@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace ProyectoFinal.Modelos
 {
-    public class PracticasDiagnosticoCentroSalud
+    public class PracticaDiagnosticoCentroSalud
     {
         public int CentroSaludId { get; set; }
 

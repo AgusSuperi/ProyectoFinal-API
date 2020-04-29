@@ -1,0 +1,12 @@
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.deps.json
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.dll
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.pdb
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.csprojAssemblyReference.cache
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.AssemblyInfoInputs.cache
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.AssemblyInfo.cs
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.dll
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.pdb
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.runtimeconfig.json
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.runtimeconfig.dev.json
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.genruntimeconfig.cache

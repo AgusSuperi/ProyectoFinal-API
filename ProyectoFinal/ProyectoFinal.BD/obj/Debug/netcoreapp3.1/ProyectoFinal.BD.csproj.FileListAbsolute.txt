@@ -1,0 +1,15 @@
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.dll
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.csprojAssemblyReference.cache
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.AssemblyInfoInputs.cache
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.AssemblyInfo.cs
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.deps.json
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.runtimeconfig.json
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.runtimeconfig.dev.json
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.dll
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.pdb
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.pdb
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.csproj.CoreCompileInputs.cache
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.csproj.CopyComplete
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.dll
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.pdb
+C:\Users\agusu\Desktop\Proyecto Final\ProyectoFinal\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.genruntimeconfig.cache
