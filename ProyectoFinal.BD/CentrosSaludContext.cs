@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Modelos;
+using System.Collections.Generic;
 
 namespace ProyectoFinal.BD
 {
@@ -31,6 +32,59 @@ namespace ProyectoFinal.BD
 
             modelBuilder.Entity<PracticaDiagnosticoCentroSalud>()
                 .HasKey(p => new { p.CentroSaludId, p.PracticaDiagnosticoId });
+
+            modelBuilder.Entity<CentroSalud>().HasData(
+                new CentroSalud
+                {
+                    Id= 1,
+                    Nombre = "Matias",
+                    Telefono= 0294,
+                    Direccion= "en la loma del culo",
+                    HorarioAtencion= "no trabja nunca",
+                    RestriccionEdad="ancianas"
+                }) ;
+
+            modelBuilder.Entity<Colectivo>().HasData(
+                new Colectivo
+                {
+                    Id = 1,
+                    Linea ="503"
+                });
+
+            modelBuilder.Entity<Especialidad>().HasData(
+                new Especialidad
+                {
+                    Id = 1,
+                    Nombre = "verdulero"
+                });
+
+            modelBuilder.Entity<PracticaDiagnostico>().HasData(
+                new PracticaDiagnostico
+                {
+                    Id = 1,
+                    Nombre = "prostata"
+                });
+
+            modelBuilder.Entity<ColectivoCentroSalud>().HasData(
+                new ColectivoCentroSalud
+                {
+                    ColectivoId = 1,
+                    CentroSaludId=1,
+                });
+
+            modelBuilder.Entity<EspecialidadCentroSalud>().HasData(
+                new EspecialidadCentroSalud
+                {
+                    EspecialidadId = 1,
+                    CentroSaludId = 1,
+                });
+
+            modelBuilder.Entity<PracticaDiagnosticoCentroSalud>().HasData(
+                new PracticaDiagnosticoCentroSalud
+                {
+                    PracticaDiagnosticoId = 1,
+                    CentroSaludId = 1,
+                });
         }
 
     }

@@ -773,11 +773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agusu\\Desktop\\Proyecto Final\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+      "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
       "projectName": "ProyectoFinal.Modelos",
-      "projectPath": "C:\\Users\\agusu\\Desktop\\Proyecto Final\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+      "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
       "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agusu\\Desktop\\Proyecto Final\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
+      "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
