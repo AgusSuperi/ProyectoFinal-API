@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {}
+    "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {
+    "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
         "projectName": "ProyectoFinal.API",
-        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
         "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
+        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
-                "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
+              "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+                "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+    "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
+        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
         "projectName": "ProyectoFinal.BD",
-        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
+        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
         "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\obj\\",
+        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.BD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,8 +108,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
-                "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj"
+              "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+                "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj"
               }
             }
           }
@@ -167,14 +167,14 @@
         }
       }
     },
-    "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+    "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "projectName": "ProyectoFinal.Modelos",
-        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
+        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
