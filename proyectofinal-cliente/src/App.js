@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import NavBar from "./components/navbar";
 import CentrosSalud from "./components/screens/centrosSalud";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ButtonBases from "../buttonBases";
+import Container from "@material-ui/core/Container";
 
 class CentrosSalud extends Component {
   state = {
@@ -31,9 +32,9 @@ class CentrosSalud extends Component {
     const { centrosSalud, cargando, error } = this.state;
 
     return (
-      <div className="container">
+      <Container maxWidth="md">
         <ButtonBases centrosSalud={centrosSalud} />
-      </div>
+      </Container>
     );
   }
 }
