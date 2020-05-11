@@ -768,19 +768,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\agusu\\.nuget\\packages\\": {}
+    "C:\\Users\\matia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+      "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
       "projectName": "ProyectoFinal.Modelos",
-      "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
-      "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
+      "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

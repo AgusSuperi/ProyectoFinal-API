@@ -9020,19 +9020,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\agusu\\.nuget\\packages\\": {}
+    "C:\\Users\\matia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+      "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
       "projectName": "ProyectoFinal.API",
-      "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
-      "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
+      "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9045,8 +9045,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
-              "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoActualizado\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
+            "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+              "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
             }
           }
         }
