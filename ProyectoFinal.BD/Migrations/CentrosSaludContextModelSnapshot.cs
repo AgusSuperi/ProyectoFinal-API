@@ -35,6 +35,12 @@ namespace ProyectoFinal.BD.Migrations
                         .HasColumnType("nvarchar(80)")
                         .HasMaxLength(80);
 
+                    b.Property<double>("Latitud")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Longitud")
+                        .HasColumnType("float");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(80)")
@@ -58,6 +64,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 1,
                             Direccion = "Humboldt 3758",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.739649999999997,
+                            Longitud = -62.212719999999997,
                             Nombre = "12 de Octubre",
                             RestriccionEdad = "",
                             Telefono = 4811397
@@ -67,6 +75,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 2,
                             Direccion = "Los Adobes 424",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.682989999999997,
+                            Longitud = -62.215170000000001,
                             Nombre = "Aldea Romana",
                             RestriccionEdad = "",
                             Telefono = 4862444
@@ -76,6 +86,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 3,
                             Direccion = "3 de Febrero 1658",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.724510000000002,
+                            Longitud = -62.237690000000001,
                             Nombre = "Anchorena",
                             RestriccionEdad = "",
                             Telefono = 4815400
@@ -85,6 +97,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 4,
                             Direccion = "Nicaragua 2953",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.690530000000003,
+                            Longitud = -62.293439999999997,
                             Nombre = "Avellaneda",
                             RestriccionEdad = "",
                             Telefono = 4888350
@@ -94,6 +108,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 5,
                             Direccion = "Chiclana 1974",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.747190000000003,
+                            Longitud = -62.229520000000001,
                             Nombre = "B.Obrero V.Mitre",
                             RestriccionEdad = "",
                             Telefono = 4821674
@@ -103,6 +119,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 6,
                             Direccion = "Charcas 906",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.715159999999997,
+                            Longitud = -62.24924,
                             Nombre = "Bella Vista",
                             RestriccionEdad = "",
                             Telefono = 4565569
@@ -112,6 +130,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 7,
                             Direccion = "Lugones 46",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.690689999999996,
+                            Longitud = -62.304180000000002,
                             Nombre = "Bº Latino",
                             RestriccionEdad = "",
                             Telefono = 4889859
@@ -121,6 +141,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 8,
                             Direccion = "Alberti 215",
                             HorarioAtencion = "Atencion las 24 horas",
+                            Latitud = -38.700319999999998,
+                            Longitud = -62.284280000000003,
                             Nombre = "Cabildo",
                             RestriccionEdad = "",
                             Telefono = 4918250
@@ -130,6 +152,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 9,
                             Direccion = "25 de Mayo 396",
                             HorarioAtencion = "Atencion las 24 horas",
+                            Latitud = -38.729410000000001,
+                            Longitud = -62.262650000000001,
                             Nombre = "Centro de Salud “A. Menghini” Gral Daniel Cerri",
                             RestriccionEdad = "",
                             Telefono = 4840157
@@ -139,6 +163,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 10,
                             Direccion = "Adrián Veres y Martin Gil",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.719299999999997,
+                            Longitud = -62.315089999999998,
                             Nombre = "Centro de Salud “Leandro Piñeiro”",
                             RestriccionEdad = "",
                             Telefono = 4546309
@@ -148,6 +174,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 11,
                             Direccion = "Lautaro y Paul Harris",
                             HorarioAtencion = "Atencion las 24 horas",
+                            Latitud = -38.775539999999999,
+                            Longitud = -62.27122,
                             Nombre = "Centro de Salud “Leonor Capelli” de Ing. White",
                             RestriccionEdad = "",
                             Telefono = 4573132
@@ -157,6 +185,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 12,
                             Direccion = "Leopoldo Marechal 1712",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.717370000000003,
+                            Longitud = -62.227370000000001,
                             Nombre = "Centro de Salud 9 de Noviembre",
                             RestriccionEdad = "",
                             Telefono = 4822622
@@ -166,6 +196,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 13,
                             Direccion = "Vieytes 1616",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.717370000000003,
+                            Longitud = -62.227370000000001,
                             Nombre = "Centro de Salud Norte",
                             RestriccionEdad = "",
                             Telefono = 4888267
@@ -175,6 +207,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 14,
                             Direccion = "Esmeralda 1450",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.748260000000002,
+                            Longitud = -62.245559999999998,
                             Nombre = "CIC Spurr",
                             RestriccionEdad = "",
                             Telefono = 4511862
@@ -184,6 +218,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 15,
                             Direccion = "O’Higgins 1637",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.734250000000003,
+                            Longitud = -62.283949999999997,
                             Nombre = "Colon",
                             RestriccionEdad = "",
                             Telefono = 4554524
@@ -193,6 +229,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 16,
                             Direccion = "D`Orbigny 2578",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.72907,
+                            Longitud = -62.223500000000001,
                             Nombre = "Don Bosco",
                             RestriccionEdad = "",
                             Telefono = 4814880
@@ -202,6 +240,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 17,
                             Direccion = "Avda. Arias 1730",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.750830000000001,
+                            Longitud = -62.268889999999999,
                             Nombre = "Enrique Julio",
                             RestriccionEdad = "",
                             Telefono = 4556898
@@ -211,6 +251,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 18,
                             Direccion = "Viamonte 2853",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.699939999999998,
+                            Longitud = -62.301450000000003,
                             Nombre = "Estomba",
                             RestriccionEdad = "",
                             Telefono = 4889026
@@ -220,6 +262,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 19,
                             Direccion = "La Rioja 5700",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.752609999999997,
+                            Longitud = -62.176259999999999,
                             Nombre = "Grünbein",
                             RestriccionEdad = "",
                             Telefono = 4810938
@@ -229,7 +273,9 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 20,
                             Direccion = "Maldonado 671",
                             HorarioAtencion = "08:00 a 14:00",
-                            Nombre = "Kilometro 5",
+                            Latitud = -38.710299999999997,
+                            Longitud = -62.293860000000002,
+                            Nombre = "Kilómetro 5",
                             RestriccionEdad = "",
                             Telefono = 4565567
                         },
@@ -238,6 +284,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 21,
                             Direccion = "Felix Frías 850",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.747889999999998,
+                            Longitud = -62.285899999999998,
                             Nombre = "Loma Paraguaya",
                             RestriccionEdad = "",
                             Telefono = 4565592
@@ -247,6 +295,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 22,
                             Direccion = "Enrique Julio 806",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.708060000000003,
+                            Longitud = -62.299720000000001,
                             Nombre = "Lujan",
                             RestriccionEdad = "",
                             Telefono = 4888351
@@ -256,6 +306,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 23,
                             Direccion = "Richieri 2535",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.71734,
+                            Longitud = -62.319479999999999,
                             Nombre = "Maldonado",
                             RestriccionEdad = "",
                             Telefono = 4550257
@@ -265,6 +317,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 24,
                             Direccion = "Mendoza 1250",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.720500000000001,
+                            Longitud = -62.293309999999998,
                             Nombre = "Mariano Moreno",
                             RestriccionEdad = "",
                             Telefono = 4552088
@@ -274,6 +328,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 25,
                             Direccion = "Laudelino Cruz 1892",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.708684599999998,
+                            Longitud = -62.237235699999999,
                             Nombre = "Miramar",
                             RestriccionEdad = "",
                             Telefono = 4552417
@@ -283,6 +339,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 26,
                             Direccion = "19 de Mayo 769",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.708269999999999,
+                            Longitud = -62.26052,
                             Nombre = "Naposta (ext)",
                             RestriccionEdad = "",
                             Telefono = 4565562
@@ -292,6 +350,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 27,
                             Direccion = "Líbano 589",
                             HorarioAtencion = "08:00 a 18:00",
+                            Latitud = -38.726959999999998,
+                            Longitud = -62.289850000000001,
                             Nombre = "Noroeste",
                             RestriccionEdad = "",
                             Telefono = 4556878
@@ -301,6 +361,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 28,
                             Direccion = "Witcomb 3900",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.676279999999998,
+                            Longitud = -62.296109999999999,
                             Nombre = "Nueva Belgrano",
                             RestriccionEdad = "",
                             Telefono = 4888268
@@ -310,6 +372,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 29,
                             Direccion = "Jujuy 946",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.725650000000002,
+                            Longitud = -62.296169999999996,
                             Nombre = "Pampa Central",
                             RestriccionEdad = "",
                             Telefono = 4556939
@@ -319,6 +383,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 30,
                             Direccion = "Lauquen 356",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.697719999999997,
+                            Longitud = -62.211730000000003,
                             Nombre = "Patagonia",
                             RestriccionEdad = "",
                             Telefono = 4862440
@@ -328,6 +394,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 31,
                             Direccion = "Misiones 754",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.73527,
+                            Longitud = -62.263350000000003,
                             Nombre = "Pedro Pico",
                             RestriccionEdad = "",
                             Telefono = 4565559
@@ -337,6 +405,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 32,
                             Direccion = "Estados Unidos 503",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.738199999999999,
+                            Longitud = -62.253799999999998,
                             Nombre = "Rivadavia",
                             RestriccionEdad = "",
                             Telefono = 4556927
@@ -346,6 +416,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 33,
                             Direccion = "Venezuela 296",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.739150000000002,
+                            Longitud = -62.245719999999999,
                             Nombre = "Rosario Sur",
                             RestriccionEdad = "",
                             Telefono = 4821625
@@ -355,6 +427,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 34,
                             Direccion = "Reconquista 2045",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.770603999999999,
+                            Longitud = -62.245449999999998,
                             Nombre = "Saladero",
                             RestriccionEdad = "",
                             Telefono = 4570427
@@ -364,6 +438,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 35,
                             Direccion = "Alberti 477",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.696959999999997,
+                            Longitud = -62.280160000000002,
                             Nombre = "San Cayetano",
                             RestriccionEdad = "",
                             Telefono = 4888366
@@ -373,6 +449,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 36,
                             Direccion = "Pacifico 154",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.736339999999998,
+                            Longitud = -62.292070000000002,
                             Nombre = "San Dionisio (Ext.)",
                             RestriccionEdad = "",
                             Telefono = 4550211
@@ -382,6 +460,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 37,
                             Direccion = "Reconquista 3084",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.779440000000001,
+                            Longitud = -62.256219999999999,
                             Nombre = "San Jose Obrero",
                             RestriccionEdad = "",
                             Telefono = 4570474
@@ -391,6 +471,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 38,
                             Direccion = "Bermudez 1580",
                             HorarioAtencion = "extensión CS 9 de noviembre",
+                            Latitud = -38.720199999999998,
+                            Longitud = -62.235520000000001,
                             Nombre = "Sanchez Elia",
                             RestriccionEdad = "",
                             Telefono = 4815419
@@ -400,6 +482,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 39,
                             Direccion = "Pellegrini 638",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.721600000000002,
+                            Longitud = -62.250210000000003,
                             Nombre = "Tiro Federal",
                             RestriccionEdad = "",
                             Telefono = 4554598
@@ -409,6 +493,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 40,
                             Direccion = "Uruguay 463",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.701560000000001,
+                            Longitud = -62.274769999999997,
                             Nombre = "Universitario",
                             RestriccionEdad = "",
                             Telefono = 4565581
@@ -416,89 +502,109 @@ namespace ProyectoFinal.BD.Migrations
                         new
                         {
                             Id = 41,
-                            Direccion = "Salinas Chicas 4150",
-                            HorarioAtencion = "08:00 a 14:00",
-                            Nombre = "V. Harding Green",
-                            RestriccionEdad = "",
-                            Telefono = 4862447
-                        },
-                        new
-                        {
-                            Id = 42,
                             Direccion = "Humboldt 56",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.708159999999999,
+                            Longitud = -62.253019999999999,
                             Nombre = "Vacunatorio Municipal “La Falda” ",
                             RestriccionEdad = "",
                             Telefono = 4554626
                         },
                         new
                         {
-                            Id = 43,
+                            Id = 42,
                             Direccion = "Gurruchaga 40",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.705910000000003,
+                            Longitud = -62.413710000000002,
                             Nombre = "Vacunatorio Municipal “Laureano Muñiz”",
                             RestriccionEdad = "",
                             Telefono = 4847220
                         },
                         new
                         {
-                            Id = 44,
+                            Id = 43,
                             Direccion = "Larrea 5450",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.714779999999998,
+                            Longitud = -62.311369999999997,
                             Nombre = "Villa Bordeu",
                             RestriccionEdad = "",
                             Telefono = 4885679
                         },
                         new
                         {
-                            Id = 45,
+                            Id = 44,
                             Direccion = "Fournier 1809",
                             HorarioAtencion = "extensión CS 9 de noviembre",
+                            Latitud = -38.723370000000003,
+                            Longitud = -62.226770000000002,
                             Nombre = "Villa Amaducci",
                             RestriccionEdad = "",
                             Telefono = 4810155
                         },
                         new
                         {
-                            Id = 46,
+                            Id = 45,
                             Direccion = "Juana Azurduy 1345",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.750140000000002,
+                            Longitud = -62.275770000000001,
                             Nombre = "Villa Delfina",
                             RestriccionEdad = "",
                             Telefono = 4552271
                         },
                         new
                         {
-                            Id = 47,
+                            Id = 46,
                             Direccion = "Berutti 2980",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.729419999999998,
+                            Longitud = -62.2605,
                             Nombre = "Villa Esperanza",
                             RestriccionEdad = "",
                             Telefono = 4813677
                         },
                         new
                         {
-                            Id = 48,
+                            Id = 47,
                             Direccion = "José Ingenieros 2235",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.69153,
+                            Longitud = -62.263590000000001,
                             Nombre = "Villa Floresta",
                             RestriccionEdad = "",
                             Telefono = 4888365
                         },
                         new
                         {
-                            Id = 49,
+                            Id = 48,
                             Direccion = "Rojas 4898",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.74982,
+                            Longitud = -62.191670000000002,
                             Nombre = "Villa Gloria",
                             RestriccionEdad = "",
                             Telefono = 4817321
                         },
                         new
                         {
+                            Id = 49,
+                            Direccion = "Salinas Chicas 4150",
+                            HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.714480000000002,
+                            Longitud = -62.189450000000001,
+                            Nombre = "Villa Harding Green",
+                            RestriccionEdad = "",
+                            Telefono = 4862447
+                        },
+                        new
+                        {
                             Id = 50,
                             Direccion = "Washington 232",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.730409999999999,
+                            Longitud = -62.24653,
                             Nombre = "Villa Mitre",
                             RestriccionEdad = "",
                             Telefono = 4817261
@@ -508,6 +614,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 51,
                             Direccion = "Pilcaniyen 259",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.746099999999998,
+                            Longitud = -62.225990000000003,
                             Nombre = "Villa Muñiz",
                             RestriccionEdad = "",
                             Telefono = 4811080
@@ -517,6 +625,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 52,
                             Direccion = "Pacifico 1925",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.721699999999998,
+                            Longitud = -62.31221,
                             Nombre = "Villa Nocito",
                             RestriccionEdad = "",
                             Telefono = 4550240
@@ -526,6 +636,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 53,
                             Direccion = "Misiones 1570",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.742669999999997,
+                            Longitud = -62.272080000000003,
                             Nombre = "Villa Ressia",
                             RestriccionEdad = "",
                             Telefono = 4565591
@@ -535,6 +647,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 54,
                             Direccion = "Libertad 1955",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.755940000000002,
+                            Longitud = -62.261400000000002,
                             Nombre = "Villa Rosas",
                             RestriccionEdad = "",
                             Telefono = 4552418
@@ -544,6 +658,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 55,
                             Direccion = "Tarija 1350",
                             HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.75788,
+                            Longitud = -62.246609999999997,
                             Nombre = "Villa Serra",
                             RestriccionEdad = "",
                             Telefono = 4560139

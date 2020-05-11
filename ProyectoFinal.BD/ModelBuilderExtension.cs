@@ -16,6 +16,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4811397,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.739650,
+                    Longitud = -62.212720,
                 },
 
                 new CentroSalud
@@ -26,6 +28,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4862444,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.682990,
+                    Longitud = -62.215170,
                 },
 
                 new CentroSalud
@@ -36,6 +40,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4815400,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.724510,
+                    Longitud = -62.237690,
                 },
 
                 new CentroSalud
@@ -46,6 +52,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4888350,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.690530,
+                    Longitud = -62.293440,
                 },
 
                 new CentroSalud
@@ -56,6 +64,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4821674,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.74719,
+                    Longitud = -62.229520,
                 },
 
                 new CentroSalud
@@ -66,6 +76,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4565569,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.715160,
+                    Longitud = -62.249240,
                 },
 
                 new CentroSalud
@@ -76,6 +88,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4889859,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.690690,
+                    Longitud = -62.304180,
                 },
 
                 new CentroSalud
@@ -86,6 +100,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4918250,
                     HorarioAtencion = "Atencion las 24 horas",
                     RestriccionEdad = "",
+                    Latitud = -38.700320,
+                    Longitud = -62.284280,
                 },
 
                 new CentroSalud
@@ -96,6 +112,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4840157,
                     HorarioAtencion = "Atencion las 24 horas",
                     RestriccionEdad = "",
+                    Latitud = -38.729410,
+                    Longitud = -62.262650,
                 },
 
                 new CentroSalud
@@ -106,6 +124,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4546309,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.719300,
+                    Longitud = -62.315090,
                 },
 
                 new CentroSalud
@@ -116,6 +136,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4573132,
                     HorarioAtencion = "Atencion las 24 horas",
                     RestriccionEdad = "",
+                    Latitud = -38.775540,
+                    Longitud = -62.271220,
                 },
 
                 new CentroSalud
@@ -126,6 +148,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4822622,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.717370,
+                    Longitud = -62.227370,
                 },
 
                 new CentroSalud
@@ -136,6 +160,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4888267,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.717370,
+                    Longitud = -62.227370,
                 },
 
                 new CentroSalud
@@ -146,6 +172,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4511862,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.748260,
+                    Longitud = -62.245560,
                 },
 
                 new CentroSalud
@@ -156,6 +184,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4554524,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.734250,
+                    Longitud = -62.283950,
                 },
 
                 new CentroSalud
@@ -166,6 +196,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4814880,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.729070,
+                    Longitud = -62.223500,
                 },
 
                 new CentroSalud
@@ -176,6 +208,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4556898,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.750830,
+                    Longitud = -62.268890,
                 },
 
                 new CentroSalud
@@ -186,6 +220,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4889026,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.699940,
+                    Longitud = -62.301450,
                 },
 
                 new CentroSalud
@@ -196,16 +232,20 @@ namespace ProyectoFinal.BD
                     Telefono = 4810938,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.752610,
+                    Longitud = -62.176260,
                 },
 
                 new CentroSalud
                 {
                     Id = 20,
-                    Nombre = "Kilometro 5",
+                    Nombre = "Kilómetro 5",
                     Direccion = "Maldonado 671",
                     Telefono = 4565567,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.710300,
+                    Longitud = -62.293860,
                 },
 
                 new CentroSalud
@@ -216,6 +256,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4565592,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.747890,
+                    Longitud = -62.285900,
                 },
 
                 new CentroSalud
@@ -226,6 +268,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4888351,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.708060,
+                    Longitud = -62.299720,
                 },
 
                 new CentroSalud
@@ -236,6 +280,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4550257,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.717340,
+                    Longitud = -62.319480,
                 },
 
                 new CentroSalud
@@ -246,6 +292,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4552088,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.720500,
+                    Longitud = -62.293310,
                 },
 
                 new CentroSalud
@@ -256,6 +304,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4552417,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.7086846,
+                    Longitud = -62.2372357,
                 },
 
                 new CentroSalud
@@ -266,6 +316,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4565562,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.708270,
+                    Longitud = -62.260520,
                 },
 
                 new CentroSalud
@@ -276,6 +328,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4556878,
                     HorarioAtencion = "08:00 a 18:00",
                     RestriccionEdad = "",
+                    Latitud = -38.726960,
+                    Longitud = -62.289850,
                 },
 
                 new CentroSalud
@@ -286,6 +340,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4888268,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.676280,
+                    Longitud = -62.296110,
                 },
 
                 new CentroSalud
@@ -296,6 +352,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4556939,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.725650,
+                    Longitud = -62.296170,
                 },
 
                 new CentroSalud
@@ -306,6 +364,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4862440,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.697720,
+                    Longitud = -62.211730,
                 },
 
                 new CentroSalud
@@ -316,6 +376,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4565559,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.735270,
+                    Longitud = -62.263350,
                 },
 
                 new CentroSalud
@@ -326,6 +388,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4556927,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.738200,
+                    Longitud = -62.253800,
                 },
 
                 new CentroSalud
@@ -336,6 +400,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4821625,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.739150,
+                    Longitud = -62.245720,
                 },
 
                 new CentroSalud
@@ -346,6 +412,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4570427,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.770604,
+                    Longitud = -62.245450,
                 },
 
                 new CentroSalud
@@ -356,6 +424,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4888366,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.696960,
+                    Longitud = -62.280160,
                 },
 
                 new CentroSalud
@@ -366,6 +436,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4550211,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.736340,
+                    Longitud = -62.292070,
                 },
 
                 new CentroSalud
@@ -376,6 +448,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4570474,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.779440,
+                    Longitud = -62.256220,
                 },
 
                 new CentroSalud
@@ -386,6 +460,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4815419,
                     HorarioAtencion = "extensión CS 9 de noviembre",
                     RestriccionEdad = "",
+                    Latitud = -38.720200,
+                    Longitud = -62.235520,
                 },
 
                 new CentroSalud
@@ -396,6 +472,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4554598,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.721600,
+                    Longitud = -62.250210,
                 },
 
                 new CentroSalud
@@ -406,96 +484,116 @@ namespace ProyectoFinal.BD
                     Telefono = 4565581,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
-                },
+                    Latitud = -38.701560,
+                    Longitud = -62.274770,
+                },                
 
                 new CentroSalud
                 {
                     Id = 41,
-                    Nombre = "V. Harding Green",
-                    Direccion = "Salinas Chicas 4150",
-                    Telefono = 4862447,
-                    HorarioAtencion = "08:00 a 14:00",
-                    RestriccionEdad = "",
-                },
-
-                new CentroSalud
-                {
-                    Id = 42,
                     Nombre = "Vacunatorio Municipal “La Falda” ",
                     Direccion = "Humboldt 56",
                     Telefono = 4554626,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.708160,
+                    Longitud = -62.253020,
                 },
 
                 new CentroSalud
                 {
-                    Id = 43,
+                    Id = 42,
                     Nombre = "Vacunatorio Municipal “Laureano Muñiz”",
                     Direccion = "Gurruchaga 40",
                     Telefono = 4847220,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.705910,
+                    Longitud = -62.413710,
                 },
 
                 new CentroSalud
                 {
-                    Id = 44,
+                    Id = 43,
                     Nombre = "Villa Bordeu",
                     Direccion = "Larrea 5450",
                     Telefono = 4885679,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.714780,
+                    Longitud = -62.311370,
                 },
 
                 new CentroSalud
                 {
-                    Id = 45,
+                    Id = 44,
                     Nombre = "Villa Amaducci",
                     Direccion = "Fournier 1809",
                     Telefono = 4810155,
                     HorarioAtencion = "extensión CS 9 de noviembre",
                     RestriccionEdad = "",
+                    Latitud = -38.723370,
+                    Longitud = -62.226770,
                 },
 
                 new CentroSalud
                 {
-                    Id = 46,
+                    Id = 45,
                     Nombre = "Villa Delfina",
                     Direccion = "Juana Azurduy 1345",
                     Telefono = 4552271,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.750140,
+                    Longitud = -62.275770,
                 },
 
                 new CentroSalud
                 {
-                    Id = 47,
+                    Id = 46,
                     Nombre = "Villa Esperanza",
                     Direccion = "Berutti 2980",
                     Telefono = 4813677,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.729420,
+                    Longitud = -62.260500,
                 },
 
                 new CentroSalud
                 {
-                    Id = 48,
+                    Id = 47,
                     Nombre = "Villa Floresta",
                     Direccion = "José Ingenieros 2235",
                     Telefono = 4888365,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.691530,
+                    Longitud = -62.263590,
                 },
 
                 new CentroSalud
                 {
-                    Id = 49,
+                    Id = 48,
                     Nombre = "Villa Gloria",
                     Direccion = "Rojas 4898",
                     Telefono = 4817321,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.749820,
+                    Longitud = -62.191670,
+                },
+
+                new CentroSalud
+                {
+                    Id = 49,
+                    Nombre = "Villa Harding Green",
+                    Direccion = "Salinas Chicas 4150",
+                    Telefono = 4862447,
+                    HorarioAtencion = "08:00 a 14:00",
+                    RestriccionEdad = "",
+                    Latitud = -38.714480,
+                    Longitud = -62.189450,
                 },
 
                 new CentroSalud
@@ -506,6 +604,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4817261,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.730410,
+                    Longitud = -62.246530,
                 },
 
                 new CentroSalud
@@ -516,6 +616,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4811080,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.746100,
+                    Longitud = -62.225990,
                 },
 
                 new CentroSalud
@@ -526,6 +628,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4550240,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.721700,
+                    Longitud = -62.312210,
                 },
 
                 new CentroSalud
@@ -536,6 +640,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4565591,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.742670,
+                    Longitud = -62.272080,
                 },
 
                 new CentroSalud
@@ -546,6 +652,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4552418,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.755940,
+                    Longitud = -62.261400,
                 },
 
                 new CentroSalud
@@ -556,6 +664,8 @@ namespace ProyectoFinal.BD
                     Telefono = 4560139,
                     HorarioAtencion = "08:00 a 14:00",
                     RestriccionEdad = "",
+                    Latitud = -38.757880,
+                    Longitud = -62.246610,
                 });
 
             modelBuilder.Entity<Colectivo>().HasData(

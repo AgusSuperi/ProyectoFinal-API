@@ -22,6 +22,12 @@ namespace ProyectoFinal.Modelos
         [Required, StringLength(200)]
         public string RestriccionEdad { get; set; }
 
+        [Required]
+        public double Latitud { get; set; }
+
+        [Required]
+        public double Longitud { get; set; }
+
         public virtual IEnumerable<EspecialidadCentroSalud> EspecialidadesCentroSalud { get; set; } = new List<EspecialidadCentroSalud>();
 
         public virtual IEnumerable<PracticaDiagnosticoCentroSalud> PracticasDiagnosticoCentroSalud { get; set; } = new List<PracticaDiagnosticoCentroSalud>();

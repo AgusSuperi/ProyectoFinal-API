@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {}
+    "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+    "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "projectName": "ProyectoFinal.Modelos",
-        "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
+        "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
               "target": "Package",
               "version": "[3.1.3, )"
             }

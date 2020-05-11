@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {}
+    "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {
+    "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
         "projectName": "ProyectoFinal.API",
-        "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+        "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
+        "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
-                "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
+              "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+                "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+    "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
         "projectName": "ProyectoFinal.BD",
-        "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
+        "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.BD\\obj\\",
+        "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,8 +108,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
-                "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj"
+              "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+                "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj"
               }
             }
           }
@@ -123,10 +123,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.3, )"
@@ -138,6 +134,10 @@
               "version": "[3.1.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
               "target": "Package",
               "version": "[3.1.3, )"
             },
@@ -167,14 +167,14 @@
         }
       }
     },
-    "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+    "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "projectName": "ProyectoFinal.Modelos",
-        "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
+        "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -204,6 +204,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
               "target": "Package",
               "version": "[3.1.3, )"
             }

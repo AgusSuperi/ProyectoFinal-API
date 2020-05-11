@@ -22,6 +22,10 @@ namespace ProyectoFinal.API.DTOs
         [Required, StringLength(200)]
         public string RestriccionEdad { get; set; }
 
+        public double Latitud { get; set; }
+
+        public double Longitud { get; set; }
+
         public ICollection<EspecialidadDTO> Especialidades { get; set; } = new List<EspecialidadDTO>();
 
         public ICollection<ColectivoDTO> Colectivos { get; set; } = new List<ColectivoDTO>();
