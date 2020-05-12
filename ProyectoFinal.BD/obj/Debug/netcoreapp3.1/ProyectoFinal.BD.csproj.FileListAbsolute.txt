@@ -74,3 +74,4 @@ C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.genruntimeconfig.cache
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.csproj.CoreCompileInputs.cache
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\EFCoreSqlServerNetTopologySuite.cs

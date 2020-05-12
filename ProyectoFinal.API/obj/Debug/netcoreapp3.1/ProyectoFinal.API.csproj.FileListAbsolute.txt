@@ -204,12 +204,6 @@ C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\z
 C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.csproj.CoreCompileInputs.cache
 C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\EntityFramework.dll
-C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\System.CodeDom.dll
-C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
-C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\agusu\Desktop\ProyectoActualizado\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\agusu\Desktop\ProyectoActualizado\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\agusu\Desktop\ProyectoActualizado\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -675,3 +669,6 @@ C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\NetTopologySuite.dll
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\NetTopologySuite.dll
+C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\NetTopologySuite.IO.SqlServerBytes.dll
