@@ -24,6 +24,7 @@ namespace ProyectoFinal.API
             {
                 options.UseSqlServer(Configuration.GetConnectionString("CentrosSaludBD"));
             });
+
             services.AddControllers();
         }
 
@@ -44,7 +45,7 @@ namespace ProyectoFinal.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });
+            });            
         }
     }
 }

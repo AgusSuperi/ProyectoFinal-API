@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoFinal.BD;
 
 namespace ProyectoFinal.BD.Migrations
 {
     [DbContext(typeof(CentrosSaludContext))]
-    partial class CentrosSaludContextModelSnapshot : ModelSnapshot
+    [Migration("20200519151659_CambioDeNombresCAPS")]
+    partial class CambioDeNombresCAPS
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -128,28 +130,6 @@ namespace ProyectoFinal.BD.Migrations
                         new
                         {
                             Id = 7,
-                            Direccion = "Lugones 46",
-                            HorarioAtencion = "08:00 a 14:00",
-                            Latitud = -38.690689999999996,
-                            Longitud = -62.304180000000002,
-                            Nombre = "Barrio Latino",
-                            RestriccionEdad = "",
-                            Telefono = 4889859
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Direccion = "Chiclana 1974",
-                            HorarioAtencion = "08:00 a 14:00",
-                            Latitud = -38.747190000000003,
-                            Longitud = -62.229520000000001,
-                            Nombre = "Barrio Obrero",
-                            RestriccionEdad = "",
-                            Telefono = 4821674
-                        },
-                        new
-                        {
-                            Id = 9,
                             Direccion = "Charcas 906",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.715159999999997,
@@ -160,7 +140,18 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 10,
+                            Id = 8,
+                            Direccion = "Lugones 46",
+                            HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.690689999999996,
+                            Longitud = -62.304180000000002,
+                            Nombre = "Bº Latino",
+                            RestriccionEdad = "",
+                            Telefono = 4889859
+                        },
+                        new
+                        {
+                            Id = 9,
                             Direccion = "Alberti 215",
                             HorarioAtencion = "Las 24 hs",
                             Latitud = -38.700319999999998,
@@ -171,7 +162,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 11,
+                            Id = 10,
                             Direccion = "Esmeralda 1450",
                             HorarioAtencion = "08:00 a 18:00",
                             Latitud = -38.748260000000002,
@@ -182,18 +173,18 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 12,
+                            Id = 11,
                             Direccion = "O’Higgins 1637",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.734250000000003,
                             Longitud = -62.283949999999997,
-                            Nombre = "Colón",
+                            Nombre = "Colon",
                             RestriccionEdad = "",
                             Telefono = 4554524
                         },
                         new
                         {
-                            Id = 13,
+                            Id = 12,
                             Direccion = "D`Orbigny 2578",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.72907,
@@ -204,7 +195,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 14,
+                            Id = 13,
                             Direccion = "Avda. Arias 1730",
                             HorarioAtencion = "08:00 a 18:00",
                             Latitud = -38.750830000000001,
@@ -215,7 +206,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 15,
+                            Id = 14,
                             Direccion = "Viamonte 2853",
                             HorarioAtencion = "08:00 a 18:00",
                             Latitud = -38.699939999999998,
@@ -226,7 +217,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 16,
+                            Id = 15,
                             Direccion = "La Rioja 5700",
                             HorarioAtencion = "08:00 a 18:00",
                             Latitud = -38.752609999999997,
@@ -237,7 +228,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 17,
+                            Id = 16,
                             Direccion = "Maldonado 671",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.710299999999997,
@@ -248,29 +239,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 18,
-                            Direccion = "Humboldt 56",
-                            HorarioAtencion = "08:00 a 14:00",
-                            Latitud = -38.708159999999999,
-                            Longitud = -62.253019999999999,
-                            Nombre = "La Falda - Vacunatorio",
-                            RestriccionEdad = "",
-                            Telefono = 4554626
-                        },
-                        new
-                        {
-                            Id = 19,
-                            Direccion = "Gurruchaga 40",
-                            HorarioAtencion = "08:00 a 14:00",
-                            Latitud = -38.705910000000003,
-                            Longitud = -62.413710000000002,
-                            Nombre = "Laureano Muñiz - Vacunatorio",
-                            RestriccionEdad = "",
-                            Telefono = 4847220
-                        },
-                        new
-                        {
-                            Id = 20,
+                            Id = 17,
                             Direccion = "Adrián Veres y Martin Gil",
                             HorarioAtencion = "08:00 a 18:00",
                             Latitud = -38.719299999999997,
@@ -281,18 +250,18 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 21,
+                            Id = 18,
                             Direccion = "Lautaro y Paul Harris",
                             HorarioAtencion = "Las 24 hs",
                             Latitud = -38.775539999999999,
                             Longitud = -62.27122,
-                            Nombre = "Leonor Capelli",
+                            Nombre = "Leonor Capelli - Ing. White",
                             RestriccionEdad = "",
                             Telefono = 4573132
                         },
                         new
                         {
-                            Id = 22,
+                            Id = 19,
                             Direccion = "Felix Frías 850",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.747889999999998,
@@ -303,7 +272,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 23,
+                            Id = 20,
                             Direccion = "Enrique Julio 806",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.708060000000003,
@@ -314,7 +283,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 24,
+                            Id = 21,
                             Direccion = "Richieri 2535",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.71734,
@@ -325,7 +294,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 25,
+                            Id = 22,
                             Direccion = "Mendoza 1250",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.720500000000001,
@@ -336,7 +305,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 26,
+                            Id = 23,
                             Direccion = "Laudelino Cruz 1892",
                             HorarioAtencion = "08:00 a 18:00",
                             Latitud = -38.708684599999998,
@@ -347,18 +316,18 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 27,
+                            Id = 24,
                             Direccion = "19 de Mayo 769",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.708269999999999,
                             Longitud = -62.26052,
-                            Nombre = "Naposta",
+                            Nombre = "Naposta (ext)",
                             RestriccionEdad = "",
                             Telefono = 4565562
                         },
                         new
                         {
-                            Id = 28,
+                            Id = 25,
                             Direccion = "Líbano 589",
                             HorarioAtencion = "08:00 a 18:00",
                             Latitud = -38.726959999999998,
@@ -369,7 +338,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 29,
+                            Id = 26,
                             Direccion = "Vieytes 1616",
                             HorarioAtencion = "08:00 a 18:00",
                             Latitud = -38.717370000000003,
@@ -380,7 +349,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 30,
+                            Id = 27,
                             Direccion = "Witcomb 3900",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.676279999999998,
@@ -391,7 +360,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 31,
+                            Id = 28,
                             Direccion = "Jujuy 946",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.725650000000002,
@@ -402,7 +371,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 32,
+                            Id = 29,
                             Direccion = "Lauquen 356",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.697719999999997,
@@ -413,7 +382,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 33,
+                            Id = 30,
                             Direccion = "Misiones 754",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.73527,
@@ -424,7 +393,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 34,
+                            Id = 31,
                             Direccion = "Estados Unidos 503",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.738199999999999,
@@ -435,7 +404,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 35,
+                            Id = 32,
                             Direccion = "Venezuela 296",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.739150000000002,
@@ -446,7 +415,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 36,
+                            Id = 33,
                             Direccion = "Reconquista 2045",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.770603999999999,
@@ -457,7 +426,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 37,
+                            Id = 34,
                             Direccion = "Alberti 477",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.696959999999997,
@@ -468,18 +437,18 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 38,
+                            Id = 35,
                             Direccion = "Pacifico 154",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.736339999999998,
                             Longitud = -62.292070000000002,
-                            Nombre = "San Dionisio",
+                            Nombre = "San Dionisio (Ext.)",
                             RestriccionEdad = "",
                             Telefono = 4550211
                         },
                         new
                         {
-                            Id = 39,
+                            Id = 36,
                             Direccion = "Reconquista 3084",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.779440000000001,
@@ -490,7 +459,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 40,
+                            Id = 37,
                             Direccion = "Bermudez 1580",
                             HorarioAtencion = "extensión CS 9 de noviembre",
                             Latitud = -38.720199999999998,
@@ -501,7 +470,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 41,
+                            Id = 38,
                             Direccion = "Pellegrini 638",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.721600000000002,
@@ -512,7 +481,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 42,
+                            Id = 39,
                             Direccion = "Uruguay 463",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.701560000000001,
@@ -523,7 +492,29 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 43,
+                            Id = 40,
+                            Direccion = "Humboldt 56",
+                            HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.708159999999999,
+                            Longitud = -62.253019999999999,
+                            Nombre = "Vacunatorio - La Falda",
+                            RestriccionEdad = "",
+                            Telefono = 4554626
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Direccion = "Gurruchaga 40",
+                            HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.705910000000003,
+                            Longitud = -62.413710000000002,
+                            Nombre = "Vacunatorio - Laureano Muñiz",
+                            RestriccionEdad = "",
+                            Telefono = 4847220
+                        },
+                        new
+                        {
+                            Id = 42,
                             Direccion = "Larrea 5450",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.714779999999998,
@@ -534,7 +525,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 44,
+                            Id = 43,
                             Direccion = "Fournier 1809",
                             HorarioAtencion = "extensión CS 9 de noviembre",
                             Latitud = -38.723370000000003,
@@ -545,7 +536,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 45,
+                            Id = 44,
                             Direccion = "Juana Azurduy 1345",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.750140000000002,
@@ -556,7 +547,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 46,
+                            Id = 45,
                             Direccion = "Berutti 2980",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.729419999999998,
@@ -567,7 +558,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 47,
+                            Id = 46,
                             Direccion = "José Ingenieros 2235",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.69153,
@@ -578,7 +569,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 48,
+                            Id = 47,
                             Direccion = "Rojas 4898",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.74982,
@@ -589,7 +580,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 49,
+                            Id = 48,
                             Direccion = "Salinas Chicas 4150",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.714480000000002,
@@ -600,7 +591,7 @@ namespace ProyectoFinal.BD.Migrations
                         },
                         new
                         {
-                            Id = 50,
+                            Id = 49,
                             Direccion = "Washington 232",
                             HorarioAtencion = "08:00 a 14:00",
                             Latitud = -38.730409999999999,
@@ -608,6 +599,17 @@ namespace ProyectoFinal.BD.Migrations
                             Nombre = "Villa Mitre",
                             RestriccionEdad = "",
                             Telefono = 4817261
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Direccion = "Chiclana 1974",
+                            HorarioAtencion = "08:00 a 14:00",
+                            Latitud = -38.747190000000003,
+                            Longitud = -62.229520000000001,
+                            Nombre = "Villa Mitre - B. Obrero",
+                            RestriccionEdad = "",
+                            Telefono = 4821674
                         },
                         new
                         {

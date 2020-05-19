@@ -657,8 +657,6 @@ C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.pdb
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.pdb
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.csprojAssemblyReference.cache
-C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.csproj.CoreCompileInputs.cache
-C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.AssemblyInfoInputs.cache
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.AssemblyInfo.cs
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.RazorTargetAssemblyInfo.cache
@@ -672,3 +670,5 @@ C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.
 C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
 C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\NetTopologySuite.dll
 C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.API\bin\Debug\netcoreapp3.1\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.csproj.CoreCompileInputs.cache
+C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.API\obj\Debug\netcoreapp3.1\ProyectoFinal.API.MvcApplicationPartsAssemblyInfo.cache
