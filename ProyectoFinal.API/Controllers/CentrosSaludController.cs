@@ -30,35 +30,14 @@ namespace ProyectoFinal.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<CentroSaludDTO>> GetCentroSalud(int id)
         {
-            var centroSalud = await _context.CentrosSalud.FindAsync(id);
-
-            var colectivos = await _context.ColectivosCentrosSalud.
-                Where(ccs => ccs.CentroSaludId == id).
-                Select(ccs=> Helper.ColectivoToDTO(ccs.Colectivo)).
-                ToListAsync();
-
-            var especialidades = await _context.EspecialidadesCentrosSalud.
-                Where(ecs => ecs.CentroSaludId == id).
-                Select(ecs => Helper.EspecialidadToDTO(ecs.Especialidad)).
-                ToListAsync();
-
-            var practicasDiagnostico = await _context.PracticasDiagnosticoCentrosSalud.
-                Where(pdcs => pdcs.CentroSaludId == id).
-                Select(pdcs => Helper.PracticaDiagnosticoToDTO(pdcs.PracticaDiagnostico)).
-                ToListAsync();
+            var centroSalud = await _context.CentrosSalud.FindAsync(id); 
 
             if (centroSalud == null)
             {
                 return NotFound();
             }
 
-            var centroSaludDTO = Helper.CentroSaludToDTO(centroSalud);
-
-            centroSaludDTO.Colectivos = colectivos;
-            centroSaludDTO.Especialidades = especialidades;
-            centroSaludDTO.PracticasDiagnostico = practicasDiagnostico;
-
-            return centroSaludDTO;
+            return Helper.CentroSaludToDTO(centroSalud);
         }
     }
 }

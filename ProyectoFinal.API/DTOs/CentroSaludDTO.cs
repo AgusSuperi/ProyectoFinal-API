@@ -26,10 +26,5 @@ namespace ProyectoFinal.API.DTOs
 
         public double Longitud { get; set; }
 
-        public ICollection<EspecialidadDTO> Especialidades { get; set; } = new List<EspecialidadDTO>();
-
-        public ICollection<ColectivoDTO> Colectivos { get; set; } = new List<ColectivoDTO>();
-
-        public ICollection<PracticaDiagnosticoDTO> PracticasDiagnostico { get; set; } = new List<PracticaDiagnosticoDTO>();
     }
 }

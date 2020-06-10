@@ -3,6 +3,8 @@ using ProyectoFinal.Modelos;
 
 namespace ProyectoFinal.BD
 {
+
+    //dotnet ef migrations add NuevasEspecialidades -s ..\ProyectoFinal.API\ProyectoFinal.API.csproj
     public static class ModelBuilderExtension
     {
         public static void Seed(this ModelBuilder modelBuilder)
@@ -252,7 +254,7 @@ namespace ProyectoFinal.BD
                 new CentroSalud
                 {
                     Id = 21,
-                    Nombre = "Leonor Capelli",
+                    Nombre = "Leonor Capelli (Ingeniero White)",
                     Direccion = "Lautaro y Paul Harris",
                     Telefono = 4573132,
                     HorarioAtencion = "Las 24 hs",
@@ -516,18 +518,6 @@ namespace ProyectoFinal.BD
                 new CentroSalud
                 {
                     Id = 43,
-                    Nombre = "Villa Bordeu",
-                    Direccion = "Larrea 5450",
-                    Telefono = 4885679,
-                    HorarioAtencion = "08:00 a 14:00",
-                    RestriccionEdad = "",
-                    Latitud = -38.714780,
-                    Longitud = -62.311370,
-                },
-
-                new CentroSalud
-                {
-                    Id = 44,
                     Nombre = "Villa Amaducci",
                     Direccion = "Fournier 1809",
                     Telefono = 4810155,
@@ -535,6 +525,18 @@ namespace ProyectoFinal.BD
                     RestriccionEdad = "",
                     Latitud = -38.723370,
                     Longitud = -62.226770,
+                },
+
+                new CentroSalud
+                {
+                    Id = 44,
+                    Nombre = "Villa Bordeu",
+                    Direccion = "Larrea 5450",
+                    Telefono = 4885679,
+                    HorarioAtencion = "08:00 a 14:00",
+                    RestriccionEdad = "",
+                    Latitud = -38.714780,
+                    Longitud = -62.311370,
                 },
 
                 new CentroSalud
@@ -669,382 +671,2499 @@ namespace ProyectoFinal.BD
                     Longitud = -62.246610,
                 });
 
-            modelBuilder.Entity<Colectivo>().HasData(
-                new Colectivo
-                {
-                    Id = 1,
-                    Linea = "319"
-                },
-
-                new Colectivo
-                {
-                    Id = 2,
-                    Linea = "500"
-                },
-
-                new Colectivo
-                {
-                    Id = 3,
-                    Linea = "502"
-                },
-
-                new Colectivo
-                {
-                    Id = 4,
-                    Linea = "503"
-                },
-
-                new Colectivo
-                {
-                    Id = 5,
-                    Linea = "504"
-                },
-
-                new Colectivo
-                {
-                    Id = 6,
-                    Linea = "505"
-                },
-
-                new Colectivo
-                {
-                    Id = 7,
-                    Linea = "506"
-                },
-
-                new Colectivo
-                {
-                    Id = 8,
-                    Linea = "507"
-                },
-
-                new Colectivo
-                {
-                    Id = 9,
-                    Linea = "509"
-                },
-
-               new Colectivo
-                {
-                    Id = 10,
-                    Linea = "512"
-                },
-
-                new Colectivo
-                {
-                    Id = 11,
-                    Linea = "513"
-                },
-
-                new Colectivo
-                {
-                    Id = 12,
-                    Linea = "513 EX"
-                },
-
-                new Colectivo
-                {
-                    Id = 13,
-                    Linea = "514"
-                },
-
-                new Colectivo
-                {
-                    Id = 14,
-                    Linea = "516"
-                },
-
-                new Colectivo
-                {
-                    Id = 15,
-                    Linea = "517"
-                },
-
-                new Colectivo
-                {
-                    Id = 16,
-                    Linea = "518"
-                },
-
-                new Colectivo
-                {
-                    Id = 17,
-                    Linea = "519"
-                },
-
-                new Colectivo
-                {
-                    Id = 18,
-                    Linea = "519 A"
-                },
-
-                new Colectivo
-                {
-                    Id = 19,
-                    Linea = "520"
-                });
-
             modelBuilder.Entity<Especialidad>().HasData(
                 new Especialidad
                 {
                     Id = 1,
+                    Nombre = "Actividad Comunitaria"
+                },
+
+                new Especialidad
+                {
+                    Id = 2,
                     Nombre = "Alergia"
                 },
 
                 new Especialidad
                 {
-                    Id = 2,
-                    Nombre = "Cardiología"
+                    Id = 3,
+                    Nombre = "Anatomia Patológica"
                 },
 
                 new Especialidad
                 {
-                    Id = 3,
+                    Id = 4,
                     Nombre = "Clínica Médica"
                 },
 
                 new Especialidad
                 {
-                    Id = 4,
-                    Nombre = "Dermatología"
-                },
-
-                new Especialidad
-                {
-                    Id = 5,
-                    Nombre = "Endocrinología"
-                },
-
-                new Especialidad
-                {
                     Id = 6,
+                    Nombre = "Diagnóstico por imagen"
+                },
+
+                new Especialidad
+                {
+                    Id = 7,
                     Nombre = "Enfermería"
                 },
 
                 new Especialidad
                 {
-                    Id = 7,
-                    Nombre = "Estimulación Temprana"
+                    Id = 8,
+                    Nombre = "Familia / General"
                 },
 
                 new Especialidad
                 {
-                    Id = 8,
+                    Id = 9,
                     Nombre = "Fonoaudiología"
                 },
 
                 new Especialidad
                 {
-                    Id = 9,
-                    Nombre = "Gastroenterología"
-                },
-
-                new Especialidad
-                {
                     Id = 10,
-                    Nombre = "Ginecología"
+                    Nombre = "Ginecología / Obstetricia"
                 },
 
                 new Especialidad
                 {
                     Id = 11,
-                    Nombre = "Hematología"
+                    Nombre = "Guardia"
                 },
 
                 new Especialidad
                 {
                     Id = 12,
-                    Nombre = "Infectología"
-                },
-
-                 new Especialidad
-                 {
-                     Id = 13,
-                     Nombre = "Inmunizaciones"
-                 },
-
-                new Especialidad
-                {
-                    Id = 14,
-                    Nombre = "Kinesiología"
-                },
-
-                new Especialidad
-                {
-                    Id = 15,
-                    Nombre = "Medicina Familiar"
-                },
-
-                new Especialidad
-                {
-                    Id = 16,
-                    Nombre = "Nefrología"
-                },
-
-                new Especialidad
-                {
-                    Id = 17,
-                    Nombre = "Neumonología"
-                },
-
-                new Especialidad
-                {
-                    Id = 18,
-                    Nombre = "Neurocirugía"
-                },
-
-                new Especialidad
-                {
-                    Id = 19,
-                    Nombre = "Neurología"
-                },
-
-                new Especialidad
-                {
-                    Id = 20,
                     Nombre = "Nutrición"
                 },
 
                 new Especialidad
                 {
-                    Id = 21,
-                    Nombre = "Obstetricia"
-                },
-
-                new Especialidad
-                {
-                    Id = 22,
+                    Id = 13,
                     Nombre = "Odontología"
                 },
 
                 new Especialidad
                 {
-                    Id = 23,
+                    Id = 14,
                     Nombre = "Oftalmología"
                 },
 
                 new Especialidad
                 {
-                    Id = 24,
-                    Nombre = "Oncología"
-                },
-
-                new Especialidad
-                {
-                    Id = 25,
-                    Nombre = "Otorrinolaringología"
-                },
-
-                new Especialidad
-                {
-                    Id = 26,
+                    Id = 15,
                     Nombre = "Pediatría"
                 },
 
                 new Especialidad
                 {
-                    Id = 27,
+                    Id = 16,
+                    Nombre = "Promotor de Salud"
+                },
+
+                new Especialidad
+                {
+                    Id = 17,
                     Nombre = "Psicología"
                 },
 
                 new Especialidad
                 {
-                    Id = 28,
+                    Id = 18,
                     Nombre = "Psicopedagogía"
                 },
 
                 new Especialidad
                 {
-                    Id = 29,
+                    Id = 19,
                     Nombre = "Trabajo Social"
                 },
 
                 new Especialidad
                 {
-                    Id = 30,
-                    Nombre = "Traumatología y Ortopedia"
-                },
-
-                new Especialidad
-                {
-                    Id = 31,
-                    Nombre = "Urología"
-                });
-
-            modelBuilder.Entity<PracticaDiagnostico>().HasData(
-                new PracticaDiagnostico
-                {
-                    Id = 1,
-                    Nombre = "Ecografías"
-                },
-
-                new PracticaDiagnostico
-                {
-                    Id = 2,
-                    Nombre = "Electrocardiogramas"
-                },
-
-                new PracticaDiagnostico
-                {
-                    Id = 3,
-                    Nombre = "Electroencefalogramas"
-                },
-
-                new PracticaDiagnostico
-                {
-                    Id = 4,
-                    Nombre = "Endoscopías"
-                },
-
-                new PracticaDiagnostico
-                {
-                    Id = 5,
-                    Nombre = "Laboratorio de Análisis Clínicos"
-                },
-
-                new PracticaDiagnostico
-                {
-                    Id = 6,
-                    Nombre = "Laboratorio de Anatomía Patológica"
-                },
-
-                new PracticaDiagnostico
-                {
-                    Id = 7,
-                    Nombre = "Laboratorio de Hematología"
-                },
-
-                new PracticaDiagnostico
-                {
-                    Id = 8,
-                    Nombre = "Radiografías"
-                },
-
-                new PracticaDiagnostico
-                {
-                    Id = 9,
-                    Nombre = "Tomografías"
-                });
-
-            modelBuilder.Entity<ColectivoCentroSalud>().HasData(
-                new ColectivoCentroSalud
-                {
-                    ColectivoId = 1,
-                    CentroSaludId = 1,
+                    Id = 20,
+                    Nombre = "Técnico en Farmacia"
                 });
 
             modelBuilder.Entity<EspecialidadCentroSalud>().HasData(
+                 new EspecialidadCentroSalud
+                 {
+                     CentroSaludId = 1,
+                     EspecialidadId = 1,
+
+                 },
+
                 new EspecialidadCentroSalud
                 {
-                    EspecialidadId = 1,
                     CentroSaludId = 1,
-                });
+                    EspecialidadId = 7,
 
-            modelBuilder.Entity<PracticaDiagnosticoCentroSalud>().HasData(
-                new PracticaDiagnosticoCentroSalud
+                },
+
+                new EspecialidadCentroSalud
                 {
-                    PracticaDiagnosticoId = 1,
                     CentroSaludId = 1,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 1,
+                    EspecialidadId = 10,
+                },
+
+                 new EspecialidadCentroSalud
+                 {
+                     CentroSaludId = 1,
+                     EspecialidadId = 13,
+                 },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 1,
+                    EspecialidadId = 15,
+                },
+
+                 new EspecialidadCentroSalud
+                 {
+                     CentroSaludId = 1,
+                     EspecialidadId = 16,
+                 },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 1,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 1,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 2,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 2,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 2,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 2,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 2,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 2,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 16,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 17,
+                },
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 3,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 1,
+                },
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 4,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 16,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 5,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 6,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 7,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 7,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 7,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 7,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 7,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 7,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 7,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 7,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 8,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 8,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 8,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 8,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 8,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 8,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 8,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 8,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 9,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 10,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 10,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 10,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 10,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 10,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 10,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 10,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 10,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 11,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 2,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 12,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 13,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 13,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 13,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 13,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 13,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 13,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 13,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 13,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 14,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 15,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 15,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 15,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 15,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 15,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 15,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 15,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 15,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 16,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 17,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 17,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 17,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 17,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 17,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 18,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 18,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 18,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 3,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 8
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 20,
+                    EspecialidadId = 20,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 2,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 6,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 14,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 21,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 16,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 22,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 23,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 23,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 23,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 23,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 23,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 24,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 24,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 24,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 24,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 24,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 25,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 25,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 25,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 25,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 25,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 25,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 25,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 26,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 27,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 28,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 28,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 28,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 28,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 28,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 28,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 28,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 30,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 30,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 30,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 30,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 30,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 30,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 31,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 31,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 31,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 31,
+                    EspecialidadId = 16,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 31,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 31,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 32,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 33,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 34,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 34,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 34,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 34,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 34,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 34,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 34,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 34,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 35,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 35,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 35,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 35,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 35,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 35,
+                    EspecialidadId = 16,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 35,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 35,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 36,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 36,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 36,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 36,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 36,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 37,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 37,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 16,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 38,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 39,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 39,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 39,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 39,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 40,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 40,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 40,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 40,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 41,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 41,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 41,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 41,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 41,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 41,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 42,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 42,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 42,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 42,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 42,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 43,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 3,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 44,
+                    EspecialidadId = 20,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 45,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 46,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 47,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 47,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 47,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 47,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 47,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 48,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 48,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 48,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 48,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 48,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 48,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 48,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 12,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 49,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 50,
+                    EspecialidadId = 1,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 50,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 50,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 51,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 51,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 51,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 51,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 51,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 51,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 51,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 52,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 52,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 52,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 52,
+                    EspecialidadId = 16,
+                },
+
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 52,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 52,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 9,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 17,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 53,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 54,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 54,
+                    EspecialidadId = 7,
+                },
+
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 54,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 54,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 54,
+                    EspecialidadId = 13,
+                },
+
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 54,
+                    EspecialidadId = 15,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 54,
+                    EspecialidadId = 19,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 55,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 55,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 55,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 55,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 55,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 55,
+                    EspecialidadId = 17,
                 });
         }
     }

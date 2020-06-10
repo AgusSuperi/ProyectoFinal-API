@@ -8705,19 +8705,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matia\\.nuget\\packages\\": {}
+    "C:\\Users\\agusu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+      "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
       "projectName": "ProyectoFinal.API",
-      "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
-      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
+      "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+      "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8730,8 +8730,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
-              "projectPath": "C:\\Users\\matia\\Documents\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
+            "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+              "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
             }
           }
         }
@@ -8776,6 +8776,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8784,7 +8790,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -19,15 +19,6 @@ namespace ProyectoFinal.API.DTOs
             };
         }
 
-        public static ColectivoDTO ColectivoToDTO (Colectivo colectivo)
-        {
-            return new ColectivoDTO
-            {
-                Id = colectivo.Id,
-                Linea=colectivo.Linea
-            };
-        }
-
         public static EspecialidadDTO EspecialidadToDTO (Especialidad especialidad)
         {
             return new EspecialidadDTO
@@ -37,13 +28,5 @@ namespace ProyectoFinal.API.DTOs
             };
         }
 
-        public static PracticaDiagnosticoDTO PracticaDiagnosticoToDTO(PracticaDiagnostico practicaDiagnostico)
-        {
-            return new PracticaDiagnosticoDTO
-            {
-                Id = practicaDiagnostico.Id,
-                Nombre = practicaDiagnostico.Nombre
-            };
-        }
     }
 }

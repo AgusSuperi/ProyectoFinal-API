@@ -29,12 +29,5 @@ namespace ProyectoFinal.Modelos
         public double Longitud { get; set; }
 
         public virtual IEnumerable<EspecialidadCentroSalud> EspecialidadesCentroSalud { get; set; } = new List<EspecialidadCentroSalud>();
-
-        public virtual IEnumerable<PracticaDiagnosticoCentroSalud> PracticasDiagnosticoCentroSalud { get; set; } = new List<PracticaDiagnosticoCentroSalud>();
-
-        public virtual IEnumerable<ColectivoCentroSalud> ColectivosCentroSalud { get; set; } = new List<ColectivoCentroSalud>();
-
-        //ver lo de las imagenes
-        //public string Turno { get; set; }
     }
 }
