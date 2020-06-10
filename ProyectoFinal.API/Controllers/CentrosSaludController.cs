@@ -39,5 +39,23 @@ namespace ProyectoFinal.API.Controllers
 
             return Helper.CentroSaludToDTO(centroSalud);
         }
+
+        // GET: api/centrossalud/5/especialidades
+        [HttpGet("{id}/especialidades")]
+        public async Task<ActionResult<IEnumerable<EspecialidadDTO>>> GetEspecialidades(int id)
+        {
+            var centroSalud = await _context.CentrosSalud.FindAsync(id);
+
+            if (centroSalud == null)
+            {
+                return NotFound();
+            }
+            var especialidades = await _context.EspecialidadesCentrosSalud.
+                Where(ecs => ecs.CentroSaludId == id).
+                Select(ecs => Helper.EspecialidadToDTO(ecs.Especialidad)).
+                ToListAsync();
+
+            return especialidades;
+        }
     }
 }
