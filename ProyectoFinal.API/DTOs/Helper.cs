@@ -13,7 +13,6 @@ namespace ProyectoFinal.API.DTOs
                 Telefono = centroSalud.Telefono,
                 Direccion = centroSalud.Direccion,
                 HorarioAtencion = centroSalud.HorarioAtencion,
-                RestriccionEdad = centroSalud.RestriccionEdad,
                 Latitud = centroSalud.Latitud,
                 Longitud = centroSalud.Longitud,
             };

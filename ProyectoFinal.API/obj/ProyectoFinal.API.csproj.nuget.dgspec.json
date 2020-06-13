@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {}
+    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {
+    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+        "projectUniqueName": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
         "projectName": "ProyectoFinal.API",
-        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
-        "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
+        "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
-                "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
+              "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+                "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
               }
             }
           }
@@ -73,12 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -87,21 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
+        "projectUniqueName": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
         "projectName": "ProyectoFinal.BD",
-        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
-        "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.BD\\obj\\",
+        "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
+        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,8 +108,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
-                "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj"
+              "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+                "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj"
               }
             }
           }
@@ -164,32 +158,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectUniqueName": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "projectName": "ProyectoFinal.Modelos",
-        "projectPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
-        "packagesPath": "C:\\Users\\agusu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agusu\\Desktop\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
+        "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\agusu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -234,18 +222,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

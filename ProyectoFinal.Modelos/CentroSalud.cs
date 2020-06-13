@@ -19,9 +19,6 @@ namespace ProyectoFinal.Modelos
         [Required, StringLength(80)]
         public string HorarioAtencion { get; set; }
 
-        [Required, StringLength(200)]
-        public string RestriccionEdad { get; set; }
-
         [Required]
         public double Latitud { get; set; }
 

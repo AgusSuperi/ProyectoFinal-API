@@ -19,9 +19,6 @@ namespace ProyectoFinal.API.DTOs
         [Required, StringLength(80)]
         public string HorarioAtencion { get; set; }
 
-        [Required, StringLength(200)]
-        public string RestriccionEdad { get; set; }
-
         public double Latitud { get; set; }
 
         public double Longitud { get; set; }

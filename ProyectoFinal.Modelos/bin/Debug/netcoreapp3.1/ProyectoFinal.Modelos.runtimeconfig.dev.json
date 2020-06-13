@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\agusu\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\agusu\\.nuget\\packages"
+      "C:\\Users\\matia\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\matia\\.nuget\\packages"
     ]
   }
 }

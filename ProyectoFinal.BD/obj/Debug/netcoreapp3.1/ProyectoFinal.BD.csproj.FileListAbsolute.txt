@@ -75,3 +75,19 @@ C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.csproj.CoreCompileInputs.cache
 C:\Users\matia\Documents\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\EFCoreSqlServerNetTopologySuite.cs
 C:\Users\agusu\Desktop\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\EFCoreSqlServerNetTopologySuite.cs
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.deps.json
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.runtimeconfig.json
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.runtimeconfig.dev.json
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.dll
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.BD.pdb
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.dll
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.pdb
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.csprojAssemblyReference.cache
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.AssemblyInfoInputs.cache
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.AssemblyInfo.cs
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.csproj.CoreCompileInputs.cache
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\EFCoreSqlServerNetTopologySuite.cs
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.csproj.CopyComplete
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.dll
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.pdb
+D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.BD\obj\Debug\netcoreapp3.1\ProyectoFinal.BD.genruntimeconfig.cache
