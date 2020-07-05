@@ -2,7 +2,7 @@
 
 namespace ProyectoFinal.API.DTOs
 {
-    public class CentroSaludDTO
+    public class HospitalPublicoDTO
     {
         public int Id { get; set; }
 
@@ -16,14 +16,9 @@ namespace ProyectoFinal.API.DTOs
         public string Direccion { get; set; }
 
         [Required, StringLength(80)]
-        public string HorarioAtencion { get; set; }
+        public string URLPagina { get; set; }
 
-        public double Latitud { get; set; }
-
-        public double Longitud { get; set; }
-
-        [Required, StringLength(80)]
-        public string Barrio { get; set; }
-
+        [Required, StringLength(250)]
+        public string Restriccion { get; set; }
     }
 }

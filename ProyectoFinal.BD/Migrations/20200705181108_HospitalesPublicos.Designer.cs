@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoFinal.BD;
 
 namespace ProyectoFinal.BD.Migrations
 {
     [DbContext(typeof(CentrosSaludContext))]
-    partial class CentrosSaludContextModelSnapshot : ModelSnapshot
+    [Migration("20200705181108_HospitalesPublicos")]
+    partial class HospitalesPublicos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,7 +72,7 @@ namespace ProyectoFinal.BD.Migrations
                             Latitud = -38.717370000000003,
                             Longitud = -62.227370000000001,
                             Nombre = "9 de Noviembre",
-                            Telefono = "(291) 4822622"
+                            Telefono = "(291)4822622"
                         },
                         new
                         {
@@ -2796,11 +2798,6 @@ namespace ProyectoFinal.BD.Migrations
                         .HasColumnType("nvarchar(80)")
                         .HasMaxLength(80);
 
-                    b.Property<string>("Restriccion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
-
                     b.Property<string>("Telefono")
                         .IsRequired()
                         .HasColumnType("nvarchar(80)")
@@ -2808,8 +2805,8 @@ namespace ProyectoFinal.BD.Migrations
 
                     b.Property<string>("URLPagina")
                         .IsRequired()
-                        .HasColumnType("nvarchar(100)")
-                        .HasMaxLength(100);
+                        .HasColumnType("nvarchar(80)")
+                        .HasMaxLength(80);
 
                     b.HasKey("Id");
 
@@ -2821,7 +2818,6 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 1,
                             Direccion = "Avda. Lainez 2401",
                             Nombre = "Hospital Interzonal Dr. José Penna",
-                            Restriccion = "Atiende a pacientes de Bahía Blanca y de toda la Región Sanitaria I",
                             Telefono = "(291) 4593600",
                             URLPagina = "http://www.hospitalpenna.com.ar/"
                         },
@@ -2830,27 +2826,8 @@ namespace ProyectoFinal.BD.Migrations
                             Id = 2,
                             Direccion = "Estomba 968",
                             Nombre = "Hospital Municipal de Agudos Dr. Leónidas Lucero",
-                            Restriccion = "Atiende solo a individuos domiciliados en Bahía Blanca",
                             Telefono = "(291) 4598484",
                             URLPagina = "http://www.hmabb.gov.ar/"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Direccion = "Florida 1450",
-                            Nombre = "Hospital Militar Bahía Blanca",
-                            Restriccion = "",
-                            Telefono = "(291) 4881828",
-                            URLPagina = ""
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Direccion = "Harris 3599",
-                            Nombre = "Hospital Menor Ing. White",
-                            Restriccion = "",
-                            Telefono = "(291)  4573132",
-                            URLPagina = "https://hospital-menor-ing-white.negocio.site/"
                         });
                 });
 

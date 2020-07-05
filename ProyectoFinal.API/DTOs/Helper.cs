@@ -28,5 +28,18 @@ namespace ProyectoFinal.API.DTOs
             };
         }
 
+        public static HospitalPublicoDTO HospitalPublicoToDTO(HospitalPublico hospitalPublico)
+        {
+            return new HospitalPublicoDTO
+            {
+                Id = hospitalPublico.Id,
+                Nombre = hospitalPublico.Nombre,
+                Telefono= hospitalPublico.Telefono,
+                Direccion= hospitalPublico.Direccion,
+                URLPagina= hospitalPublico.URLPagina,
+                Restriccion= hospitalPublico.Restriccion
+            };
+        }
+
     }
 }
