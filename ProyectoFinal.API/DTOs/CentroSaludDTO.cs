@@ -23,5 +23,8 @@ namespace ProyectoFinal.API.DTOs
 
         public double Longitud { get; set; }
 
+        [Required, StringLength(80)]
+        public string Barrio { get; set; }
+
     }
 }

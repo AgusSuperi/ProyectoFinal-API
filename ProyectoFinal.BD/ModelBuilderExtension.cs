@@ -20,6 +20,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.717370,
                     Longitud = -62.227370,
+                    Barrio = "Altos Sánchez",
                 },
 
                 new CentroSalud
@@ -31,6 +32,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.739650,
                     Longitud = -62.212720,
+                    Barrio = "12 de Octubre",
                 },
 
                 new CentroSalud
@@ -42,6 +44,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "Las 24 hs",
                     Latitud = -38.729410,
                     Longitud = -62.262650,
+                    Barrio = "Pedro Pico",
                 },
 
                 new CentroSalud
@@ -53,6 +56,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.682990,
                     Longitud = -62.215170,
+                    Barrio = "Aldea Romana",
                 },
 
                 new CentroSalud
@@ -64,6 +68,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.724510,
                     Longitud = -62.237690,
+                    Barrio = "Anchorena",
                 },
 
                 new CentroSalud
@@ -75,6 +80,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.690530,
                     Longitud = -62.293440,
+                    Barrio = "Avellaneda",
                 },
 
                 new CentroSalud
@@ -86,6 +92,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.690690,
                     Longitud = -62.304180,
+                    Barrio = "Barrio Latino",
                 },
 
                 new CentroSalud
@@ -97,6 +104,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.74719,
                     Longitud = -62.229520,
+                    Barrio = "Barrio Obrero",
                 },
 
                 new CentroSalud
@@ -108,18 +116,20 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.715160,
                     Longitud = -62.249240,
-                },                
+                    Barrio = "Bella Vista",
+                },
 
                 new CentroSalud
                 {
                     Id = 10,
                     Nombre = "Cabildo",
-                    Direccion = "Alberti 215",
+                    Direccion = "Manuel Alberti 215",
                     Telefono = 4918250,
                     HorarioAtencion = "Las 24 hs",
                     Latitud = -38.700320,
                     Longitud = -62.284280,
-                },               
+                    Barrio = "San Cayetano",
+                },
 
                 new CentroSalud
                 {
@@ -130,6 +140,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.748260,
                     Longitud = -62.245560,
+                    Barrio = "Spurr"
                 },
 
                 new CentroSalud
@@ -141,6 +152,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.734250,
                     Longitud = -62.283950,
+                    Barrio = "Colón",
                 },
 
                 new CentroSalud
@@ -152,17 +164,19 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.729070,
                     Longitud = -62.223500,
+                    Barrio= "Villa Don Bosco",
                 },
 
                 new CentroSalud
                 {
                     Id = 14,
                     Nombre = "Enrique Julio",
-                    Direccion = "Avda. Arias 1730",
+                    Direccion = "Avda. General Arias 1730",
                     Telefono = 4556898,
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.750830,
                     Longitud = -62.268890,
+                    Barrio="Enrique Julio",
                 },
 
                 new CentroSalud
@@ -174,6 +188,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.699940,
                     Longitud = -62.301450,
+                    Barrio= "Coronel Estomba",
                 },
 
                 new CentroSalud
@@ -185,6 +200,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.752610,
                     Longitud = -62.176260,
+                    Barrio= "Grünbein",
                 },
 
                 new CentroSalud
@@ -196,6 +212,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.710300,
                     Longitud = -62.293860,
+                    Barrio="Pacífico",
                 },
 
                 new CentroSalud
@@ -207,17 +224,19 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708160,
                     Longitud = -62.253020,
+                    Barrio="La Falda",
                 },
 
                 new CentroSalud
                 {
                     Id = 19,
                     Nombre = "Laureano Muñiz - Vacunatorio",
-                    Direccion = "Gurruchaga 40",
+                    Direccion = "Francisco de Gurruchaga 40",
                     Telefono = 4847220,
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.705910,
                     Longitud = -62.413710,
+                    Barrio="General Cerri",
                 },
 
                 new CentroSalud
@@ -229,6 +248,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.719300,
                     Longitud = -62.315090,
+                    Barrio="Vista Alegre",
                 },
 
                 new CentroSalud
@@ -240,17 +260,19 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "Las 24 hs",
                     Latitud = -38.775540,
                     Longitud = -62.271220,
+                    Barrio="ksyo",
                 },
 
                 new CentroSalud
                 {
                     Id = 22,
                     Nombre = "Loma Paraguaya",
-                    Direccion = "Felix Frías 850",
+                    Direccion = "Félix Frías 850",
                     Telefono = 4565592,
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.747890,
                     Longitud = -62.285900,
+                    Barrio="Loma Paraguaya",
                 },
 
                 new CentroSalud
@@ -262,17 +284,19 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708060,
                     Longitud = -62.299720,
+                    Barrio= "Lujan",
                 },
 
                 new CentroSalud
                 {
                     Id = 24,
                     Nombre = "Maldonado",
-                    Direccion = "Richieri 2535",
+                    Direccion = "Gral. Pablo Richieri 2535",
                     Telefono = 4550257,
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.717340,
                     Longitud = -62.319480,
+                    Barrio= "Coronel Maldonado",
                 },
 
                 new CentroSalud
@@ -284,6 +308,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.720500,
                     Longitud = -62.293310,
+                    Barrio= "Mariano Moreno",
                 },
 
                 new CentroSalud
@@ -295,6 +320,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.7086846,
                     Longitud = -62.2372357,
+                    Barrio= "Villa Miramar",
                 },
 
                 new CentroSalud
@@ -306,6 +332,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708270,
                     Longitud = -62.260520,
+                    Barrio= "Naposta",
                 },
 
                 new CentroSalud
@@ -317,6 +344,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.726960,
                     Longitud = -62.289850,
+                    Barrio= "Noroeste",
                 },
 
                 new CentroSalud
@@ -328,6 +356,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.717370,
                     Longitud = -62.227370,
+                    Barrio="Altos Sánchez",
                 },
 
                 new CentroSalud
@@ -339,6 +368,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.676280,
                     Longitud = -62.296110,
+                    Barrio= "Nueva Belgrano",
                 },
 
                 new CentroSalud
@@ -350,6 +380,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.725650,
                     Longitud = -62.296170,
+                    Barrio= "Pampa Central",
                 },
 
                 new CentroSalud
@@ -361,6 +392,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.697720,
                     Longitud = -62.211730,
+                    Barrio= "Patagonia",
                 },
 
                 new CentroSalud
@@ -372,6 +404,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.735270,
                     Longitud = -62.263350,
+                    Barrio= "Pedro Pico",
                 },
 
                 new CentroSalud
@@ -383,6 +416,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.738200,
                     Longitud = -62.253800,
+                    Barrio= "Rivadavia",
                 },
 
                 new CentroSalud
@@ -394,6 +428,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.739150,
                     Longitud = -62.245720,
+                    Barrio= "Rosario Sur",
                 },
 
                 new CentroSalud
@@ -405,17 +440,19 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.770604,
                     Longitud = -62.245450,
+                    Barrio= "Saladero",
                 },
 
                 new CentroSalud
                 {
                     Id = 37,
                     Nombre = "San Cayetano",
-                    Direccion = "Alberti 477",
+                    Direccion = "Manuel Alberti 477",
                     Telefono = 4888366,
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.696960,
                     Longitud = -62.280160,
+                    Barrio= "San Cayetano",
                 },
 
                 new CentroSalud
@@ -427,6 +464,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.736340,
                     Longitud = -62.292070,
+                    Barrio= "San Blas",
                 },
 
                 new CentroSalud
@@ -438,6 +476,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.779440,
                     Longitud = -62.256220,
+                    Barrio= "Boulevard Juan B. Justo",
                 },
 
                 new CentroSalud
@@ -449,6 +488,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "extensión CS 9 de noviembre",
                     Latitud = -38.720200,
                     Longitud = -62.235520,
+                    Barrio= "Villa Sanchez Elia",
                 },
 
                 new CentroSalud
@@ -460,6 +500,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.721600,
                     Longitud = -62.250210,
+                    Barrio= "Tiro Federal",
                 },
 
                 new CentroSalud
@@ -471,28 +512,31 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.701560,
                     Longitud = -62.274770,
-                },               
+                    Barrio= "Universitario",
+                },
 
                 new CentroSalud
                 {
                     Id = 43,
                     Nombre = "Villa Amaducci",
-                    Direccion = "Fournier 1809",
+                    Direccion = "Rastreador Fournier 1809",
                     Telefono = 4810155,
                     HorarioAtencion = "extensión CS 9 de noviembre",
                     Latitud = -38.723370,
                     Longitud = -62.226770,
+                    Barrio= "Villa Amaducci",
                 },
 
                 new CentroSalud
                 {
                     Id = 44,
                     Nombre = "Villa Bordeu",
-                    Direccion = "Larrea 5450",
+                    Direccion = "Juan Larrea 5450",
                     Telefono = 4885679,
                     HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.714780,
-                    Longitud = -62.311370,
+                    Latitud = -38.688405,
+                    Longitud = -62.345480,
+                    Barrio= "Villa Bordeu",
                 },
 
                 new CentroSalud
@@ -504,6 +548,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.750140,
                     Longitud = -62.275770,
+                    Barrio= "Villa Delfina",
                 },
 
                 new CentroSalud
@@ -513,8 +558,9 @@ namespace ProyectoFinal.BD
                     Direccion = "Berutti 2980",
                     Telefono = 4813677,
                     HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.729420,
-                    Longitud = -62.260500,
+                    Latitud = -38.746873,
+                    Longitud = -62.237961,
+                    Barrio="Rosario Sur"
                 },
 
                 new CentroSalud
@@ -526,28 +572,31 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.691530,
                     Longitud = -62.263590,
+                    Barrio= "Villa Floresta",
                 },
 
                 new CentroSalud
                 {
                     Id = 48,
                     Nombre = "Villa Gloria",
-                    Direccion = "Rojas 4898",
+                    Direccion = "Rufino Rojas 4898",
                     Telefono = 4817321,
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.749820,
                     Longitud = -62.191670,
+                    Barrio="Villa Cerrito",
                 },
 
                 new CentroSalud
                 {
                     Id = 49,
-                    Nombre = "Villa H. Green",
+                    Nombre = "Villa Harding Green",
                     Direccion = "Salinas Chicas 4150",
                     Telefono = 4862447,
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.714480,
                     Longitud = -62.189450,
+                    Barrio= "Villa Harding Green",
                 },
 
                 new CentroSalud
@@ -559,7 +608,8 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.730410,
                     Longitud = -62.246530,
-                },                
+                    Barrio= "Villa Mitre",
+                },
 
                 new CentroSalud
                 {
@@ -570,6 +620,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.746100,
                     Longitud = -62.225990,
+                    Barrio= "Villa Muñiz",
                 },
 
                 new CentroSalud
@@ -581,6 +632,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.721700,
                     Longitud = -62.312210,
+                    Barrio= "Villa Nocito",
                 },
 
                 new CentroSalud
@@ -592,6 +644,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.742670,
                     Longitud = -62.272080,
+                    Barrio= "Villa Ressia",
                 },
 
                 new CentroSalud
@@ -603,6 +656,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.755940,
                     Longitud = -62.261400,
+                    Barrio= "Villa Rosas",
                 },
 
                 new CentroSalud
@@ -614,7 +668,8 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.757880,
                     Longitud = -62.246610,
-                });
+                    Barrio= "Villa Serra",
+                }); ;
 
             modelBuilder.Entity<Especialidad>().HasData(
                 new Especialidad

@@ -25,6 +25,9 @@ namespace ProyectoFinal.Modelos
         [Required]
         public double Longitud { get; set; }
 
+        [Required, StringLength(80)]
+        public string Barrio { get; set; }
+
         public virtual IEnumerable<EspecialidadCentroSalud> EspecialidadesCentroSalud { get; set; } = new List<EspecialidadCentroSalud>();
     }
 }

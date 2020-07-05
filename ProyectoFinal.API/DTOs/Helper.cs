@@ -15,6 +15,7 @@ namespace ProyectoFinal.API.DTOs
                 HorarioAtencion = centroSalud.HorarioAtencion,
                 Latitud = centroSalud.Latitud,
                 Longitud = centroSalud.Longitud,
+                Barrio= centroSalud.Barrio,
             };
         }
 
