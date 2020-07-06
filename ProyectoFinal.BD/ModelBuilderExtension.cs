@@ -176,7 +176,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.750830,
                     Longitud = -62.268890,
-                    Barrio="Enrique Julio",
+                    Barrio= "Enrique Julio",
                 },
 
                 new CentroSalud
@@ -212,7 +212,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.710300,
                     Longitud = -62.293860,
-                    Barrio="Pacífico",
+                    Barrio= "Pacífico",
                 },
 
                 new CentroSalud
@@ -224,7 +224,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708160,
                     Longitud = -62.253020,
-                    Barrio="La Falda",
+                    Barrio= "La Falda",
                 },
 
                 new CentroSalud
@@ -236,7 +236,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.705910,
                     Longitud = -62.413710,
-                    Barrio="General Cerri",
+                    Barrio= "General Cerri",
                 },
 
                 new CentroSalud
@@ -248,7 +248,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.719300,
                     Longitud = -62.315090,
-                    Barrio="Vista Alegre",
+                    Barrio= "Vista Alegre",
                 },
 
                 new CentroSalud
@@ -260,7 +260,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "Las 24 hs",
                     Latitud = -38.775540,
                     Longitud = -62.271220,
-                    Barrio="ksyo",
+                    Barrio= "",
                 },
 
                 new CentroSalud
@@ -272,7 +272,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.747890,
                     Longitud = -62.285900,
-                    Barrio="Loma Paraguaya",
+                    Barrio= "Loma Paraguaya",
                 },
 
                 new CentroSalud
@@ -579,12 +579,12 @@ namespace ProyectoFinal.BD
                 {
                     Id = 48,
                     Nombre = "Villa Gloria",
-                    Direccion = "Rufino Rojas 4898",
+                    Direccion = "Ricardo Rojas 4898",
                     Telefono = "(291) 4817321",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.749820,
                     Longitud = -62.191670,
-                    Barrio="Villa Cerrito",
+                    Barrio= "Villa Cerrito",
                 },
 
                 new CentroSalud

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.API.DTOs;
 using ProyectoFinal.BD;
+using ProyectoFinal.Modelos;
 
 namespace ProyectoFinal.API.Controllers
 {
@@ -23,8 +24,10 @@ namespace ProyectoFinal.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSalud()
         {
-            return await _context.CentrosSalud.Select(c=> Helper.CentroSaludToDTO(c)).ToListAsync();
-        }
+            var centrosSalud = await _context.CentrosSalud.Select(c => Helper.CentroSaludToDTO(c)).ToListAsync();
+            centrosSalud.ForEach(c => GetEspecialidades(c));
+            return centrosSalud;
+        }        
 
         // GET: api/centrossalud/5
         [HttpGet("{id}")]
@@ -56,6 +59,16 @@ namespace ProyectoFinal.API.Controllers
                 ToListAsync();
 
             return especialidades;
+        }
+
+        private void GetEspecialidades(CentroSaludDTO centroSalud)
+        {
+            var especialidades = _context.EspecialidadesCentrosSalud.
+                Where(ecs => ecs.CentroSaludId == centroSalud.Id).
+                Select(ecs => Helper.EspecialidadToDTO(ecs.Especialidad)).
+                ToList();
+
+            centroSalud.Especialidades = especialidades;
         }
     }
 }

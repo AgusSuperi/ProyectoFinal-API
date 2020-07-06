@@ -1,4 +1,5 @@
 ﻿using ProyectoFinal.Modelos;
+using System.Collections.Generic;
 
 namespace ProyectoFinal.API.DTOs
 {
@@ -15,7 +16,7 @@ namespace ProyectoFinal.API.DTOs
                 HorarioAtencion = centroSalud.HorarioAtencion,
                 Latitud = centroSalud.Latitud,
                 Longitud = centroSalud.Longitud,
-                Barrio= centroSalud.Barrio,
+                Barrio = centroSalud.Barrio,
             };
         }
 

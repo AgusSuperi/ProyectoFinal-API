@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProyectoFinal.API.DTOs
 {
@@ -24,6 +25,8 @@ namespace ProyectoFinal.API.DTOs
 
         [Required, StringLength(80)]
         public string Barrio { get; set; }
+
+        public IEnumerable<EspecialidadDTO> Especialidades { get; set; }
 
     }
 }
