@@ -17,6 +17,7 @@ namespace ProyectoFinal.API.DTOs
                 Latitud = centroSalud.Latitud,
                 Longitud = centroSalud.Longitud,
                 Barrio = centroSalud.Barrio,
+                ImagenURL=centroSalud.ImagenURL,
             };
         }
 
@@ -25,7 +26,7 @@ namespace ProyectoFinal.API.DTOs
             return new EspecialidadDTO
             {
                 Id = especialidad.Id,
-                Nombre = especialidad.Nombre
+                Nombre = especialidad.Nombre,
             };
         }
 
@@ -38,7 +39,8 @@ namespace ProyectoFinal.API.DTOs
                 Telefono= hospitalPublico.Telefono,
                 Direccion= hospitalPublico.Direccion,
                 URLPagina= hospitalPublico.URLPagina,
-                Restriccion= hospitalPublico.Restriccion
+                Restriccion= hospitalPublico.Restriccion,
+                ImagenURL=hospitalPublico.ImagenURL,
             };
         }
 

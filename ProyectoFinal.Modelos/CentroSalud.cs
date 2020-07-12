@@ -28,6 +28,9 @@ namespace ProyectoFinal.Modelos
         [Required, StringLength(80)]
         public string Barrio { get; set; }
 
+        [Required, StringLength(200)]
+        public string ImagenURL { get; set; }
+
         public virtual IEnumerable<EspecialidadCentroSalud> EspecialidadesCentroSalud { get; set; } = new List<EspecialidadCentroSalud>();
     }
 }

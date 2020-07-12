@@ -21,6 +21,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.717370,
                     Longitud = -62.227370,
                     Barrio = "Altos Sánchez",
+                    ImagenURL="9denoviembre.png",
                 },
 
                 new CentroSalud
@@ -33,6 +34,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.739650,
                     Longitud = -62.212720,
                     Barrio = "12 de Octubre",
+                    ImagenURL ="12deoctubre.png",
                 },
 
                 new CentroSalud
@@ -45,6 +47,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.729410,
                     Longitud = -62.262650,
                     Barrio = "Pedro Pico",
+                    ImagenURL ="amenghini.png",
                 },
 
                 new CentroSalud
@@ -57,6 +60,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.682990,
                     Longitud = -62.215170,
                     Barrio = "Aldea Romana",
+                    ImagenURL = "aldearomana.png",
                 },
 
                 new CentroSalud
@@ -69,6 +73,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.724510,
                     Longitud = -62.237690,
                     Barrio = "Anchorena",
+                    ImagenURL = "anchorena.png",
                 },
 
                 new CentroSalud
@@ -81,6 +86,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.690530,
                     Longitud = -62.293440,
                     Barrio = "Avellaneda",
+                    ImagenURL = "avellaneda.png",
                 },
 
                 new CentroSalud
@@ -92,7 +98,8 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.690690,
                     Longitud = -62.304180,
-                    Barrio = "Barrio Latino",
+                    Barrio = "Latino",
+                    ImagenURL = "barriolatino.png",
                 },
 
                 new CentroSalud
@@ -104,7 +111,8 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.74719,
                     Longitud = -62.229520,
-                    Barrio = "Barrio Obrero",
+                    Barrio = "Obrero",
+                    ImagenURL = "barrioobrero.png",
                 },
 
                 new CentroSalud
@@ -117,6 +125,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.715160,
                     Longitud = -62.249240,
                     Barrio = "Bella Vista",
+                    ImagenURL = "bellavista.png",
                 },
 
                 new CentroSalud
@@ -129,6 +138,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.700320,
                     Longitud = -62.284280,
                     Barrio = "San Cayetano",
+                    ImagenURL = "cabildo.png",
                 },
 
                 new CentroSalud
@@ -140,7 +150,9 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.748260,
                     Longitud = -62.245560,
-                    Barrio = "Spurr"
+                    Barrio = "Spurr",
+                    ImagenURL = "cicspurr.png",
+
                 },
 
                 new CentroSalud
@@ -153,6 +165,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.734250,
                     Longitud = -62.283950,
                     Barrio = "Colón",
+                    ImagenURL = "colon.png",
                 },
 
                 new CentroSalud
@@ -165,6 +178,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.729070,
                     Longitud = -62.223500,
                     Barrio= "Villa Don Bosco",
+                    ImagenURL = "donbosco.png",
                 },
 
                 new CentroSalud
@@ -177,6 +191,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.750830,
                     Longitud = -62.268890,
                     Barrio= "Enrique Julio",
+                    ImagenURL = "enriquejulio.png",
                 },
 
                 new CentroSalud
@@ -189,6 +204,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.699940,
                     Longitud = -62.301450,
                     Barrio= "Coronel Estomba",
+                    ImagenURL = "estomba.png",
                 },
 
                 new CentroSalud
@@ -201,6 +217,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.752610,
                     Longitud = -62.176260,
                     Barrio= "Grünbein",
+                    ImagenURL = "grunbein.png",
                 },
 
                 new CentroSalud
@@ -213,6 +230,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.710300,
                     Longitud = -62.293860,
                     Barrio= "Pacífico",
+                    ImagenURL = "kilometro5.png",
                 },
 
                 new CentroSalud
@@ -225,6 +243,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.708160,
                     Longitud = -62.253020,
                     Barrio= "La Falda",
+                    ImagenURL = "lafalda.png",
                 },
 
                 new CentroSalud
@@ -237,6 +256,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.705910,
                     Longitud = -62.413710,
                     Barrio= "General Cerri",
+                    ImagenURL = "laureanomuñiz.png",
                 },
 
                 new CentroSalud
@@ -249,6 +269,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.719300,
                     Longitud = -62.315090,
                     Barrio= "Vista Alegre",
+                    ImagenURL = "leandropiñeiro.png",
                 },
 
                 new CentroSalud
@@ -261,6 +282,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.775540,
                     Longitud = -62.271220,
                     Barrio= "",
+                    ImagenURL = "leonorcapelli.png",
                 },
 
                 new CentroSalud
@@ -273,6 +295,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.747890,
                     Longitud = -62.285900,
                     Barrio= "Loma Paraguaya",
+                    ImagenURL = "lomaparaguaya.png",
                 },
 
                 new CentroSalud
@@ -285,6 +308,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.708060,
                     Longitud = -62.299720,
                     Barrio= "Lujan",
+                    ImagenURL = "lujan.png",
                 },
 
                 new CentroSalud
@@ -297,6 +321,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.717340,
                     Longitud = -62.319480,
                     Barrio= "Coronel Maldonado",
+                    ImagenURL = "maldonado.png",
                 },
 
                 new CentroSalud
@@ -309,6 +334,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.720500,
                     Longitud = -62.293310,
                     Barrio= "Mariano Moreno",
+                    ImagenURL = "marianomoreno.png",
                 },
 
                 new CentroSalud
@@ -321,6 +347,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.7086846,
                     Longitud = -62.2372357,
                     Barrio= "Villa Miramar",
+                    ImagenURL = "miramar.png",
                 },
 
                 new CentroSalud
@@ -333,6 +360,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.708270,
                     Longitud = -62.260520,
                     Barrio= "Naposta",
+                    ImagenURL = "naposta.png",
                 },
 
                 new CentroSalud
@@ -345,6 +373,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.726960,
                     Longitud = -62.289850,
                     Barrio= "Noroeste",
+                    ImagenURL = "noroeste.png",
                 },
 
                 new CentroSalud
@@ -357,6 +386,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.717370,
                     Longitud = -62.227370,
                     Barrio="Altos Sánchez",
+                    ImagenURL = "norte.png",
                 },
 
                 new CentroSalud
@@ -369,6 +399,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.676280,
                     Longitud = -62.296110,
                     Barrio= "Nueva Belgrano",
+                    ImagenURL = "nuevabelgrano.png",
                 },
 
                 new CentroSalud
@@ -381,6 +412,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.725650,
                     Longitud = -62.296170,
                     Barrio= "Pampa Central",
+                    ImagenURL = "pampacentral.png",
                 },
 
                 new CentroSalud
@@ -393,6 +425,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.697720,
                     Longitud = -62.211730,
                     Barrio= "Patagonia",
+                    ImagenURL = "patagonia.png",
                 },
 
                 new CentroSalud
@@ -405,6 +438,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.735270,
                     Longitud = -62.263350,
                     Barrio= "Pedro Pico",
+                    ImagenURL = "pedropico.png",
                 },
 
                 new CentroSalud
@@ -417,6 +451,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.738200,
                     Longitud = -62.253800,
                     Barrio= "Rivadavia",
+                    ImagenURL = "rivadavia.png",
                 },
 
                 new CentroSalud
@@ -429,6 +464,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.739150,
                     Longitud = -62.245720,
                     Barrio= "Rosario Sur",
+                    ImagenURL = "rosariosur.png",
                 },
 
                 new CentroSalud
@@ -441,6 +477,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.770604,
                     Longitud = -62.245450,
                     Barrio= "Saladero",
+                    ImagenURL = "saladero.png",
                 },
 
                 new CentroSalud
@@ -453,6 +490,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.696960,
                     Longitud = -62.280160,
                     Barrio= "San Cayetano",
+                    ImagenURL = "sancayetano.png",
                 },
 
                 new CentroSalud
@@ -465,6 +503,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.736340,
                     Longitud = -62.292070,
                     Barrio= "San Blas",
+                    ImagenURL = "sandionisio.png",
                 },
 
                 new CentroSalud
@@ -477,6 +516,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.779440,
                     Longitud = -62.256220,
                     Barrio= "Boulevard Juan B. Justo",
+                    ImagenURL = "sanjoseobrero.png",
                 },
 
                 new CentroSalud
@@ -489,6 +529,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.720200,
                     Longitud = -62.235520,
                     Barrio= "Villa Sanchez Elia",
+                    ImagenURL = "sanchezelia.png",
                 },
 
                 new CentroSalud
@@ -501,6 +542,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.721600,
                     Longitud = -62.250210,
                     Barrio= "Tiro Federal",
+                    ImagenURL = "tirofederal.png",
                 },
 
                 new CentroSalud
@@ -513,6 +555,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.701560,
                     Longitud = -62.274770,
                     Barrio= "Universitario",
+                    ImagenURL = "universitario.png",
                 },
 
                 new CentroSalud
@@ -525,6 +568,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.723370,
                     Longitud = -62.226770,
                     Barrio= "Villa Amaducci",
+                    ImagenURL = "villaamaducci.png",
                 },
 
                 new CentroSalud
@@ -537,6 +581,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.688405,
                     Longitud = -62.345480,
                     Barrio= "Villa Bordeu",
+                    ImagenURL = "villabordeu.png",
                 },
 
                 new CentroSalud
@@ -549,6 +594,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.750140,
                     Longitud = -62.275770,
                     Barrio= "Villa Delfina",
+                    ImagenURL = "villadelfina.png",
                 },
 
                 new CentroSalud
@@ -560,7 +606,8 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.746873,
                     Longitud = -62.237961,
-                    Barrio="Rosario Sur"
+                    Barrio="Rosario Sur",
+                    ImagenURL = "villaesperanza.png",
                 },
 
                 new CentroSalud
@@ -573,6 +620,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.691530,
                     Longitud = -62.263590,
                     Barrio= "Villa Floresta",
+                    ImagenURL = "villafloresta.png",
                 },
 
                 new CentroSalud
@@ -585,6 +633,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.749820,
                     Longitud = -62.191670,
                     Barrio= "Villa Cerrito",
+                    ImagenURL = "villagloria.png",
                 },
 
                 new CentroSalud
@@ -597,6 +646,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.714480,
                     Longitud = -62.189450,
                     Barrio= "Villa Harding Green",
+                    ImagenURL = "villahardinggreen.png",
                 },
 
                 new CentroSalud
@@ -609,6 +659,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.730410,
                     Longitud = -62.246530,
                     Barrio= "Villa Mitre",
+                    ImagenURL = "villamitre.png",
                 },
 
                 new CentroSalud
@@ -621,6 +672,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.746100,
                     Longitud = -62.225990,
                     Barrio= "Villa Muñiz",
+                    ImagenURL = "villamuñiz.png",
                 },
 
                 new CentroSalud
@@ -633,6 +685,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.721700,
                     Longitud = -62.312210,
                     Barrio= "Villa Nocito",
+                    ImagenURL = "villanocito.png",
                 },
 
                 new CentroSalud
@@ -645,6 +698,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.742670,
                     Longitud = -62.272080,
                     Barrio= "Villa Ressia",
+                    ImagenURL = "villaressia.png",
                 },
 
                 new CentroSalud
@@ -657,6 +711,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.755940,
                     Longitud = -62.261400,
                     Barrio= "Villa Rosas",
+                    ImagenURL = "villarosas.png",
                 },
 
                 new CentroSalud
@@ -669,6 +724,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.757880,
                     Longitud = -62.246610,
                     Barrio= "Villa Serra",
+                    ImagenURL = "villaserra.png",
                 }); ;
 
             modelBuilder.Entity<Especialidad>().HasData(
@@ -3173,8 +3229,9 @@ namespace ProyectoFinal.BD
                    Nombre = "Hospital Interzonal Dr. José Penna",
                    Telefono = "(291) 4593600",
                    Direccion = "Avda. Lainez 2401",
-                   URLPagina = "http://www.hospitalpenna.com.ar/",
+                   URLPagina = "hospitalpenna.com.ar",
                    Restriccion= "Atiende a pacientes de Bahía Blanca y de toda la Región Sanitaria I",
+                   ImagenURL = "hospitalpenna.png",
                },
                new HospitalPublico
                {
@@ -3182,8 +3239,9 @@ namespace ProyectoFinal.BD
                    Nombre = "Hospital Municipal de Agudos Dr. Leónidas Lucero",
                    Telefono = "(291) 4598484",
                    Direccion = "Estomba 968",
-                   URLPagina = "http://www.hmabb.gov.ar/",
+                   URLPagina = "hmabb.gov.ar",
                    Restriccion= "Atiende solo a individuos domiciliados en Bahía Blanca",
+                   ImagenURL = "hospitalmunicipal.png",
                },
 
                new HospitalPublico
@@ -3194,6 +3252,7 @@ namespace ProyectoFinal.BD
                    Direccion = "Florida 1450",
                    URLPagina = "",
                    Restriccion = "",
+                   ImagenURL = "hospitalmilitar.png",
                },
                new HospitalPublico
                {
@@ -3201,8 +3260,9 @@ namespace ProyectoFinal.BD
                    Nombre = "Hospital Menor Ing. White",
                    Telefono = "(291)  4573132",
                    Direccion = "Harris 3599",
-                   URLPagina = "https://hospital-menor-ing-white.negocio.site/",
+                   URLPagina = "hospital-menor-ing-white.negocio.site",
                    Restriccion = "",
+                   ImagenURL = "hospitalingwhite.png",
                });
         }
     }

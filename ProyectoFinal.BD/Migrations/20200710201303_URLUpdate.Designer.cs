@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoFinal.BD;
 
 namespace ProyectoFinal.BD.Migrations
 {
     [DbContext(typeof(CentrosSaludContext))]
-    partial class CentrosSaludContextModelSnapshot : ModelSnapshot
+    [Migration("20200710201303_URLUpdate")]
+    partial class URLUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -2889,7 +2891,7 @@ namespace ProyectoFinal.BD.Migrations
                             Nombre = "Hospital Interzonal Dr. José Penna",
                             Restriccion = "Atiende a pacientes de Bahía Blanca y de toda la Región Sanitaria I",
                             Telefono = "(291) 4593600",
-                            URLPagina = "hospitalpenna.com.ar"
+                            URLPagina = "www.hospitalpenna.com.ar"
                         },
                         new
                         {

@@ -20,5 +20,8 @@ namespace ProyectoFinal.API.DTOs
 
         [Required, StringLength(250)]
         public string Restriccion { get; set; }
+
+        [Required, StringLength(200)]
+        public string ImagenURL { get; set; }
     }
 }
