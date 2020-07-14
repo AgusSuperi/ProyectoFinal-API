@@ -24,9 +24,7 @@ namespace ProyectoFinal.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSalud()
         {
-            var centrosSalud = await _context.CentrosSalud.Select(c => Helper.CentroSaludToDTO(c)).ToListAsync();
-            centrosSalud.ForEach(c => GetEspecialidades(c));
-            return centrosSalud;
+            return await _context.CentrosSalud.Select(c => Helper.CentroSaludToDTO(c)).ToListAsync();
         }        
 
         // GET: api/centrossalud/5
@@ -61,14 +59,58 @@ namespace ProyectoFinal.API.Controllers
             return especialidades;
         }
 
-        private void GetEspecialidades(CentroSaludDTO centroSalud)
+        // GET: api/centrossalud/filtro
+        [HttpGet("filtro")]
+        public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSaludUsandoFiltros(FiltroDTO filtro)
         {
-            var especialidades = _context.EspecialidadesCentrosSalud.
-                Where(ecs => ecs.CentroSaludId == centroSalud.Id).
-                Select(ecs => Helper.EspecialidadToDTO(ecs.Especialidad)).
+            var centrosSalud = await _context.CentrosSalud.
+                Where(c => (filtro.Horarios.Count > 0 ? filtro.Horarios.Contains(c.HorarioAtencion) : true) &&
+                (filtro.Barrios.Count > 0 ? filtro.Barrios.Contains(c.Barrio) : true)).
+                Include(c => c.EspecialidadesCentroSalud).
+                Select(c => Helper.CentroSaludToDTO(c)).
+                ToListAsync();
+
+            List<CentroSaludDTO> result = new List<CentroSaludDTO>();
+
+            if (filtro.Especialidades.Count > 0)
+            {
+                foreach (var centroSalud in centrosSalud)
+                {
+                    if (CapsContieneEspecialidades(filtro.Especialidades, centroSalud))
+                    {
+                        result.Add(centroSalud);
+                    }
+                }
+
+                if (result.Count() == 0)
+                {
+                    return NotFound();
+                }
+
+                return result;
+            }
+            else
+            {
+                return centrosSalud;
+            }            
+        }
+
+        private bool CapsContieneEspecialidades(List<string> especialidades, CentroSaludDTO centroSalud)
+        {
+            var especialidadesCentroSalud =  _context.EspecialidadesCentrosSalud.
+                Where(e => e.CentroSaludId == centroSalud.Id).
+                Select(e => e.Especialidad.Nombre).
                 ToList();
 
-            centroSalud.Especialidades = especialidades;
+            foreach (var especialidad in especialidades)
+            {
+                if (!especialidadesCentroSalud.Contains(especialidad))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }
