@@ -59,8 +59,8 @@ namespace ProyectoFinal.API.Controllers
             return especialidades;
         }
 
-        // GET: api/centrossalud/filtro
-        [HttpGet("filtro")]
+        // POST: api/centrossalud/filtro
+        [HttpPost("filtro")]
         public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSaludUsandoFiltros(FiltroDTO filtro)
         {
             var centrosSalud = await _context.CentrosSalud.
@@ -80,11 +80,6 @@ namespace ProyectoFinal.API.Controllers
                     {
                         result.Add(centroSalud);
                     }
-                }
-
-                if (result.Count() == 0)
-                {
-                    return NotFound();
                 }
 
                 return result;

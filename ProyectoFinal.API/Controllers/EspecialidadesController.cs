@@ -21,9 +21,9 @@ namespace ProyectoFinal.API.Controllers
 
         // GET: api/especialidades
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EspecialidadDTO>>> GetEspecialidades()
+        public async Task<ActionResult<IEnumerable<string>>> GetEspecialidades()
         {
-            return await _context.Especialidades.Select(e=>Helper.EspecialidadToDTO(e)).ToListAsync();
+            return await _context.Especialidades.Select(e => e.Nombre).ToListAsync();
         }
 
         // GET: api/especialidades/5
