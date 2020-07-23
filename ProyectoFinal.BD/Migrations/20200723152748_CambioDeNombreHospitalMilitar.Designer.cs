@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoFinal.BD;
 
 namespace ProyectoFinal.BD.Migrations
 {
     [DbContext(typeof(CentrosSaludContext))]
-    partial class CentrosSaludContextModelSnapshot : ModelSnapshot
+    [Migration("20200723152748_CambioDeNombreHospitalMilitar")]
+    partial class CambioDeNombreHospitalMilitar
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -2909,7 +2911,7 @@ namespace ProyectoFinal.BD.Migrations
                             Nombre = "Hospital Militar",
                             Restriccion = "",
                             Telefono = "(291) 4881828",
-                            URLPagina = "sanidad.ejercito.mil.ar"
+                            URLPagina = ""
                         },
                         new
                         {

@@ -3247,10 +3247,10 @@ namespace ProyectoFinal.BD
                new HospitalPublico
                {
                    Id = 3,
-                   Nombre = "Hospital Militar Bahía Blanca",
+                   Nombre = "Hospital Militar",
                    Telefono = "(291) 4881828",
                    Direccion = "Florida 1450",
-                   URLPagina = "",
+                   URLPagina = "sanidad.ejercito.mil.ar",
                    Restriccion = "",
                    ImagenURL = "hospitalmilitar.png",
                },
