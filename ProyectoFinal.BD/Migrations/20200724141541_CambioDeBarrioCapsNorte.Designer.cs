@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoFinal.BD;
 
 namespace ProyectoFinal.BD.Migrations
 {
     [DbContext(typeof(CentrosSaludContext))]
-    partial class CentrosSaludContextModelSnapshot : ModelSnapshot
+    [Migration("20200724141541_CambioDeBarrioCapsNorte")]
+    partial class CambioDeBarrioCapsNorte
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -2836,6 +2838,90 @@ namespace ProyectoFinal.BD.Migrations
                         {
                             CentroSaludId = 55,
                             EspecialidadId = 17
+                        });
+                });
+
+            modelBuilder.Entity("ProyectoFinal.Modelos.HospitalPublico", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(80)")
+                        .HasMaxLength(80);
+
+                    b.Property<string>("ImagenURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(80)")
+                        .HasMaxLength(80);
+
+                    b.Property<string>("Restriccion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(80)")
+                        .HasMaxLength(80);
+
+                    b.Property<string>("URLPagina")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HospitalesPublicos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Direccion = "Avda. Lainez 2401",
+                            ImagenURL = "hospitalpenna.png",
+                            Nombre = "Hospital Interzonal Dr. José Penna",
+                            Restriccion = "Atiende a pacientes de Bahía Blanca y de toda la Región Sanitaria I",
+                            Telefono = "(291) 4593600",
+                            URLPagina = "hospitalpenna.com.ar"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Direccion = "Estomba 968",
+                            ImagenURL = "hospitalmunicipal.png",
+                            Nombre = "Hospital Municipal de Agudos Dr. Leónidas Lucero",
+                            Restriccion = "Atiende solo a individuos domiciliados en Bahía Blanca",
+                            Telefono = "(291) 4598484",
+                            URLPagina = "hmabb.gov.ar"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Direccion = "Florida 1450",
+                            ImagenURL = "hospitalmilitar.png",
+                            Nombre = "Hospital Militar",
+                            Restriccion = "",
+                            Telefono = "(291) 4881828",
+                            URLPagina = "sanidad.ejercito.mil.ar"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Direccion = "Harris 3599",
+                            ImagenURL = "hospitalingwhite.png",
+                            Nombre = "Hospital Menor Ing. White",
+                            Restriccion = "",
+                            Telefono = "(291)  4573132",
+                            URLPagina = "hospital-menor-ing-white.negocio.site"
                         });
                 });
 

@@ -13,8 +13,6 @@ namespace ProyectoFinal.BD
 
         public CentrosSaludContext(DbContextOptions<CentrosSaludContext> Options) : base(Options) { }
 
-        public DbSet<HospitalPublico> HospitalesPublicos { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<EspecialidadCentroSalud>()

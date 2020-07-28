@@ -21,7 +21,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.717370,
                     Longitud = -62.227370,
                     Barrio = "Altos Sánchez",
-                    ImagenURL="9denoviembre.png",
+                    ImagenURL = "9denoviembre.png",
                 },
 
                 new CentroSalud
@@ -34,7 +34,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.739650,
                     Longitud = -62.212720,
                     Barrio = "12 de Octubre",
-                    ImagenURL ="12deoctubre.png",
+                    ImagenURL = "12deoctubre.png",
                 },
 
                 new CentroSalud
@@ -47,7 +47,7 @@ namespace ProyectoFinal.BD
                     Latitud = -38.729410,
                     Longitud = -62.262650,
                     Barrio = "Pedro Pico",
-                    ImagenURL ="amenghini.png",
+                    ImagenURL = "amenghini.png",
                 },
 
                 new CentroSalud
@@ -98,7 +98,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.690690,
                     Longitud = -62.304180,
-                    Barrio = "Latino",
+                    Barrio = "Barrio Latino",
                     ImagenURL = "barriolatino.png",
                 },
 
@@ -111,7 +111,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.74719,
                     Longitud = -62.229520,
-                    Barrio = "Obrero",
+                    Barrio = "Barrio Obrero",
                     ImagenURL = "barrioobrero.png",
                 },
 
@@ -150,7 +150,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.748260,
                     Longitud = -62.245560,
-                    Barrio = "Spurr",
+                    Barrio = "Villa Moresino",
                     ImagenURL = "cicspurr.png",
 
                 },
@@ -177,7 +177,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.729070,
                     Longitud = -62.223500,
-                    Barrio= "Villa Don Bosco",
+                    Barrio = "Villa Don Bosco",
                     ImagenURL = "donbosco.png",
                 },
 
@@ -190,7 +190,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.750830,
                     Longitud = -62.268890,
-                    Barrio= "Enrique Julio",
+                    Barrio = "Enrique Julio",
                     ImagenURL = "enriquejulio.png",
                 },
 
@@ -203,7 +203,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.699940,
                     Longitud = -62.301450,
-                    Barrio= "Coronel Estomba",
+                    Barrio = "Coronel Estomba",
                     ImagenURL = "estomba.png",
                 },
 
@@ -216,7 +216,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.752610,
                     Longitud = -62.176260,
-                    Barrio= "Grünbein",
+                    Barrio = "Grünbein",
                     ImagenURL = "grunbein.png",
                 },
 
@@ -229,7 +229,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.710300,
                     Longitud = -62.293860,
-                    Barrio= "Pacífico",
+                    Barrio = "Kilómetro 5",
                     ImagenURL = "kilometro5.png",
                 },
 
@@ -242,7 +242,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708160,
                     Longitud = -62.253020,
-                    Barrio= "La Falda",
+                    Barrio = "La Falda",
                     ImagenURL = "lafalda.png",
                 },
 
@@ -255,7 +255,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.705910,
                     Longitud = -62.413710,
-                    Barrio= "General Cerri",
+                    Barrio = "General Cerri",
                     ImagenURL = "laureanomuñiz.png",
                 },
 
@@ -268,20 +268,20 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.719300,
                     Longitud = -62.315090,
-                    Barrio= "Vista Alegre",
+                    Barrio = "Vista Alegre",
                     ImagenURL = "leandropiñeiro.png",
                 },
 
                 new CentroSalud
                 {
                     Id = 21,
-                    Nombre = "Leonor Capelli (Ingeniero White)",
+                    Nombre = "Leonor Capelli",
                     Direccion = "Lautaro y Paul Harris",
                     Telefono = "(291) 4573132",
                     HorarioAtencion = "Las 24 hs",
                     Latitud = -38.775540,
                     Longitud = -62.271220,
-                    Barrio= "",
+                    Barrio = "Ingeniero White",
                     ImagenURL = "leonorcapelli.png",
                 },
 
@@ -294,7 +294,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.747890,
                     Longitud = -62.285900,
-                    Barrio= "Loma Paraguaya",
+                    Barrio = "Loma Paraguaya",
                     ImagenURL = "lomaparaguaya.png",
                 },
 
@@ -307,7 +307,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708060,
                     Longitud = -62.299720,
-                    Barrio= "Lujan",
+                    Barrio = "Lujan",
                     ImagenURL = "lujan.png",
                 },
 
@@ -320,7 +320,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.717340,
                     Longitud = -62.319480,
-                    Barrio= "Coronel Maldonado",
+                    Barrio = "Coronel Maldonado",
                     ImagenURL = "maldonado.png",
                 },
 
@@ -333,7 +333,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.720500,
                     Longitud = -62.293310,
-                    Barrio= "Mariano Moreno",
+                    Barrio = "Mariano Moreno",
                     ImagenURL = "marianomoreno.png",
                 },
 
@@ -346,7 +346,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.7086846,
                     Longitud = -62.2372357,
-                    Barrio= "Villa Miramar",
+                    Barrio = "Villa Miramar",
                     ImagenURL = "miramar.png",
                 },
 
@@ -359,7 +359,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708270,
                     Longitud = -62.260520,
-                    Barrio= "Naposta",
+                    Barrio = "Naposta",
                     ImagenURL = "naposta.png",
                 },
 
@@ -372,7 +372,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.726960,
                     Longitud = -62.289850,
-                    Barrio= "Noroeste",
+                    Barrio = "Noroeste",
                     ImagenURL = "noroeste.png",
                 },
 
@@ -383,9 +383,9 @@ namespace ProyectoFinal.BD
                     Direccion = "Vieytes 1616",
                     Telefono = "(291) 4888267",
                     HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.717370,
-                    Longitud = -62.227370,
-                    Barrio="Altos Sánchez",
+                    Latitud = -38.705806,
+                    Longitud = -62.287014,
+                    Barrio = "Pacífico",
                     ImagenURL = "norte.png",
                 },
 
@@ -398,7 +398,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.676280,
                     Longitud = -62.296110,
-                    Barrio= "Nueva Belgrano",
+                    Barrio = "Nueva Belgrano",
                     ImagenURL = "nuevabelgrano.png",
                 },
 
@@ -411,7 +411,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.725650,
                     Longitud = -62.296170,
-                    Barrio= "Pampa Central",
+                    Barrio = "Pampa Central",
                     ImagenURL = "pampacentral.png",
                 },
 
@@ -424,7 +424,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.697720,
                     Longitud = -62.211730,
-                    Barrio= "Patagonia",
+                    Barrio = "Patagonia",
                     ImagenURL = "patagonia.png",
                 },
 
@@ -437,7 +437,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.735270,
                     Longitud = -62.263350,
-                    Barrio= "Pedro Pico",
+                    Barrio = "Pedro Pico",
                     ImagenURL = "pedropico.png",
                 },
 
@@ -450,7 +450,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.738200,
                     Longitud = -62.253800,
-                    Barrio= "Rivadavia",
+                    Barrio = "Rivadavia",
                     ImagenURL = "rivadavia.png",
                 },
 
@@ -463,7 +463,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.739150,
                     Longitud = -62.245720,
-                    Barrio= "Rosario Sur",
+                    Barrio = "Rosario Sur",
                     ImagenURL = "rosariosur.png",
                 },
 
@@ -476,7 +476,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.770604,
                     Longitud = -62.245450,
-                    Barrio= "Saladero",
+                    Barrio = "Saladero",
                     ImagenURL = "saladero.png",
                 },
 
@@ -489,7 +489,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.696960,
                     Longitud = -62.280160,
-                    Barrio= "San Cayetano",
+                    Barrio = "San Cayetano",
                     ImagenURL = "sancayetano.png",
                 },
 
@@ -502,7 +502,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.736340,
                     Longitud = -62.292070,
-                    Barrio= "San Blas",
+                    Barrio = "Noroeste",
                     ImagenURL = "sandionisio.png",
                 },
 
@@ -515,7 +515,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.779440,
                     Longitud = -62.256220,
-                    Barrio= "Boulevard Juan B. Justo",
+                    Barrio = "Juan B. Justo",
                     ImagenURL = "sanjoseobrero.png",
                 },
 
@@ -525,10 +525,10 @@ namespace ProyectoFinal.BD
                     Nombre = "Sanchez Elia",
                     Direccion = "Bermudez 1580",
                     Telefono = "(291) 4815419",
-                    HorarioAtencion = "extensión CS 9 de noviembre",
+                    HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.720200,
                     Longitud = -62.235520,
-                    Barrio= "Villa Sanchez Elia",
+                    Barrio = "Sanchez Elia",
                     ImagenURL = "sanchezelia.png",
                 },
 
@@ -541,7 +541,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.721600,
                     Longitud = -62.250210,
-                    Barrio= "Tiro Federal",
+                    Barrio = "Tiro Federal",
                     ImagenURL = "tirofederal.png",
                 },
 
@@ -554,7 +554,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.701560,
                     Longitud = -62.274770,
-                    Barrio= "Universitario",
+                    Barrio = "Universitario",
                     ImagenURL = "universitario.png",
                 },
 
@@ -564,10 +564,10 @@ namespace ProyectoFinal.BD
                     Nombre = "Villa Amaducci",
                     Direccion = "Rastreador Fournier 1809",
                     Telefono = "(291) 4810155",
-                    HorarioAtencion = "extensión CS 9 de noviembre",
+                    HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.723370,
                     Longitud = -62.226770,
-                    Barrio= "Villa Amaducci",
+                    Barrio = "Villa Amaducci",
                     ImagenURL = "villaamaducci.png",
                 },
 
@@ -580,7 +580,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.688405,
                     Longitud = -62.345480,
-                    Barrio= "Villa Bordeu",
+                    Barrio = "Villa Bordeu",
                     ImagenURL = "villabordeu.png",
                 },
 
@@ -593,7 +593,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.750140,
                     Longitud = -62.275770,
-                    Barrio= "Villa Delfina",
+                    Barrio = "Villa Delfina",
                     ImagenURL = "villadelfina.png",
                 },
 
@@ -606,7 +606,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.746873,
                     Longitud = -62.237961,
-                    Barrio="Rosario Sur",
+                    Barrio = "Rosario Sur",
                     ImagenURL = "villaesperanza.png",
                 },
 
@@ -619,7 +619,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.691530,
                     Longitud = -62.263590,
-                    Barrio= "Villa Floresta",
+                    Barrio = "Villa Floresta",
                     ImagenURL = "villafloresta.png",
                 },
 
@@ -632,7 +632,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.749820,
                     Longitud = -62.191670,
-                    Barrio= "Villa Cerrito",
+                    Barrio = "Villa Cerrito",
                     ImagenURL = "villagloria.png",
                 },
 
@@ -645,7 +645,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.714480,
                     Longitud = -62.189450,
-                    Barrio= "Villa Harding Green",
+                    Barrio = "Villa Harding Green",
                     ImagenURL = "villahardinggreen.png",
                 },
 
@@ -658,7 +658,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.730410,
                     Longitud = -62.246530,
-                    Barrio= "Villa Mitre",
+                    Barrio = "Villa Mitre",
                     ImagenURL = "villamitre.png",
                 },
 
@@ -671,7 +671,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.746100,
                     Longitud = -62.225990,
-                    Barrio= "Villa Muñiz",
+                    Barrio = "Villa Muñiz",
                     ImagenURL = "villamuñiz.png",
                 },
 
@@ -684,7 +684,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.721700,
                     Longitud = -62.312210,
-                    Barrio= "Villa Nocito",
+                    Barrio = "Villa Nocito",
                     ImagenURL = "villanocito.png",
                 },
 
@@ -697,7 +697,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.742670,
                     Longitud = -62.272080,
-                    Barrio= "Villa Ressia",
+                    Barrio = "Villa Ressia",
                     ImagenURL = "villaressia.png",
                 },
 
@@ -710,7 +710,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.755940,
                     Longitud = -62.261400,
-                    Barrio= "Villa Rosas",
+                    Barrio = "Villa Rosas",
                     ImagenURL = "villarosas.png",
                 },
 
@@ -723,7 +723,7 @@ namespace ProyectoFinal.BD
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.757880,
                     Longitud = -62.246610,
-                    Barrio= "Villa Serra",
+                    Barrio = "Villa Serra",
                     ImagenURL = "villaserra.png",
                 }); ;
 
@@ -3221,49 +3221,6 @@ namespace ProyectoFinal.BD
                     CentroSaludId = 55,
                     EspecialidadId = 17,
                 });
-
-            modelBuilder.Entity<HospitalPublico>().HasData(
-               new HospitalPublico
-               {
-                   Id = 1,
-                   Nombre = "Hospital Interzonal Dr. José Penna",
-                   Telefono = "(291) 4593600",
-                   Direccion = "Avda. Lainez 2401",
-                   URLPagina = "hospitalpenna.com.ar",
-                   Restriccion= "Atiende a pacientes de Bahía Blanca y de toda la Región Sanitaria I",
-                   ImagenURL = "hospitalpenna.png",
-               },
-               new HospitalPublico
-               {
-                   Id = 2,
-                   Nombre = "Hospital Municipal de Agudos Dr. Leónidas Lucero",
-                   Telefono = "(291) 4598484",
-                   Direccion = "Estomba 968",
-                   URLPagina = "hmabb.gov.ar",
-                   Restriccion= "Atiende solo a individuos domiciliados en Bahía Blanca",
-                   ImagenURL = "hospitalmunicipal.png",
-               },
-
-               new HospitalPublico
-               {
-                   Id = 3,
-                   Nombre = "Hospital Militar",
-                   Telefono = "(291) 4881828",
-                   Direccion = "Florida 1450",
-                   URLPagina = "sanidad.ejercito.mil.ar",
-                   Restriccion = "",
-                   ImagenURL = "hospitalmilitar.png",
-               },
-               new HospitalPublico
-               {
-                   Id = 4,
-                   Nombre = "Hospital Menor Ing. White",
-                   Telefono = "(291)  4573132",
-                   Direccion = "Harris 3599",
-                   URLPagina = "hospital-menor-ing-white.negocio.site",
-                   Restriccion = "",
-                   ImagenURL = "hospitalingwhite.png",
-               });
         }
     }
 }
