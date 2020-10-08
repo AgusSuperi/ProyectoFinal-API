@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xzb+lqmN/Xc6FnYtlo4I2z/8q8p5GctcDf1Qt/uED4M2LAUf1J+rN7KuHXxoaSfWWg7a8+sOnC5gyNH//gLYVw==",
+  "dgSpecHash": "NjosnWaeX/G8XI7ZCt8GDi+2LYWiI05LZOsuMo6YIYlNVJPiORayJ+j8cy6X/250BZJhRFQbVDUOv1n521Dsww==",
   "success": true,
-  "projectFilePath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+  "projectFilePath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matia\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\matia\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

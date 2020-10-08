@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {}
+    "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {
+    "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.API\\ProyectoFinal.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
         "projectName": "ProyectoFinal.API",
-        "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
+        "projectPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.API\\ProyectoFinal.API.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.API\\obj\\",
+        "outputPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
-                "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
+              "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+                "projectPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj"
               }
             }
           }
@@ -81,18 +81,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
+    "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
         "projectName": "ProyectoFinal.BD",
-        "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
+        "projectPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.BD\\ProyectoFinal.BD.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.BD\\obj\\",
+        "outputPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.BD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,8 +108,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
-                "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj"
+              "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+                "projectPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj"
               }
             }
           }
@@ -163,18 +163,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+    "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "projectName": "ProyectoFinal.Modelos",
-        "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
+        "outputPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -227,7 +227,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

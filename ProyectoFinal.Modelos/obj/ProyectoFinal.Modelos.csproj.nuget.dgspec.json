@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {}
+    "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
+    "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "projectName": "ProyectoFinal.Modelos",
-        "projectPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
+        "projectPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\ProyectoFinal.Modelos.csproj",
         "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal\\ProyectoFinal.Modelos\\obj\\",
+        "outputPath": "C:\\Users\\matia\\OneDrive\\Documentos\\Universidad\\Proyecto Final\\ProyectoFinal-API\\ProyectoFinal.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
