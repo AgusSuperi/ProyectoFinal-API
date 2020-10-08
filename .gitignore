@@ -28,3 +28,10 @@
 *.exe
 *.pdb
 .vs/ProyectoFinal/v16/.suo
+ProyectoFinal.API/obj/Debug/netcoreapp3.1/ProyectoFinal.API.pdb
+ProyectoFinal.API/obj/Debug/netcoreapp3.1/ProyectoFinal.API.dll
+ProyectoFinal.API/obj/Debug/netcoreapp3.1/ProyectoFinal.API.csprojAssemblyReference.cache
+ProyectoFinal.API/bin/Debug/netcoreapp3.1/ProyectoFinal.API.pdb
+ProyectoFinal.API/bin/Debug/netcoreapp3.1/ProyectoFinal.API.dll
+ProyectoFinal.API/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+.vs/ProyectoFinal/v16/.suo
