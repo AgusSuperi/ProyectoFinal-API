@@ -73,3 +73,16 @@ D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.Modelos\obj
 D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.dll
 D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.pdb
 D:\Documentos\Universidad\Proyecto Final\ProyectoFinal\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.genruntimeconfig.cache
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.deps.json
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.runtimeconfig.json
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.runtimeconfig.dev.json
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.dll
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\bin\Debug\netcoreapp3.1\ProyectoFinal.Modelos.pdb
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.csprojAssemblyReference.cache
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.AssemblyInfoInputs.cache
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.AssemblyInfo.cs
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.dll
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.pdb
+C:\Users\matia\OneDrive\Documentos\Universidad\Proyecto Final\ProyectoFinal-API\ProyectoFinal.Modelos\obj\Debug\netcoreapp3.1\ProyectoFinal.Modelos.genruntimeconfig.cache
