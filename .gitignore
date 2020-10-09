@@ -232,3 +232,5 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+*.cache
+.vs/ProyectoFinal/v16/.suo
