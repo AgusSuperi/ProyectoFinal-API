@@ -2,6 +2,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using ProyectoFinal.IServicios;
 
 namespace ProyectoFinal.API.Controllers
 {
@@ -10,16 +11,18 @@ namespace ProyectoFinal.API.Controllers
     public class ImagenesController : ControllerBase
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IServicioImagenes servicioImagenes;
 
-        public ImagenesController(IWebHostEnvironment webHostEnvironment)
+        public ImagenesController(IServicioImagenes servicioImagenes, IWebHostEnvironment webHostEnvironment)
         {
+            this.servicioImagenes = servicioImagenes;
             _webHostEnvironment = webHostEnvironment;
         }
 
-        [HttpGet("{nombre}")]
-        public IActionResult GetImagenCaps(string nombre)
+        [HttpGet("{nombreImagen}")]
+        public IActionResult GetImagenCentroSaludPorNombre(string nombreImagen)
         {
-            return AbrirImagenODefault(nombre);
+            return AbrirImagenODefault(nombreImagen);
         }
 
         private IActionResult AbrirImagenODefault(string nombre)

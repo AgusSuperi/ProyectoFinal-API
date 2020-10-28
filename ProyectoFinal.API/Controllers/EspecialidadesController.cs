@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ProyectoFinal.API.DTOs;
+using ProyectoFinal.DTO;
 using ProyectoFinal.BD;
 
 namespace ProyectoFinal.API.Controllers
@@ -42,7 +42,7 @@ namespace ProyectoFinal.API.Controllers
 
         // GET: api/especialidades/5/centrossalud
         [HttpGet("{id}/centrossalud")]
-        public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSaludByEspecialidades(int id)
+        public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSaludPorEspecialidadId(int id)
         {
             var especialidad = await _context.Especialidades.FindAsync(id);
 

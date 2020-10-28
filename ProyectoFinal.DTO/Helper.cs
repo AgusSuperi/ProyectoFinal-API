@@ -1,7 +1,6 @@
 ﻿using ProyectoFinal.Modelos;
-using System.Collections.Generic;
 
-namespace ProyectoFinal.API.DTOs
+namespace ProyectoFinal.DTO
 {
     public static class Helper
     {

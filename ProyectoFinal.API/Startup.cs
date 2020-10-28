@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ProyectoFinal.BD;
+using ProyectoFinal.IServicios;
+using ProyectoFinal.Servicios;
 
 namespace ProyectoFinal.API
 {
@@ -26,6 +28,11 @@ namespace ProyectoFinal.API
             });
 
             services.AddControllers();
+
+            services.AddTransient<IServicioCentrosSalud, ServicioCentrosSalud>();
+            services.AddTransient<IServicioEspecialidades, ServicioEspecialidades>();
+            services.AddTransient<IServicioBarrios, ServicioBarrios>();
+            services.AddTransient<IServicioImagenes, ServicioImagenes>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

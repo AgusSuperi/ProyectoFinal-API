@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProyectoFinal.API.DTOs
+namespace ProyectoFinal.DTO
 {
     public class EspecialidadDTO
     {

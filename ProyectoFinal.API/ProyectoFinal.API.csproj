@@ -18,7 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IServicios\ProyectoFinal.IServicios.csproj" />
     <ProjectReference Include="..\ProyectoFinal.BD\ProyectoFinal.BD.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.DTOs\ProyectoFinal.DTO.csproj" />
+    <ProjectReference Include="..\Servicios\ProyectoFinal.Servicios.csproj" />
   </ItemGroup>
 
 

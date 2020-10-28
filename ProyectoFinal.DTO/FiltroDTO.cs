@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ProyectoFinal.API.DTOs
+namespace ProyectoFinal.DTO
 {
     public class FiltroDTO
     {

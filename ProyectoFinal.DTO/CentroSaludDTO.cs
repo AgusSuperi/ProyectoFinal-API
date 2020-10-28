@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace ProyectoFinal.API.DTOs
+namespace ProyectoFinal.DTO
 {
     public class CentroSaludDTO
     {
