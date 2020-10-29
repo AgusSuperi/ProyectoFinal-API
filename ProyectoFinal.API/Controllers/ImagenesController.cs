@@ -2,7 +2,6 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using ProyectoFinal.IServicios;
 
 namespace ProyectoFinal.API.Controllers
 {
@@ -11,23 +10,16 @@ namespace ProyectoFinal.API.Controllers
     public class ImagenesController : ControllerBase
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
-        private readonly IServicioImagenes servicioImagenes;
 
-        public ImagenesController(IServicioImagenes servicioImagenes, IWebHostEnvironment webHostEnvironment)
+        public ImagenesController(IWebHostEnvironment webHostEnvironment)
         {
-            this.servicioImagenes = servicioImagenes;
             _webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet("{nombreImagen}")]
         public IActionResult GetImagenCentroSaludPorNombre(string nombreImagen)
         {
-            return AbrirImagenODefault(nombreImagen);
-        }
-
-        private IActionResult AbrirImagenODefault(string nombre)
-        {
-            var rutaImagen = Path.Combine(_webHostEnvironment.ContentRootPath, "Imagenes/CAPS/" + nombre);
+            var rutaImagen = Path.Combine(_webHostEnvironment.ContentRootPath, "Imagenes/CAPS/" + nombreImagen);
 
             if (System.IO.File.Exists(rutaImagen))
             {

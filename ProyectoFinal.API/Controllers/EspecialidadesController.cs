@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.DTO;
-using ProyectoFinal.BD;
+using ProyectoFinal.IServicios;
 
 namespace ProyectoFinal.API.Controllers
 {
@@ -12,56 +10,53 @@ namespace ProyectoFinal.API.Controllers
     [ApiController]
     public class EspecialidadesController : ControllerBase
     {
-        private readonly CentrosSaludContext _context;
+        private readonly IServicioEspecialidades servicioEspecialidades;
 
-        public EspecialidadesController(CentrosSaludContext context)
+        public EspecialidadesController(IServicioEspecialidades servicioEspecialidades)
         {
-            _context = context;
+            this.servicioEspecialidades = servicioEspecialidades;
         }
 
         // GET: api/especialidades
         [HttpGet]
         public async Task<ActionResult<IEnumerable<string>>> GetEspecialidades()
         {
-            return await _context.Especialidades.Select(e => e.Nombre).ToListAsync();
+            var especialidades = await servicioEspecialidades.GetEspecialidades();
+
+            if (especialidades == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(especialidades);
         }
 
         // GET: api/especialidades/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<EspecialidadDTO>> GetEspecialidad(int id)
+        public async Task<ActionResult<EspecialidadDTO>> GetEspecialidadPorId(int id)
         {
-            var especialidad = await _context.Especialidades.FindAsync(id);
+            var especialidad = await servicioEspecialidades.GetEspecialidadPorId(id);
 
             if (especialidad == null)
             {
                 return NotFound();
             }
 
-            return Helper.EspecialidadToDTO(especialidad);
+            return Ok(especialidad);
         }
 
         // GET: api/especialidades/5/centrossalud
         [HttpGet("{id}/centrossalud")]
         public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSaludPorEspecialidadId(int id)
         {
-            var especialidad = await _context.Especialidades.FindAsync(id);
+            var centrosSalud = await servicioEspecialidades.GetCentrosSaludPorEspecialidadId(id);
 
-            if (especialidad == null)
+            if (centrosSalud == null)
             {
                 return NotFound();
             }
 
-            var centrossalud = await _context.EspecialidadesCentrosSalud.
-                Where(ecs => ecs.EspecialidadId == id).
-                Select(ecs => Helper.CentroSaludToDTO(ecs.CentroSalud)).
-                ToListAsync();
-
-            if (centrossalud == null)
-            {
-                return NotFound();
-            }
-
-            return centrossalud;
+            return Ok(centrosSalud);
         }
     }
 }

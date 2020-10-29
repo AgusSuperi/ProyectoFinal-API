@@ -1,11 +1,11 @@
 ﻿using ProyectoFinal.IServicios;
 using ProyectoFinal.DTO;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ProyectoFinal.BD;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using ProyectoFinal.Modelos;
 
 namespace ProyectoFinal.Servicios
 {
@@ -18,39 +18,31 @@ namespace ProyectoFinal.Servicios
             this.centrosSaludContext = centrosSaludContext;
         }        
 
-        public async Task<IEnumerable<CentroSaludDTO>> GetCentrosSaludAsync()
+        public async Task<IEnumerable<CentroSalud>> GetCentrosSalud()
         {
-            return await centrosSaludContext.CentrosSalud.Select(c => Helper.CentroSaludToDTO(c)).ToListAsync();
+            return await centrosSaludContext.CentrosSalud.ToListAsync();
         }
 
-        public async Task<CentroSaludDTO> GetCentroSaludPorIdAsync(int id)
+        public async Task<CentroSalud> GetCentroSaludPorId(int id)
         {
-            var centroSalud = await centrosSaludContext.CentrosSalud.FindAsync(id);
-
-            if (centroSalud == null)
-            {
-                return null;
-            }
-
-            return Helper.CentroSaludToDTO(centroSalud);
+            return await centrosSaludContext.CentrosSalud.FindAsync(id);
         }
 
-        public async Task<IEnumerable<CentroSaludDTO>> GetCentrosSaludPorFiltro(FiltroDTO filtro)
+        public async Task<IEnumerable<CentroSalud>> GetCentrosSaludPorFiltro(FiltroDTO filtro)
         {
             var centrosSalud = await centrosSaludContext.CentrosSalud.
                 Where(c => (filtro.Horarios.Count > 0 ? filtro.Horarios.Contains(c.HorarioAtencion) : true) &&
                 (filtro.Barrios.Count > 0 ? filtro.Barrios.Contains(c.Barrio) : true)).
                 Include(c => c.EspecialidadesCentroSalud).
-                Select(c => Helper.CentroSaludToDTO(c)).
                 ToListAsync();
 
-            List<CentroSaludDTO> result = new List<CentroSaludDTO>();
+            List<CentroSalud> result = new List<CentroSalud>();
 
             if (filtro.Especialidades.Count > 0)
             {
                 foreach (var centroSalud in centrosSalud)
                 {
-                    if (CapsContieneEspecialidades(filtro.Especialidades, centroSalud))
+                    if (await CapsContieneEspecialidades(filtro.Especialidades, centroSalud))
                     {
                         result.Add(centroSalud);
                     }
@@ -64,7 +56,7 @@ namespace ProyectoFinal.Servicios
             }
         }
 
-        public async Task<IEnumerable<EspecialidadDTO>> GetEspecialidadesPorCentroSaludIdAsync(int id)
+        public async Task<IEnumerable<Especialidad>> GetEspecialidadesPorCentroSaludId(int id)
         {
             var centroSalud = await centrosSaludContext.CentrosSalud.FindAsync(id);
 
@@ -75,18 +67,18 @@ namespace ProyectoFinal.Servicios
 
             var especialidades = await centrosSaludContext.EspecialidadesCentrosSalud.
                 Where(ecs => ecs.CentroSaludId == id).
-                Select(ecs => Helper.EspecialidadToDTO(ecs.Especialidad)).
+                Select(ecs => ecs.Especialidad).
                 ToListAsync();
 
             return especialidades;
         }
 
-        private bool CapsContieneEspecialidades(List<string> especialidades, CentroSaludDTO centroSalud)
+        private async Task<bool> CapsContieneEspecialidades(List<string> especialidades, CentroSalud centroSalud)
         {
-            var especialidadesCentroSalud = centrosSaludContext.EspecialidadesCentrosSalud.
+            var especialidadesCentroSalud = await centrosSaludContext.EspecialidadesCentrosSalud.
                 Where(e => e.CentroSaludId == centroSalud.Id).
                 Select(e => e.Especialidad.Nombre).
-                ToList();
+                ToListAsync();
 
             foreach (var especialidad in especialidades)
             {

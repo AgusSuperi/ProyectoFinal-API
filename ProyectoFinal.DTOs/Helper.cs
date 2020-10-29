@@ -16,7 +16,7 @@ namespace ProyectoFinal.DTO
                 Latitud = centroSalud.Latitud,
                 Longitud = centroSalud.Longitud,
                 Barrio = centroSalud.Barrio,
-                ImagenURL=centroSalud.ImagenURL,
+                ImagenURL = centroSalud.ImagenURL,
             };
         }
 

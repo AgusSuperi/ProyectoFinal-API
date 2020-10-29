@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using ProyectoFinal.BD;
 using ProyectoFinal.DTO;
 using ProyectoFinal.IServicios;
 
@@ -14,45 +14,60 @@ namespace ProyectoFinal.API.Controllers
     public class CentrosSaludController : ControllerBase
     {
         private readonly IServicioCentrosSalud servicioCentrosSalud;
+        private readonly IMapper mapper;
 
-        public CentrosSaludController(IServicioCentrosSalud servicioCentrosSalud)
+        public CentrosSaludController(IServicioCentrosSalud servicioCentrosSalud, IMapper mapper)
         {
             this.servicioCentrosSalud = servicioCentrosSalud;
+            this.mapper = mapper;
         }
 
         // GET: api/centrossalud
         [HttpGet]
-        public async Task<IEnumerable<CentroSaludDTO>> GetCentrosSalud()
+        public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSalud()
         {
-            return await servicioCentrosSalud.GetCentrosSaludAsync();
+            var centrosSalud = await servicioCentrosSalud.GetCentrosSalud();
+            if (centrosSalud == null)
+            {
+                return NotFound();
+            }
+            return Ok(mapper.Map<IEnumerable<CentroSaludDTO>>(centrosSalud).ToList());
         }        
 
         // GET: api/centrossalud/5
         [HttpGet("{id}")]
         public async Task<ActionResult<CentroSaludDTO>> GetCentroSaludPorId(int id)
         {
-            var centroSalud = await servicioCentrosSalud.GetCentroSaludPorIdAsync(id);
-
+            var centroSalud = await servicioCentrosSalud.GetCentroSaludPorId(id);
             if (centroSalud == null)
             {
                 return NotFound();
             }
-
-            return centroSalud;
+            return Ok(mapper.Map<CentroSaludDTO>(centroSalud));
         }
 
         // GET: api/centrossalud/5/especialidades
         [HttpGet("{id}/especialidades")]
-        public async Task<IEnumerable<EspecialidadDTO>> GetEspecialidades(int id)
+        public async Task<ActionResult<IEnumerable<EspecialidadDTO>>> GetEspecialidadesPorCentroSaludId(int id)
         {
-            return await servicioCentrosSalud.GetEspecialidadesPorCentroSaludIdAsync(id);
+            var especialidades = await servicioCentrosSalud.GetEspecialidadesPorCentroSaludId(id);
+            if (especialidades == null)
+            {
+                return NotFound();
+            }
+            return Ok(mapper.Map<IEnumerable<EspecialidadDTO>>(especialidades).ToList());
         }
 
         // POST: api/centrossalud/filtro
         [HttpPost("filtro")]
-        public async Task<IEnumerable<CentroSaludDTO>> GetCentrosSaludPorFiltro(FiltroDTO filtro)
+        public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSaludPorFiltro(FiltroDTO filtro)
         {
-            return await servicioCentrosSalud.GetCentrosSaludPorFiltro(filtro);        
+            var centrosSalud = await servicioCentrosSalud.GetCentrosSaludPorFiltro(filtro);            
+            if (centrosSalud == null)
+            {
+                return NotFound();
+            }
+            return Ok(mapper.Map<IEnumerable<CentroSaludDTO>>(centrosSalud).ToList());
         }
     }
 }

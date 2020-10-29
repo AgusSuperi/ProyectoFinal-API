@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using ProyectoFinal.BD;
+using ProyectoFinal.IServicios;
 
 namespace ProyectoFinal.API.Controllers
 {
@@ -9,28 +8,25 @@ namespace ProyectoFinal.API.Controllers
     [ApiController]
     public class BarriosController : ControllerBase
     {
-        private readonly CentrosSaludContext _context;
+        private readonly IServicioBarrios servicioBarrios;
 
-        public BarriosController(CentrosSaludContext context)
+        public BarriosController(IServicioBarrios servicioBarrios)
         {
-            _context = context;
+            this.servicioBarrios = servicioBarrios;
         }
 
         // GET: api/barrios
         [HttpGet]
-        public IEnumerable<string> GetBarrios()
+        public ActionResult<IEnumerable<string>> GetBarrios()
         {
-            HashSet<string> barrios = new HashSet<string>();
+            var barrios = servicioBarrios.GetBarrios();
 
-            foreach (var centroSalud in _context.CentrosSalud)
+            if (barrios == null)
             {
-                barrios.Add(centroSalud.Barrio);
+                return NotFound();
             }
 
-            var barriosOrdenados = barrios.ToList();
-            barriosOrdenados.Sort();
-
-            return barriosOrdenados;
+            return Ok(barrios);
         }
     }
 }

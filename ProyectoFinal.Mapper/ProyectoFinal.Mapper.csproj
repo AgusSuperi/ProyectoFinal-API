@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -6,13 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IServicios\ProyectoFinal.IServicios.csproj" />
-    <ProjectReference Include="..\ProyectoFinal.BD\ProyectoFinal.BD.csproj" />
     <ProjectReference Include="..\ProyectoFinal.DTOs\ProyectoFinal.DTO.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Modelos\ProyectoFinal.Modelos.csproj" />
   </ItemGroup>
 
 </Project>
