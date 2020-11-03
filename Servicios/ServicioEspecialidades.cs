@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.BD;
-using ProyectoFinal.DTO;
 using ProyectoFinal.IServicios;
+using ProyectoFinal.Modelos;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,7 +22,7 @@ namespace ProyectoFinal.Servicios
             return await centroSaludContext.Especialidades.Select(e => e.Nombre).ToListAsync();
         }
 
-        public async Task<EspecialidadDTO> GetEspecialidadPorId(int id)
+        public async Task<Especialidad> GetEspecialidadPorId(int id)
         {
             var especialidad = await centroSaludContext.Especialidades.FindAsync(id);
 
@@ -31,10 +31,10 @@ namespace ProyectoFinal.Servicios
                 return null;
             }
 
-            return Helper.EspecialidadToDTO(especialidad);
+            return especialidad;
         }
 
-        public async Task<IEnumerable<CentroSaludDTO>> GetCentrosSaludPorEspecialidadId(int id)
+        public async Task<IEnumerable<CentroSalud>> GetCentrosSaludPorEspecialidadId(int id)
         {
             var especialidad = await centroSaludContext.Especialidades.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace ProyectoFinal.Servicios
 
             var centrossalud = await centroSaludContext.EspecialidadesCentrosSalud.
                 Where(ecs => ecs.EspecialidadId == id).
-                Select(ecs => Helper.CentroSaludToDTO(ecs.CentroSalud)).
+                Select(ecs => ecs.CentroSalud).
                 ToListAsync();
 
             if (centrossalud == null)

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoFinal.DTO;
 using ProyectoFinal.IServicios;
@@ -11,10 +13,12 @@ namespace ProyectoFinal.API.Controllers
     public class EspecialidadesController : ControllerBase
     {
         private readonly IServicioEspecialidades servicioEspecialidades;
+        private readonly IMapper mapper;
 
-        public EspecialidadesController(IServicioEspecialidades servicioEspecialidades)
+        public EspecialidadesController(IServicioEspecialidades servicioEspecialidades, IMapper mapper)
         {
             this.servicioEspecialidades = servicioEspecialidades;
+            this.mapper = mapper;
         }
 
         // GET: api/especialidades
@@ -42,7 +46,7 @@ namespace ProyectoFinal.API.Controllers
                 return NotFound();
             }
 
-            return Ok(especialidad);
+            return Ok(mapper.Map<EspecialidadDTO>(especialidad));
         }
 
         // GET: api/especialidades/5/centrossalud
@@ -56,7 +60,7 @@ namespace ProyectoFinal.API.Controllers
                 return NotFound();
             }
 
-            return Ok(centrosSalud);
+            return Ok(mapper.Map<IEnumerable<CentroSaludDTO>>(centrosSalud).ToList());
         }
     }
 }

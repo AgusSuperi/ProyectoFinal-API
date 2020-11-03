@@ -1,4 +1,4 @@
-﻿using ProyectoFinal.DTO;
+﻿using ProyectoFinal.Modelos;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -8,8 +8,8 @@ namespace ProyectoFinal.IServicios
     {
         public Task<IEnumerable<string>> GetEspecialidades();
 
-        public Task<EspecialidadDTO> GetEspecialidadPorId(int id);
+        public Task<Especialidad> GetEspecialidadPorId(int id);
 
-        public Task<IEnumerable<CentroSaludDTO>> GetCentrosSaludPorEspecialidadId(int id);
+        public Task<IEnumerable<CentroSalud>> GetCentrosSaludPorEspecialidadId(int id);
     }
 }
