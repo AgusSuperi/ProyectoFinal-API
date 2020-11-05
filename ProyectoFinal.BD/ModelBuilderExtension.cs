@@ -132,15 +132,15 @@ namespace ProyectoFinal.BD
                 {
                     Id = 10,
                     Nombre = "Cabildo",
-                    Direccion = "Manuel Alberti 215",
+                    Direccion = "Alberti 215",
                     Telefono = "(291) 4918250",
                     HorarioAtencion = "Las 24 hs",
-                    Latitud = -38.700320,
-                    Longitud = -62.284280,
-                    Barrio = "San Cayetano",
+                    Latitud = -38.489273,
+                    Longitud = -61.896659,
+                    Barrio = "Cabildo",
                     ImagenURL = "cabildo.png",
                 },
-
+                
                 new CentroSalud
                 {
                     Id = 11,
@@ -192,19 +192,6 @@ namespace ProyectoFinal.BD
                     Longitud = -62.268890,
                     Barrio = "Enrique Julio",
                     ImagenURL = "enriquejulio.png",
-                },
-
-                new CentroSalud
-                {
-                    Id = 15,
-                    Nombre = "Estomba",
-                    Direccion = "Viamonte 2853",
-                    Telefono = "(291) 4889026",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.699940,
-                    Longitud = -62.301450,
-                    Barrio = "Coronel Estomba",
-                    ImagenURL = "estomba.png",
                 },
 
                 new CentroSalud
@@ -380,15 +367,15 @@ namespace ProyectoFinal.BD
                 {
                     Id = 29,
                     Nombre = "Norte",
-                    Direccion = "Vieytes 1616",
+                    Direccion = "Vieytes 2616",
                     Telefono = "(291) 4888267",
                     HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.705806,
-                    Longitud = -62.287014,
-                    Barrio = "Pacífico",
+                    Latitud = -38.698551,
+                    Longitud = -62.297645,
+                    Barrio = "Los Almendros",
                     ImagenURL = "norte.png",
                 },
-
+               
                 new CentroSalud
                 {
                     Id = 30,
@@ -556,19 +543,6 @@ namespace ProyectoFinal.BD
                     Longitud = -62.274770,
                     Barrio = "Universitario",
                     ImagenURL = "universitario.png",
-                },
-
-                new CentroSalud
-                {
-                    Id = 43,
-                    Nombre = "Villa Amaducci",
-                    Direccion = "Rastreador Fournier 1809",
-                    Telefono = "(291) 4810155",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.723370,
-                    Longitud = -62.226770,
-                    Barrio = "Villa Amaducci",
-                    ImagenURL = "villaamaducci.png",
                 },
 
                 new CentroSalud
@@ -1601,54 +1575,6 @@ namespace ProyectoFinal.BD
 
                 new EspecialidadCentroSalud
                 {
-                    CentroSaludId = 15,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 15,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 15,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 15,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 15,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 15,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 15,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 15,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
                     CentroSaludId = 16,
                     EspecialidadId = 1,
                 },
@@ -2157,6 +2083,56 @@ namespace ProyectoFinal.BD
                     EspecialidadId = 19,
                 },
 
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 29,
+                    EspecialidadId = 4,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 29,
+                    EspecialidadId = 7,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 29,
+                    EspecialidadId = 8,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 29,
+                    EspecialidadId = 10,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 29,
+                    EspecialidadId = 11,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 29,
+                    EspecialidadId = 13,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 29,
+                    EspecialidadId = 18,
+                },
+
+                new EspecialidadCentroSalud
+                {
+                    CentroSaludId = 29,
+                    EspecialidadId = 19,
+                },
+
+
                 new EspecialidadCentroSalud
                 {
                     CentroSaludId = 30,
@@ -2653,12 +2629,6 @@ namespace ProyectoFinal.BD
                 {
                     CentroSaludId = 42,
                     EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 43,
-                    EspecialidadId = 7,
                 },
 
                 new EspecialidadCentroSalud

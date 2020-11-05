@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoFinal.BD;
 
 namespace ProyectoFinal.BD.Migrations
 {
     [DbContext(typeof(CentrosSaludContext))]
-    partial class CentrosSaludContextModelSnapshot : ModelSnapshot
+    [Migration("20201105212951_CambiosCapsNorte")]
+    partial class CambiosCapsNorte
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -177,12 +179,12 @@ namespace ProyectoFinal.BD.Migrations
                         new
                         {
                             Id = 10,
-                            Barrio = "Cabildo",
-                            Direccion = "Alberti 215",
+                            Barrio = "San Cayetano",
+                            Direccion = "Manuel Alberti 215",
                             HorarioAtencion = "Las 24 hs",
                             ImagenURL = "cabildo.png",
-                            Latitud = -38.489272999999997,
-                            Longitud = -61.896659,
+                            Latitud = -38.700319999999998,
+                            Longitud = -62.284280000000003,
                             Nombre = "Cabildo",
                             Telefono = "(291) 4918250"
                         },
@@ -393,12 +395,12 @@ namespace ProyectoFinal.BD.Migrations
                         new
                         {
                             Id = 29,
-                            Barrio = "Los Almendros",
+                            Barrio = "Estomba",
                             Direccion = "Vieytes 2616",
                             HorarioAtencion = "08:00 a 18:00",
                             ImagenURL = "norte.png",
-                            Latitud = -38.698551000000002,
-                            Longitud = -62.297645000000003,
+                            Latitud = -38.705806000000003,
+                            Longitud = -62.287013999999999,
                             Nombre = "Norte",
                             Telefono = "(291) 4888267"
                         },
@@ -557,6 +559,18 @@ namespace ProyectoFinal.BD.Migrations
                             Longitud = -62.274769999999997,
                             Nombre = "Universitario",
                             Telefono = "(291) 4565581"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Barrio = "Villa Amaducci",
+                            Direccion = "Rastreador Fournier 1809",
+                            HorarioAtencion = "08:00 a 18:00",
+                            ImagenURL = "villaamaducci.png",
+                            Latitud = -38.723370000000003,
+                            Longitud = -62.226770000000002,
+                            Nombre = "Villa Amaducci",
+                            Telefono = "(291) 4810155"
                         },
                         new
                         {
@@ -2342,6 +2356,11 @@ namespace ProyectoFinal.BD.Migrations
                         {
                             CentroSaludId = 42,
                             EspecialidadId = 19
+                        },
+                        new
+                        {
+                            CentroSaludId = 43,
+                            EspecialidadId = 7
                         },
                         new
                         {
