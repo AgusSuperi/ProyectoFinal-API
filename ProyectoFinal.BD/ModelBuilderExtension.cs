@@ -15,7 +15,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 1,
                     Nombre = "9 de Noviembre",
-                    Direccion = "Leopoldo Marechal 1712",
+                    Direccion = "Leopoldo Marechal 1712, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4822622",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.717370,
@@ -28,7 +28,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 2,
                     Nombre = "12 de Octubre",
-                    Direccion = "Humboldt 3758",
+                    Direccion = "Humboldt 3758, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4811397",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.739650,
@@ -41,20 +41,20 @@ namespace ProyectoFinal.BD
                 {
                     Id = 3,
                     Nombre = "A. Menghini",
-                    Direccion = "25 de Mayo 396",
+                    Direccion = "25 de Mayo 396, Gral Daniel Cerri, Provincia de Buenos Aires",
                     Telefono = "(291) 4840157",
                     HorarioAtencion = "Las 24 hs",
-                    Latitud = -38.729410,
-                    Longitud = -62.262650,
-                    Barrio = "Pedro Pico",
+                    Latitud = -38.718364,
+                    Longitud = -62.391708,
+                    Barrio = "General Daniel Cerri",
                     ImagenURL = "amenghini.png",
-                },
+                },  
 
                 new CentroSalud
                 {
                     Id = 4,
                     Nombre = "Aldea Romana",
-                    Direccion = "Los Adobes 424",
+                    Direccion = "Los Adobes 424, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4862444",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.682990,
@@ -67,7 +67,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 5,
                     Nombre = "Anchorena",
-                    Direccion = "3 de Febrero 1658",
+                    Direccion = "3 de Febrero 1658, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4815400",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.724510,
@@ -80,7 +80,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 6,
                     Nombre = "Avellaneda",
-                    Direccion = "Nicaragua 2953",
+                    Direccion = "Nicaragua 2953, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4888350",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.690530,
@@ -93,7 +93,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 7,
                     Nombre = "Barrio Latino",
-                    Direccion = "Lugones 46",
+                    Direccion = "Lugones 46, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4889859",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.690690,
@@ -106,7 +106,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 8,
                     Nombre = "Barrio Obrero",
-                    Direccion = "Chiclana 1974",
+                    Direccion = "Chiclana 1974, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4821674",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.74719,
@@ -119,7 +119,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 9,
                     Nombre = "Bella Vista",
-                    Direccion = "Charcas 906",
+                    Direccion = "Charcas 906, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4565569",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.715160,
@@ -132,7 +132,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 10,
                     Nombre = "Cabildo",
-                    Direccion = "Alberti 215",
+                    Direccion = "Alberti 215, Cabildo, Provincia de Buenos Aires",
                     Telefono = "(291) 4918250",
                     HorarioAtencion = "Las 24 hs",
                     Latitud = -38.489273,
@@ -145,7 +145,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 11,
                     Nombre = "CIC Spurr",
-                    Direccion = "Esmeralda 1450",
+                    Direccion = "Esmeralda 1450, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4511862",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.748260,
@@ -159,7 +159,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 12,
                     Nombre = "Colón",
-                    Direccion = "O’Higgins 1637",
+                    Direccion = "O’Higgins 1637, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4554524",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.734250,
@@ -172,7 +172,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 13,
                     Nombre = "Don Bosco",
-                    Direccion = "D`Orbigny 2578",
+                    Direccion = "D`Orbigny 2578, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4814880",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.729070,
@@ -185,7 +185,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 14,
                     Nombre = "Enrique Julio",
-                    Direccion = "Avda. General Arias 1730",
+                    Direccion = "Avda. General Arias 1730, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4556898",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.750830,
@@ -198,7 +198,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 16,
                     Nombre = "Grünbein",
-                    Direccion = "La Rioja 5700",
+                    Direccion = "La Rioja 5700, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4810938",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.752610,
@@ -211,7 +211,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 17,
                     Nombre = "Kilómetro 5",
-                    Direccion = "Maldonado 671",
+                    Direccion = "Maldonado 671, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4565567",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.710300,
@@ -224,7 +224,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 18,
                     Nombre = "La Falda - Vacunatorio",
-                    Direccion = "Humboldt 56",
+                    Direccion = "Humboldt 56, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4554626",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708160,
@@ -237,12 +237,12 @@ namespace ProyectoFinal.BD
                 {
                     Id = 19,
                     Nombre = "Laureano Muñiz - Vacunatorio",
-                    Direccion = "Francisco de Gurruchaga 40",
+                    Direccion = "Francisco de Gurruchaga 40, Gral Daniel Cerri, Provincia de Buenos Aires",
                     Telefono = "(291) 4847220",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.705910,
                     Longitud = -62.413710,
-                    Barrio = "General Cerri",
+                    Barrio = "General Daniel Cerri",
                     ImagenURL = "laureanomuñiz.png",
                 },
 
@@ -250,7 +250,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 20,
                     Nombre = "Leandro Piñeiro",
-                    Direccion = "Adrián Veres y Martin Gil",
+                    Direccion = "Adrián Veres 2050, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4546309",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.719300,
@@ -263,7 +263,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 21,
                     Nombre = "Leonor Capelli",
-                    Direccion = "Lautaro y Paul Harris",
+                    Direccion = "Harris 3599, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4573132",
                     HorarioAtencion = "Las 24 hs",
                     Latitud = -38.775540,
@@ -276,7 +276,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 22,
                     Nombre = "Loma Paraguaya",
-                    Direccion = "Félix Frías 850",
+                    Direccion = "Félix Frías 850, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4565592",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.747890,
@@ -289,7 +289,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 23,
                     Nombre = "Lujan",
-                    Direccion = "Enrique Julio 806",
+                    Direccion = "Enrique Julio 806, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4888351",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708060,
@@ -302,7 +302,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 24,
                     Nombre = "Maldonado",
-                    Direccion = "Gral. Pablo Richieri 2535",
+                    Direccion = "Gral. Pablo Richieri 2535, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4550257",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.717340,
@@ -315,7 +315,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 25,
                     Nombre = "Mariano Moreno",
-                    Direccion = "Mendoza 1250",
+                    Direccion = "Mendoza 1250, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4552088",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.720500,
@@ -328,7 +328,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 26,
                     Nombre = "Miramar",
-                    Direccion = "Laudelino Cruz 1892",
+                    Direccion = "Laudelino Cruz 1892, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4552417",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.7086846,
@@ -341,7 +341,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 27,
                     Nombre = "Naposta",
-                    Direccion = "19 de Mayo 769",
+                    Direccion = "19 de Mayo 769, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4565562",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.708270,
@@ -354,7 +354,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 28,
                     Nombre = "Noroeste",
-                    Direccion = "Líbano 589",
+                    Direccion = "Líbano 589, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4556878",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.726960,
@@ -367,7 +367,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 29,
                     Nombre = "Norte",
-                    Direccion = "Vieytes 2616",
+                    Direccion = "Vieytes 2616, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4888267",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.698551,
@@ -380,7 +380,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 30,
                     Nombre = "Nueva Belgrano",
-                    Direccion = "Witcomb 3900",
+                    Direccion = "Witcomb 3900, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4888268",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.676280,
@@ -393,7 +393,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 31,
                     Nombre = "Pampa Central",
-                    Direccion = "Jujuy 946",
+                    Direccion = "Jujuy 946, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4556939",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.725650,
@@ -406,7 +406,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 32,
                     Nombre = "Patagonia",
-                    Direccion = "Lauquen 356",
+                    Direccion = "Lauquen 356, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4862440",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.697720,
@@ -419,7 +419,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 33,
                     Nombre = "Pedro Pico",
-                    Direccion = "Misiones 754",
+                    Direccion = "Misiones 754, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4565559",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.735270,
@@ -432,7 +432,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 34,
                     Nombre = "Rivadavia",
-                    Direccion = "Estados Unidos 503",
+                    Direccion = "Estados Unidos 503, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4556927",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.738200,
@@ -445,7 +445,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 35,
                     Nombre = "Rosario Sur",
-                    Direccion = "Venezuela 296",
+                    Direccion = "Venezuela 296, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4821625",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.739150,
@@ -458,7 +458,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 36,
                     Nombre = "Saladero",
-                    Direccion = "Reconquista 2045",
+                    Direccion = "Reconquista 2045, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4570427",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.770604,
@@ -471,7 +471,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 37,
                     Nombre = "San Cayetano",
-                    Direccion = "Manuel Alberti 477",
+                    Direccion = "Manuel Alberti 477, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4888366",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.696960,
@@ -484,7 +484,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 38,
                     Nombre = "San Dionisio",
-                    Direccion = "Pacifico 154",
+                    Direccion = "Pacifico 154, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4550211",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.736340,
@@ -497,7 +497,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 39,
                     Nombre = "San Jose Obrero",
-                    Direccion = "Reconquista 3084",
+                    Direccion = "Reconquista 3084, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4570474",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.779440,
@@ -510,7 +510,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 40,
                     Nombre = "Sanchez Elia",
-                    Direccion = "Bermudez 1580",
+                    Direccion = "Bermudez 1580, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4815419",
                     HorarioAtencion = "08:00 a 18:00",
                     Latitud = -38.720200,
@@ -523,7 +523,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 41,
                     Nombre = "Tiro Federal",
-                    Direccion = "Pellegrini 638",
+                    Direccion = "Pellegrini 638, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4554598",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.721600,
@@ -536,7 +536,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 42,
                     Nombre = "Universitario",
-                    Direccion = "Uruguay 463",
+                    Direccion = "Uruguay 463, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4565581",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.701560,
@@ -549,7 +549,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 44,
                     Nombre = "Villa Bordeu",
-                    Direccion = "Juan Larrea 5450",
+                    Direccion = "Juan Larrea 5450, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4885679",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.688405,
@@ -562,7 +562,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 45,
                     Nombre = "Villa Delfina",
-                    Direccion = "Juana Azurduy 1345",
+                    Direccion = "Juana Azurduy 1345, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4552271",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.750140,
@@ -575,7 +575,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 46,
                     Nombre = "Villa Esperanza",
-                    Direccion = "Berutti 2980",
+                    Direccion = "Berutti 2980, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4813677",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.746873,
@@ -588,7 +588,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 47,
                     Nombre = "Villa Floresta",
-                    Direccion = "José Ingenieros 2235",
+                    Direccion = "José Ingenieros 2235, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4888365",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.691530,
@@ -601,7 +601,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 48,
                     Nombre = "Villa Gloria",
-                    Direccion = "Ricardo Rojas 4898",
+                    Direccion = "Ricardo Rojas 4898, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4817321",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.749820,
@@ -614,7 +614,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 49,
                     Nombre = "Villa Harding Green",
-                    Direccion = "Salinas Chicas 4150",
+                    Direccion = "Salinas Chicas 4150, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4862447",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.714480,
@@ -627,7 +627,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 50,
                     Nombre = "Villa Mitre",
-                    Direccion = "Washington 232",
+                    Direccion = "Washington 232, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4817261",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.730410,
@@ -640,7 +640,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 51,
                     Nombre = "Villa Muñiz",
-                    Direccion = "Pilcaniyen 259",
+                    Direccion = "Pilcaniyen 259, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4811080",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.746100,
@@ -653,7 +653,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 52,
                     Nombre = "Villa Nocito",
-                    Direccion = "Pacifico 1925",
+                    Direccion = "Pacifico 1925, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4550240",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.721700,
@@ -666,7 +666,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 53,
                     Nombre = "Villa Ressia",
-                    Direccion = "Misiones 1570",
+                    Direccion = "Misiones 1570, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4565591",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.742670,
@@ -679,7 +679,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 54,
                     Nombre = "Villa Rosas",
-                    Direccion = "Libertad 1955",
+                    Direccion = "Libertad 1955, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4552418",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.755940,
@@ -692,7 +692,7 @@ namespace ProyectoFinal.BD
                 {
                     Id = 55,
                     Nombre = "Villa Serra",
-                    Direccion = "Tarija 1350",
+                    Direccion = "Tarija 1350, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4560139",
                     HorarioAtencion = "08:00 a 14:00",
                     Latitud = -38.757880,
