@@ -461,11 +461,11 @@ namespace ProyectoFinal.BD
                     Direccion = "Reconquista 2045, Bahía Blanca, Provincia de Buenos Aires",
                     Telefono = "(291) 4570427",
                     HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.770604,
-                    Longitud = -62.245450,
+                    Latitud = -38.770061,
+                    Longitud = -62.244759,
                     Barrio = "Saladero",
                     ImagenURL = "saladero.png",
-                },
+                }, 
 
                 new CentroSalud
                 {
