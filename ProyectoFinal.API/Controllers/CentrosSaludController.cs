@@ -57,17 +57,5 @@ namespace ProyectoFinal.API.Controllers
             }
             return Ok(mapper.Map<IEnumerable<EspecialidadDTO>>(especialidades).ToList());
         }
-
-        // POST: api/centrossalud/filtro
-        [HttpPost("filtro")]
-        public async Task<ActionResult<IEnumerable<CentroSaludDTO>>> GetCentrosSaludPorFiltro(FiltroDTO filtro)
-        {
-            var centrosSalud = await servicioCentrosSalud.GetCentrosSaludPorFiltro(filtro);            
-            if (centrosSalud == null)
-            {
-                return NotFound();
-            }
-            return Ok(mapper.Map<IEnumerable<CentroSaludDTO>>(centrosSalud).ToList());
-        }
     }
 }

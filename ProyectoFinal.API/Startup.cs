@@ -36,7 +36,10 @@ namespace ProyectoFinal.API
             services.AddTransient<IServicioCentrosSalud, ServicioCentrosSalud>();
             services.AddTransient<IServicioEspecialidades, ServicioEspecialidades>();
             services.AddTransient<IServicioBarrios, ServicioBarrios>();
-            services.AddTransient<IServicioImagenes, ServicioImagenes>();
+            services.AddTransient<IServicioFiltros, ServicioFiltros>();
+
+            // CORS
+            services.AddCors();
 
             // AutoMapper
             services.AddAutoMapper(c => c.AddProfile<AutoMapperProfile>(), typeof(Startup));

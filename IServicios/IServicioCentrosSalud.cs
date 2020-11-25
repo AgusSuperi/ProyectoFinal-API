@@ -12,7 +12,5 @@ namespace ProyectoFinal.IServicios
         public Task<CentroSalud> GetCentroSaludPorId(int id);
 
         public Task<IEnumerable<Especialidad>> GetEspecialidadesPorCentroSaludId(int id);
-
-        public Task<IEnumerable<CentroSalud>> GetCentrosSaludPorFiltro(FiltroDTO filtro);
     }
 }
