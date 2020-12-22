@@ -1,0 +1,35 @@
+﻿using Microsoft.EntityFrameworkCore;
+using ProyectoFinal.Domain.Entity;
+using ProyectoFinal.Infrastructure.Data;
+using ProyectoFinal.Infrastructure.Interface;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace ProyectoFinal.Infrastructure.Repository
+{
+    public class SpecialityRepository : ISpecialityRepository
+    {
+        private readonly ProyectoFinalContext context;
+
+        public SpecialityRepository(ProyectoFinalContext context)
+        {
+            this.context = context;
+        }
+
+        public async Task<IEnumerable<Speciality>> GetAll()
+        {
+            return await context.Specialities.ToListAsync();
+        }
+
+        public async Task<Speciality> GetById(int id)
+        {
+            return await context.Specialities.FindAsync(id);
+        }
+
+        public async Task<IEnumerable<MedicalCenter>> GetMedicalCentersById(int id)
+        {
+            var speciality = await GetById(id);
+            return speciality.MedicalCenters;
+        }
+    }
+}

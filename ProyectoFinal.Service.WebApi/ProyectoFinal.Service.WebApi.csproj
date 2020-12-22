@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.1" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProyectoFinal.Application.DTO\ProyectoFinal.Application.DTO.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Application.Interface\ProyectoFinal.Application.Interface.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Application.Main\ProyectoFinal.Application.Main.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Domain.Core\ProyectoFinal.Domain.Core.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Domain.Entity\ProyectoFinal.Domain.Entity.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Domain.Interface\ProyectoFinal.Domain.Interface.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Infrastructure.Data\ProyectoFinal.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Infrastructure.Interface\ProyectoFinal.Infrastructure.Interface.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Infrastructure.Repository\ProyectoFinal.Infrastructure.Repository.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Transversal.Common\ProyectoFinal.Transversal.Common.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Transversal.Mapper\ProyectoFinal.Transversal.Mapper.csproj" />
+  </ItemGroup>
+
+</Project>
