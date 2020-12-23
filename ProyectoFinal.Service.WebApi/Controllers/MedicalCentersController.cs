@@ -55,6 +55,17 @@ namespace ProyectoFinal.Service.WebApi.Controllers
             return BadRequest(response.Message);
         }
 
+        [HttpGet("neighborhoods")]
+        public async Task<IActionResult> GetNeighborhoods()
+        {
+            var response = await application.GetNeighborhoods();
+
+            if (response.IsSuccess)
+                return Ok(response);
+
+            return BadRequest(response.Message);
+        }
+
         /*
         [HttpPost("GetByFilter")]
         public async Task<IActionResult> GetByFilter(FilterDTO filtro)

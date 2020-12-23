@@ -11,5 +11,9 @@ namespace ProyectoFinal.Infrastructure.Interface
         Task<MedicalCenter> GetById(int id);
 
         Task<IEnumerable<Speciality>> GetSpecialitiesById(int id);
+
+        Task<IEnumerable<MedicalCenter>> GetByFilter(Filter filter);
+
+        Task<IEnumerable<string>> GetNeighborhood();
     }
 }

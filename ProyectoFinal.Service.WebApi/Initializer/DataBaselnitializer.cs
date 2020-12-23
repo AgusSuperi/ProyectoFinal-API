@@ -10,9 +10,30 @@ namespace ProyectoFinal.Service.WebApi.Initializer
     {
         public static void Initialize(ProyectoFinalContext context, IWebHostEnvironment env)
         {
-            var dentist = new Speciality("Dentista");
+            //Specialities 
+            var communityActivity = new Speciality("Actividad Comunitaria");
+            var allergy = new Speciality("Alergia");
+            var pathologicalAnatomy = new Speciality("Anatomia Patológica");
+            var medicalClinic = new Speciality("Clínica Médica");
+            var diagnosticImaging = new Speciality("Diagnóstico por imagen");
+            var nursing = new Speciality("Enfermería");
+            var generalFamily = new Speciality("Familia / General");
+            var speechTherapy = new Speciality("Fonoaudiología");
+            var gynecologyObstetrics = new Speciality("Ginecología / Obstetricia");
+            var medicalGuard = new Speciality("Guardia Médica");
+            var nutrition = new Speciality("Nutrición");
+            var odontology = new Speciality("Odontología");
+            var ophthalmology = new Speciality("Oftalmología");
+            var pediatrics = new Speciality("Pediatría");
+            var healthPromoter = new Speciality("Promotor de salud");
+            var psychology = new Speciality("Psicología");
+            var psychopedagogy = new Speciality("Psicopedagogía");
+            var socialWork = new Speciality("Trabajo social");
+            var pharmacyTechnician = new Speciality("Técnico en farmacia");
 
-            var medicalCenters = new List<MedicalCenter> {
+            //Medical Centers
+            var medicalCenters = new List<MedicalCenter> 
+            {
                 new MedicalCenter
                 {
                     Name = "9 de Noviembre",
@@ -23,3169 +44,1180 @@ namespace ProyectoFinal.Service.WebApi.Initializer
                     Longitude = -62.227370,
                     Neighborhood = "Altos Sánchez",
                     ImageURL = "9denoviembre.png",
+                    Specialities = new List<Speciality>()
+                    {
+                        communityActivity,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        healthPromoter,
+                        psychology,
+                        socialWork,
+                    },
                 },
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Nombre = "12 de Octubre",
-                    Direccion = "Humboldt 3758, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4811397",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.739650,
-                    Longitud = -62.212720,
-                    Barrio = "12 de Octubre",
-                    ImagenURL = "12deoctubre.png",
+                    Name = "12 de Octubre",
+                    Address = "Humboldt 3758, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4811397",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.739650,
+                    Longitude = -62.212720,
+                    Neighborhood = "12 de Octubre",
+                    ImageURL = "12deoctubre.png",
+                    Specialities = new List<Speciality>()
+                    {
+                        communityActivity,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        nutrition,
+                        psychology,
+                    },
                 },
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Nombre = "A. Menghini",
-                    Direccion = "25 de Mayo 396, Gral Daniel Cerri, Provincia de Buenos Aires",
-                    Telefono = "(291) 4840157",
-                    HorarioAtencion = "Las 24 hs",
-                    Latitud = -38.718364,
-                    Longitud = -62.391708,
-                    Barrio = "General Daniel Cerri",
-                    ImagenURL = "amenghini.png",
+                    Name = "A. Menghini",
+                    Address = "25 de Mayo 396, Gral Daniel Cerri, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4840157",
+                    OpeningHours = "Las 24 hs",
+                    Latitude = -38.718364,
+                    Longitude = -62.391708,
+                    Neighborhood = "General Daniel Cerri",
+                    ImageURL = "amenghini.png",
+                    Specialities = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        nutrition,
+                        odontology,
+                        pediatrics,
+                        healthPromoter,
+                        psychology,
+                        socialWork,
+                    },
                 },
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Nombre = "Aldea Romana",
-                    Direccion = "Los Adobes 424, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4862444",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.682990,
-                    Longitud = -62.215170,
-                    Barrio = "Aldea Romana",
-                    ImagenURL = "aldearomana.png",
+                    Name = "Aldea Romana",
+                    Address = "Los Adobes 424, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4862444",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.682990,
+                    Longitude = -62.215170,
+                    Neighborhood = "Aldea Romana",
+                    ImageURL = "aldearomana.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 5,
-                    Nombre = "Anchorena",
-                    Direccion = "3 de Febrero 1658, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4815400",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.724510,
-                    Longitud = -62.237690,
-                    Barrio = "Anchorena",
-                    ImagenURL = "anchorena.png",
+                    Name = "Anchorena",
+                    Address = "3 de Febrero 1658, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4815400",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.724510,
+                    Longitude = -62.237690,
+                    Neighborhood = "Anchorena",
+                    ImageURL = "anchorena.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        healthPromoter,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 6,
-                    Nombre = "Avellaneda",
-                    Direccion = "Nicaragua 2953, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4888350",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.690530,
-                    Longitud = -62.293440,
-                    Barrio = "Avellaneda",
-                    ImagenURL = "avellaneda.png",
+                    Name = "Avellaneda",
+                    Address = "Nicaragua 2953, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4888350",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.690530,
+                    Longitude = -62.293440,
+                    Neighborhood = "Avellaneda",
+                    ImageURL = "avellaneda.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 7,
-                    Nombre = "Barrio Latino",
-                    Direccion = "Lugones 46, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4889859",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.690690,
-                    Longitud = -62.304180,
-                    Barrio = "Barrio Latino",
-                    ImagenURL = "barriolatino.png",
+                    Name = "Neighborhood Latino",
+                    Address = "Lugones 46, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4889859",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.690690,
+                    Longitude = -62.304180,
+                    Neighborhood = "Barrio Latino",
+                    ImageURL = "barriolatino.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 8,
-                    Nombre = "Barrio Obrero",
-                    Direccion = "Chiclana 1974, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4821674",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.74719,
-                    Longitud = -62.229520,
-                    Barrio = "Barrio Obrero",
-                    ImagenURL = "barrioobrero.png",
+                    Name = "Neighborhood Obrero",
+                    Address = "Chiclana 1974, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4821674",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.74719,
+                    Longitude = -62.229520,
+                    Neighborhood = "Barrio Obrero",
+                    ImageURL = "barrioobrero.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        psychology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 9,
-                    Nombre = "Bella Vista",
-                    Direccion = "Charcas 906, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4565569",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.715160,
-                    Longitud = -62.249240,
-                    Barrio = "Bella Vista",
-                    ImagenURL = "bellavista.png",
+                    Name = "Bella Vista",
+                    Address = "Charcas 906, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4565569",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.715160,
+                    Longitude = -62.249240,
+                    Neighborhood = "Bella Vista",
+                    ImageURL = "bellavista.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 10,
-                    Nombre = "Cabildo",
-                    Direccion = "Alberti 215, Cabildo, Provincia de Buenos Aires",
-                    Telefono = "(291) 4918250",
-                    HorarioAtencion = "Las 24 hs",
-                    Latitud = -38.489273,
-                    Longitud = -61.896659,
-                    Barrio = "Cabildo",
-                    ImagenURL = "cabildo.png",
+                    Name = "Cabildo",
+                    Address = "Alberti 215, Cabildo, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4918250",
+                    OpeningHours = "Las 24 hs",
+                    Latitude = -38.489273,
+                    Longitude = -61.896659,
+                    Neighborhood = "Cabildo",
+                    ImageURL = "cabildo.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 11,
-                    Nombre = "CIC Spurr",
-                    Direccion = "Esmeralda 1450, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4511862",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.748260,
-                    Longitud = -62.245560,
-                    Barrio = "Villa Moresino",
-                    ImagenURL = "cicspurr.png",
+                    Name = "CIC Spurr",
+                    Address = "Esmeralda 1450, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4511862",
+                    OpeningHours = "08:00 a 18:00",
+                    Latitude = -38.748260,
+                    Longitude = -62.245560,
+                    Neighborhood = "Villa Moresino",
+                    ImageURL = "cicspurr.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                    },
 
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 12,
-                    Nombre = "Colón",
-                    Direccion = "O’Higgins 1637, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4554524",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.734250,
-                    Longitud = -62.283950,
-                    Barrio = "Colón",
-                    ImagenURL = "colon.png",
+                    Name = "Colón",
+                    Address = "O’Higgins 1637, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4554524",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.734250,
+                    Longitude = -62.283950,
+                    Neighborhood = "Colón",
+                    ImageURL = "colon.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        allergy,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        odontology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 13,
-                    Nombre = "Don Bosco",
-                    Direccion = "D`Orbigny 2578, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4814880",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.729070,
-                    Longitud = -62.223500,
-                    Barrio = "Villa Don Bosco",
-                    ImagenURL = "donbosco.png",
+                    Name = "Don Bosco",
+                    Address = "D`Orbigny 2578, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4814880",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.729070,
+                    Longitude = -62.223500,
+                    Neighborhood = "Villa Don Bosco",
+                    ImageURL = "donbosco.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 14,
-                    Nombre = "Enrique Julio",
-                    Direccion = "Avda. General Arias 1730, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4556898",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.750830,
-                    Longitud = -62.268890,
-                    Barrio = "Enrique Julio",
-                    ImagenURL = "enriquejulio.png",
+                    Name = "Enrique Julio",
+                    Address = "Avda. General Arias 1730, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4556898",
+                    OpeningHours = "08:00 a 18:00",
+                    Latitude = -38.750830,
+                    Longitude = -62.268890,
+                    Neighborhood = "Enrique Julio",
+                    ImageURL = "enriquejulio.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        nutrition,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 16,
-                    Nombre = "Grünbein",
-                    Direccion = "La Rioja 5700, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4810938",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.752610,
-                    Longitud = -62.176260,
-                    Barrio = "Grünbein",
-                    ImagenURL = "grunbein.png",
+                    Name = "Grünbein",
+                    Address = "La Rioja 5700, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4810938",
+                    OpeningHours = "08:00 a 18:00",
+                    Latitude = -38.752610,
+                    Longitude = -62.176260,
+                    Neighborhood = "Grünbein",
+                    ImageURL = "grunbein.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 17,
-                    Nombre = "Kilómetro 5",
-                    Direccion = "Maldonado 671, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4565567",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.710300,
-                    Longitud = -62.293860,
-                    Barrio = "Kilómetro 5",
-                    ImagenURL = "kilometro5.png",
+                    Name = "Kilómetro 5",
+                    Address = "Maldonado 671, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4565567",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.710300,
+                    Longitude = -62.293860,
+                    Neighborhood = "Kilómetro 5",
+                    ImageURL = "kilometro5.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        psychology,
+                        psychopedagogy,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 18,
-                    Nombre = "La Falda - Vacunatorio",
-                    Direccion = "Humboldt 56, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4554626",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.708160,
-                    Longitud = -62.253020,
-                    Barrio = "La Falda",
-                    ImagenURL = "lafalda.png",
+                    Name = "La Falda - Vacunatorio",
+                    Address = "Humboldt 56, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4554626",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.708160,
+                    Longitude = -62.253020,
+                    Neighborhood = "La Falda",
+                    ImageURL = "lafalda.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
                     Id = 19,
-                    Nombre = "Laureano Muñiz - Vacunatorio",
-                    Direccion = "Francisco de Gurruchaga 40, Gral Daniel Cerri, Provincia de Buenos Aires",
-                    Telefono = "(291) 4847220",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.705910,
-                    Longitud = -62.413710,
-                    Barrio = "General Daniel Cerri",
-                    ImagenURL = "laureanomuñiz.png",
+                    Name = "Laureano Muñiz - Vacunatorio",
+                    Address = "Francisco de Gurruchaga 40, Gral Daniel Cerri, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4847220",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.705910,
+                    Longitude = -62.413710,
+                    Neighborhood = "General Daniel Cerri",
+                    ImageURL = "laureanomuñiz.png",
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 20,
-                    Nombre = "Leandro Piñeiro",
-                    Direccion = "Adrián Veres 2050, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4546309",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.719300,
-                    Longitud = -62.315090,
-                    Barrio = "Vista Alegre",
-                    ImagenURL = "leandropiñeiro.png",
+                    Name = "Leandro Piñeiro",
+                    Address = "Adrián Veres 2050, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4546309",
+                    OpeningHours = "08:00 a 18:00",
+                    Latitude = -38.719300,
+                    Longitude = -62.315090,
+                    Neighborhood = "Vista Alegre",
+                    ImageURL = "leandropiñeiro.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        pathologicalAnatomy,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        nutrition,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                        pharmacyTechnician,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 21,
-                    Nombre = "Leonor Capelli",
-                    Direccion = "Harris 3599, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4573132",
-                    HorarioAtencion = "Las 24 hs",
-                    Latitud = -38.775540,
-                    Longitud = -62.271220,
-                    Barrio = "Ingeniero White",
-                    ImagenURL = "leonorcapelli.png",
+                    Name = "Leonor Capelli",
+                    Address = "Harris 3599, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4573132",
+                    OpeningHours = "Las 24 hs",
+                    Latitude = -38.775540,
+                    Longitude = -62.271220,
+                    Neighborhood = "Ingeniero White",
+                    ImageURL = "leonorcapelli.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        allergy,
+                        medicalClinic,
+                        diagnosticImaging,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        ophthalmology,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 22,
-                    Nombre = "Loma Paraguaya",
-                    Direccion = "Félix Frías 850, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4565592",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.747890,
-                    Longitud = -62.285900,
-                    Barrio = "Loma Paraguaya",
-                    ImagenURL = "lomaparaguaya.png",
+                    Name = "Loma Paraguaya",
+                    Address = "Félix Frías 850, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4565592",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.747890,
+                    Longitude = -62.285900,
+                    Neighborhood = "Loma Paraguaya",
+                    ImageURL = "lomaparaguaya.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        healthPromoter,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 23,
-                    Nombre = "Lujan",
-                    Direccion = "Enrique Julio 806, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4888351",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.708060,
-                    Longitud = -62.299720,
-                    Barrio = "Lujan",
-                    ImagenURL = "lujan.png",
+                    Name = "Lujan",
+                    Address = "Enrique Julio 806, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4888351",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.708060,
+                    Longitude = -62.299720,
+                    Neighborhood = "Lujan",
+                    ImageURL = "lujan.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 24,
-                    Nombre = "Maldonado",
-                    Direccion = "Gral. Pablo Richieri 2535, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4550257",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.717340,
-                    Longitud = -62.319480,
-                    Barrio = "Coronel Maldonado",
-                    ImagenURL = "maldonado.png",
+                    Name = "Maldonado",
+                    Address = "Gral. Pablo Richieri 2535, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4550257",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.717340,
+                    Longitude = -62.319480,
+                    Neighborhood = "Coronel Maldonado",
+                    ImageURL = "maldonado.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        psychology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 25,
-                    Nombre = "Mariano Moreno",
-                    Direccion = "Mendoza 1250, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4552088",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.720500,
-                    Longitud = -62.293310,
-                    Barrio = "Mariano Moreno",
-                    ImagenURL = "marianomoreno.png",
+                    Name = "Mariano Moreno",
+                    Address = "Mendoza 1250, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4552088",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.720500,
+                    Longitude = -62.293310,
+                    Neighborhood = "Mariano Moreno",
+                    ImageURL = "marianomoreno.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 26,
-                    Nombre = "Miramar",
-                    Direccion = "Laudelino Cruz 1892, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4552417",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.7086846,
-                    Longitud = -62.2372357,
-                    Barrio = "Villa Miramar",
-                    ImagenURL = "miramar.png",
+                    Name = "Miramar",
+                    Address = "Laudelino Cruz 1892, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4552417",
+                    OpeningHours = "08:00 a 18:00",
+                    Latitude = -38.7086846,
+                    Longitude = -62.2372357,
+                    Neighborhood = "Villa Miramar",
+                    ImageURL = "miramar.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        gynecologyObstetrics,
+                        nutrition,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 27,
-                    Nombre = "Naposta",
-                    Direccion = "19 de Mayo 769, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4565562",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.708270,
-                    Longitud = -62.260520,
-                    Barrio = "Naposta",
-                    ImagenURL = "naposta.png",
+                    Name = "Naposta",
+                    Address = "19 de Mayo 769, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4565562",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.708270,
+                    Longitude = -62.260520,
+                    Neighborhood = "Naposta",
+                    ImageURL = "naposta.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 28,
-                    Nombre = "Noroeste",
-                    Direccion = "Líbano 589, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4556878",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.726960,
-                    Longitud = -62.289850,
-                    Barrio = "Noroeste",
-                    ImagenURL = "noroeste.png",
+                    Name = "Noroeste",
+                    Address = "Líbano 589, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4556878",
+                    OpeningHours = "08:00 a 18:00",
+                    Latitude = -38.726960,
+                    Longitude = -62.289850,
+                    Neighborhood = "Noroeste",
+                    ImageURL = "noroeste.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 29,
-                    Nombre = "Norte",
-                    Direccion = "Vieytes 2616, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4888267",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.698551,
-                    Longitud = -62.297645,
-                    Barrio = "Los Almendros",
-                    ImagenURL = "norte.png",
+                    Name = "Norte",
+                    Address = "Vieytes 2616, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4888267",
+                    OpeningHours = "08:00 a 18:00",
+                    Latitude = -38.698551,
+                    Longitude = -62.297645,
+                    Neighborhood = "Los Almendros",
+                    ImageURL = "norte.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        odontology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 30,
-                    Nombre = "Nueva Belgrano",
-                    Direccion = "Witcomb 3900, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4888268",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.676280,
-                    Longitud = -62.296110,
-                    Barrio = "Nueva Belgrano",
-                    ImagenURL = "nuevabelgrano.png",
+                    Name = "Nueva Belgrano",
+                    Address = "Witcomb 3900, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4888268",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.676280,
+                    Longitude = -62.296110,
+                    Neighborhood = "Nueva Belgrano",
+                    ImageURL = "nuevabelgrano.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 31,
-                    Nombre = "Pampa Central",
-                    Direccion = "Jujuy 946, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4556939",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.725650,
-                    Longitud = -62.296170,
-                    Barrio = "Pampa Central",
-                    ImagenURL = "pampacentral.png",
+                    Name = "Pampa Central",
+                    Address = "Jujuy 946, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4556939",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.725650,
+                    Longitude = -62.296170,
+                    Neighborhood = "Pampa Central",
+                    ImageURL = "pampacentral.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        healthPromoter,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 32,
-                    Nombre = "Patagonia",
-                    Direccion = "Lauquen 356, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4862440",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.697720,
-                    Longitud = -62.211730,
-                    Barrio = "Patagonia",
-                    ImagenURL = "patagonia.png",
+                    Name = "Patagonia",
+                    Address = "Lauquen 356, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4862440",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.697720,
+                    Longitude = -62.211730,
+                    Neighborhood = "Patagonia",
+                    ImageURL = "patagonia.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 33,
-                    Nombre = "Pedro Pico",
-                    Direccion = "Misiones 754, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4565559",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.735270,
-                    Longitud = -62.263350,
-                    Barrio = "Pedro Pico",
-                    ImagenURL = "pedropico.png",
+                    Name = "Pedro Pico",
+                    Address = "Misiones 754, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4565559",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.735270,
+                    Longitude = -62.263350,
+                    Neighborhood = "Pedro Pico",
+                    ImageURL = "pedropico.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        gynecologyObstetrics,
+                        nutrition,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 34,
-                    Nombre = "Rivadavia",
-                    Direccion = "Estados Unidos 503, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4556927",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.738200,
-                    Longitud = -62.253800,
-                    Barrio = "Rivadavia",
-                    ImagenURL = "rivadavia.png",
+                    Name = "Rivadavia",
+                    Address = "Estados Unidos 503, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4556927",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.738200,
+                    Longitude = -62.253800,
+                    Neighborhood = "Rivadavia",
+                    ImageURL = "rivadavia.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 35,
-                    Nombre = "Rosario Sur",
-                    Direccion = "Venezuela 296, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4821625",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.739150,
-                    Longitud = -62.245720,
-                    Barrio = "Rosario Sur",
-                    ImagenURL = "rosariosur.png",
+                    Name = "Rosario Sur",
+                    Address = "Venezuela 296, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4821625",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.739150,
+                    Longitude = -62.245720,
+                    Neighborhood = "Rosario Sur",
+                    ImageURL = "rosariosur.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        healthPromoter,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 36,
-                    Nombre = "Saladero",
-                    Direccion = "Reconquista 2045, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4570427",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.770061,
-                    Longitud = -62.244759,
-                    Barrio = "Saladero",
-                    ImagenURL = "saladero.png",
+                    Name = "Saladero",
+                    Address = "Reconquista 2045, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4570427",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.770061,
+                    Longitude = -62.244759,
+                    Neighborhood = "Saladero",
+                    ImageURL = "saladero.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 37,
-                    Nombre = "San Cayetano",
-                    Direccion = "Manuel Alberti 477, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4888366",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.696960,
-                    Longitud = -62.280160,
-                    Barrio = "San Cayetano",
-                    ImagenURL = "sancayetano.png",
+                    Name = "San Cayetano",
+                    Address = "Manuel Alberti 477, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4888366",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.696960,
+                    Longitude = -62.280160,
+                    Neighborhood = "San Cayetano",
+                    ImageURL = "sancayetano.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        gynecologyObstetrics,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 38,
-                    Nombre = "San Dionisio",
-                    Direccion = "Pacifico 154, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4550211",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.736340,
-                    Longitud = -62.292070,
-                    Barrio = "Noroeste",
-                    ImagenURL = "sandionisio.png",
+                    Name = "San Dionisio",
+                    Address = "Pacifico 154, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4550211",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.736340,
+                    Longitude = -62.292070,
+                    Neighborhood = "Noroeste",
+                    ImageURL = "sandionisio.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        nutrition,
+                        odontology,
+                        pediatrics,
+                        healthPromoter,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 39,
-                    Nombre = "San Jose Obrero",
-                    Direccion = "Reconquista 3084, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4570474",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.779440,
-                    Longitud = -62.256220,
-                    Barrio = "Juan B. Justo",
-                    ImagenURL = "sanjoseobrero.png",
+                    Name = "San Jose Obrero",
+                    Address = "Reconquista 3084, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4570474",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.779440,
+                    Longitude = -62.256220,
+                    Neighborhood = "Juan B. Justo",
+                    ImageURL = "sanjoseobrero.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        odontology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 40,
-                    Nombre = "Sanchez Elia",
-                    Direccion = "Bermudez 1580, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4815419",
-                    HorarioAtencion = "08:00 a 18:00",
-                    Latitud = -38.720200,
-                    Longitud = -62.235520,
-                    Barrio = "Sanchez Elia",
-                    ImagenURL = "sanchezelia.png",
+                    Name = "Sanchez Elia",
+                    Address = "Bermudez 1580, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4815419",
+                    OpeningHours = "08:00 a 18:00",
+                    Latitude = -38.720200,
+                    Longitude = -62.235520,
+                    Neighborhood = "Sanchez Elia",
+                    ImageURL = "sanchezelia.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        nursing,
+                        speechTherapy,
+                        psychology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 41,
-                    Nombre = "Tiro Federal",
-                    Direccion = "Pellegrini 638, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4554598",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.721600,
-                    Longitud = -62.250210,
-                    Barrio = "Tiro Federal",
-                    ImagenURL = "tirofederal.png",
+                    Name = "Tiro Federal",
+                    Address = "Pellegrini 638, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4554598",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.721600,
+                    Longitude = -62.250210,
+                    Neighborhood = "Tiro Federal",
+                    ImageURL = "tirofederal.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 42,
-                    Nombre = "Universitario",
-                    Direccion = "Uruguay 463, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4565581",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.701560,
-                    Longitud = -62.274770,
-                    Barrio = "Universitario",
-                    ImagenURL = "universitario.png",
+                    Name = "Universitario",
+                    Address = "Uruguay 463, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4565581",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.701560,
+                    Longitude = -62.274770,
+                    Neighborhood = "Universitario",
+                    ImageURL = "universitario.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 44,
-                    Nombre = "Villa Bordeu",
-                    Direccion = "Juan Larrea 5450, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4885679",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.688405,
-                    Longitud = -62.345480,
-                    Barrio = "Villa Bordeu",
-                    ImagenURL = "villabordeu.png",
+                    Name = "Villa Bordeu",
+                    Address = "Juan Larrea 5450, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4885679",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.688405,
+                    Longitude = -62.345480,
+                    Neighborhood = "Villa Bordeu",
+                    ImageURL = "villabordeu.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        pathologicalAnatomy,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                        pharmacyTechnician,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 45,
-                    Nombre = "Villa Delfina",
-                    Direccion = "Juana Azurduy 1345, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4552271",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.750140,
-                    Longitud = -62.275770,
-                    Barrio = "Villa Delfina",
-                    ImagenURL = "villadelfina.png",
+                    Name = "Villa Delfina",
+                    Address = "Juana Azurduy 1345, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4552271",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.750140,
+                    Longitude = -62.275770,
+                    Neighborhood = "Villa Delfina",
+                    ImageURL = "villadelfina.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        nutrition,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 46,
-                    Nombre = "Villa Esperanza",
-                    Direccion = "Berutti 2980, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4813677",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.746873,
-                    Longitud = -62.237961,
-                    Barrio = "Rosario Sur",
-                    ImagenURL = "villaesperanza.png",
+                    Name = "Villa Esperanza",
+                    Address = "Berutti 2980, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4813677",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.746873,
+                    Longitude = -62.237961,
+                    Neighborhood = "Rosario Sur",
+                    ImageURL = "villaesperanza.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 47,
-                    Nombre = "Villa Floresta",
-                    Direccion = "José Ingenieros 2235, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4888365",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.691530,
-                    Longitud = -62.263590,
-                    Barrio = "Villa Floresta",
-                    ImagenURL = "villafloresta.png",
+                    Name = "Villa Floresta",
+                    Address = "José Ingenieros 2235, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4888365",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.691530,
+                    Longitude = -62.263590,
+                    Neighborhood = "Villa Floresta",
+                    ImageURL = "villafloresta.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 48,
-                    Nombre = "Villa Gloria",
-                    Direccion = "Ricardo Rojas 4898, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4817321",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.749820,
-                    Longitud = -62.191670,
-                    Barrio = "Villa Cerrito",
-                    ImagenURL = "villagloria.png",
+                    Name = "Villa Gloria",
+                    Address = "Ricardo Rojas 4898, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4817321",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.749820,
+                    Longitude = -62.191670,
+                    Neighborhood = "Villa Cerrito",
+                    ImageURL = "villagloria.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        psychology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 49,
-                    Nombre = "Villa Harding Green",
-                    Direccion = "Salinas Chicas 4150, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4862447",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.714480,
-                    Longitud = -62.189450,
-                    Barrio = "Villa Harding Green",
-                    ImagenURL = "villahardinggreen.png",
+                    Name = "Villa Harding Green",
+                    Address = "Salinas Chicas 4150, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4862447",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.714480,
+                    Longitude = -62.189450,
+                    Neighborhood = "Villa Harding Green",
+                    ImageURL = "villahardinggreen.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        nutrition,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        psychopedagogy,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 50,
-                    Nombre = "Villa Mitre",
-                    Direccion = "Washington 232, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4817261",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.730410,
-                    Longitud = -62.246530,
-                    Barrio = "Villa Mitre",
-                    ImagenURL = "villamitre.png",
+                    Name = "Villa Mitre",
+                    Address = "Washington 232, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4817261",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.730410,
+                    Longitude = -62.246530,
+                    Neighborhood = "Villa Mitre",
+                    ImageURL = "villamitre.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        communityActivity,
+                        nursing,
+                        psychology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 51,
-                    Nombre = "Villa Muñiz",
-                    Direccion = "Pilcaniyen 259, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4811080",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.746100,
-                    Longitud = -62.225990,
-                    Barrio = "Villa Muñiz",
-                    ImagenURL = "villamuñiz.png",
+                    Name = "Villa Muñiz",
+                    Address = "Pilcaniyen 259, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4811080",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.746100,
+                    Longitude = -62.225990,
+                    Neighborhood = "Villa Muñiz",
+                    ImageURL = "villamuñiz.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        pediatrics,
+                        psychology,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 52,
-                    Nombre = "Villa Nocito",
-                    Direccion = "Pacifico 1925, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4550240",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.721700,
-                    Longitud = -62.312210,
-                    Barrio = "Villa Nocito",
-                    ImagenURL = "villanocito.png",
+                    Name = "Villa Nocito",
+                    Address = "Pacifico 1925, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4550240",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.721700,
+                    Longitude = -62.312210,
+                    Neighborhood = "Villa Nocito",
+                    ImageURL = "villanocito.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        nursing,
+                        generalFamily,
+                        pediatrics,
+                        healthPromoter,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 53,
-                    Nombre = "Villa Ressia",
-                    Direccion = "Misiones 1570, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4565591",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.742670,
-                    Longitud = -62.272080,
-                    Barrio = "Villa Ressia",
-                    ImagenURL = "villaressia.png",
+                    Name = "Villa Ressia",
+                    Address = "Misiones 1570, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4565591",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.742670,
+                    Longitude = -62.272080,
+                    Neighborhood = "Villa Ressia",
+                    ImageURL = "villaressia.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        speechTherapy,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        odontology,
+                        pediatrics,
+                        psychology,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 54,
-                    Nombre = "Villa Rosas",
-                    Direccion = "Libertad 1955, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4552418",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.755940,
-                    Longitud = -62.261400,
-                    Barrio = "Villa Rosas",
-                    ImagenURL = "villarosas.png",
+                    Name = "Villa Rosas",
+                    Address = "Libertad 1955, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4552418",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.755940,
+                    Longitude = -62.261400,
+                    Neighborhood = "Villa Rosas",
+                    ImageURL = "villarosas.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        odontology,
+                        pediatrics,
+                        socialWork,
+                    },
                 },
 
-                new CentroSalud
+                new MedicalCenter
                 {
-                    Id = 55,
-                    Nombre = "Villa Serra",
-                    Direccion = "Tarija 1350, Bahía Blanca, Provincia de Buenos Aires",
-                    Telefono = "(291) 4560139",
-                    HorarioAtencion = "08:00 a 14:00",
-                    Latitud = -38.757880,
-                    Longitud = -62.246610,
-                    Barrio = "Villa Serra",
-                    ImagenURL = "villaserra.png",
+                    Name = "Villa Serra",
+                    Address = "Tarija 1350, Bahía Blanca, Provincia de Buenos Aires",
+                    PhoneNumber = "(291) 4560139",
+                    OpeningHours = "08:00 a 14:00",
+                    Latitude = -38.757880,
+                    Longitude = -62.246610,
+                    Neighborhood = "Villa Serra",
+                    ImageURL = "villaserra.png",
+                    Specialities  = new List<Speciality>()
+                    {
+                        medicalClinic,
+                        nursing,
+                        generalFamily,
+                        gynecologyObstetrics,
+                        medicalGuard,
+                        psychology,
+                    },
                 }
-            }
-
-            modelBuilder.Entity<Especialidad>().HasData(
-                new Especialidad
-                {
-                    Id = 1,
-                    Nombre = "Actividad Comunitaria"
-                },
-
-                new Especialidad
-                {
-                    Id = 2,
-                    Nombre = "Alergia"
-                },
-
-                new Especialidad
-                {
-                    Id = 3,
-                    Nombre = "Anatomia Patológica"
-                },
-
-                new Especialidad
-                {
-                    Id = 4,
-                    Nombre = "Clínica Médica"
-                },
-
-                new Especialidad
-                {
-                    Id = 6,
-                    Nombre = "Diagnóstico por imagen"
-                },
-
-                new Especialidad
-                {
-                    Id = 7,
-                    Nombre = "Enfermería"
-                },
-
-                new Especialidad
-                {
-                    Id = 8,
-                    Nombre = "Familia / General"
-                },
-
-                new Especialidad
-                {
-                    Id = 9,
-                    Nombre = "Fonoaudiología"
-                },
-
-                new Especialidad
-                {
-                    Id = 10,
-                    Nombre = "Ginecología / Obstetricia"
-                },
-
-                new Especialidad
-                {
-                    Id = 11,
-                    Nombre = "Guardia"
-                },
-
-                new Especialidad
-                {
-                    Id = 12,
-                    Nombre = "Nutrición"
-                },
-
-                new Especialidad
-                {
-                    Id = 13,
-                    Nombre = "Odontología"
-                },
-
-                new Especialidad
-                {
-                    Id = 14,
-                    Nombre = "Oftalmología"
-                },
-
-                new Especialidad
-                {
-                    Id = 15,
-                    Nombre = "Pediatría"
-                },
-
-                new Especialidad
-                {
-                    Id = 16,
-                    Nombre = "Promotor de Salud"
-                },
-
-                new Especialidad
-                {
-                    Id = 17,
-                    Nombre = "Psicología"
-                },
-
-                new Especialidad
-                {
-                    Id = 18,
-                    Nombre = "Psicopedagogía"
-                },
-
-                new Especialidad
-                {
-                    Id = 19,
-                    Nombre = "Trabajo Social"
-                },
-
-                new Especialidad
-                {
-                    Id = 20,
-                    Nombre = "Técnico en Farmacia"
-                });
-
-            modelBuilder.Entity<EspecialidadCentroSalud>().HasData(
-                 new EspecialidadCentroSalud
-                 {
-                     CentroSaludId = 1,
-                     EspecialidadId = 1,
-
-                 },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 1,
-                    EspecialidadId = 7,
-
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 1,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 1,
-                    EspecialidadId = 10,
-                },
-
-                 new EspecialidadCentroSalud
-                 {
-                     CentroSaludId = 1,
-                     EspecialidadId = 13,
-                 },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 1,
-                    EspecialidadId = 15,
-                },
-
-                 new EspecialidadCentroSalud
-                 {
-                     CentroSaludId = 1,
-                     EspecialidadId = 16,
-                 },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 1,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 1,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 2,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 2,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 2,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 2,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 2,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 2,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 16,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 17,
-                },
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 3,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 1,
-                },
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 4,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 16,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 5,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 6,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 7,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 7,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 7,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 7,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 7,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 7,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 7,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 7,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 8,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 8,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 8,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 8,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 8,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 8,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 8,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 8,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 9,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 10,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 10,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 10,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 10,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 10,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 10,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 10,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 10,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 11,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 2,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 12,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 13,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 13,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 13,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 13,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 13,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 13,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 13,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 13,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 14,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 16,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 17,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 17,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 17,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 17,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 17,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 18,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 18,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 18,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 3,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 8
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 20,
-                    EspecialidadId = 20,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 2,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 6,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 14,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 21,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 16,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 22,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 23,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 23,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 23,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 23,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 23,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 24,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 24,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 24,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 24,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 24,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 25,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 25,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 25,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 25,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 25,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 25,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 25,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 26,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 27,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 28,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 28,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 28,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 28,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 28,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 28,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 28,
-                    EspecialidadId = 19,
-                },
-
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 29,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 29,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 29,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 29,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 29,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 29,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 29,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 29,
-                    EspecialidadId = 19,
-                },
-
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 30,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 30,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 30,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 30,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 30,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 30,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 31,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 31,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 31,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 31,
-                    EspecialidadId = 16,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 31,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 31,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 32,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 33,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 34,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 34,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 34,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 34,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 34,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 34,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 34,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 34,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 35,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 35,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 35,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 35,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 35,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 35,
-                    EspecialidadId = 16,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 35,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 35,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 36,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 36,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 36,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 36,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 36,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 37,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 37,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 16,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 38,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 39,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 39,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 39,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 39,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 40,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 40,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 40,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 40,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 41,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 41,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 41,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 41,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 41,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 41,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 42,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 42,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 42,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 42,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 42,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 3,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 44,
-                    EspecialidadId = 20,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 45,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 46,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 47,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 47,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 47,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 47,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 47,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 48,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 48,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 48,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 48,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 48,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 48,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 48,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 12,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 18,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 49,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 50,
-                    EspecialidadId = 1,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 50,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 50,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 51,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 51,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 51,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 51,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 51,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 51,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 51,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 52,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 52,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 52,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 52,
-                    EspecialidadId = 16,
-                },
-
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 52,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 52,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 9,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 13,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 17,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 53,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 54,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 54,
-                    EspecialidadId = 7,
-                },
-
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 54,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 54,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 54,
-                    EspecialidadId = 13,
-                },
-
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 54,
-                    EspecialidadId = 15,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 54,
-                    EspecialidadId = 19,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 55,
-                    EspecialidadId = 4,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 55,
-                    EspecialidadId = 7,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 55,
-                    EspecialidadId = 8,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 55,
-                    EspecialidadId = 10,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 55,
-                    EspecialidadId = 11,
-                },
-
-                new EspecialidadCentroSalud
-                {
-                    CentroSaludId = 55,
-                    EspecialidadId = 17,
-                });
+            };          
         }
     }
 }

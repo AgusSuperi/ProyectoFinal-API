@@ -20,9 +20,6 @@ namespace ProyectoFinal.Service.WebApi.Modules.Injection
             services.AddScoped<ISpecialityApplication, SpecialityApplication>();
             services.AddScoped<ISpecialityDomain, SpecialityDomain>();
             services.AddScoped<ISpecialityRepository, SpecialityRepository>();
-            services.AddScoped<INeighborhoodApplication, NeighborhoodApplication>();
-            services.AddScoped<INeighborhoodDomain, NeighborhoodDomain>();
-            services.AddScoped<INeighborhoodRepository, NeighborhoodRepository>();
         }
     }
 }

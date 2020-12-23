@@ -79,5 +79,25 @@ namespace ProyectoFinal.Application.Main
             }
             return response;
         }
+
+        public async Task<Response<IEnumerable<string>>> GetNeighborhoods()
+        {
+            var response = new Response<IEnumerable<string>>();
+            try
+            {
+                response.Data = await domain.GetNeighborhoods();
+                if (response.Data != null)
+                {
+                    response.IsSuccess = true;
+                    response.Message = "Consulta Exitosa";
+                }
+            }
+            catch (Exception e)
+            {
+                response.Message = e.Message;
+            }
+            return response;
+        }
+
     }
 }

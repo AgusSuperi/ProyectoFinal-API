@@ -10,7 +10,6 @@ namespace ProyectoFinal.Transversal.Mapper
         {
             CreateMap<MedicalCenter, MedicalCenterDTO>().ReverseMap();
             CreateMap<Speciality, SpecialityDTO>().ReverseMap();
-            CreateMap<Neighborhood, NeighborhoodDTO>().ReverseMap();
         }
     }
 }

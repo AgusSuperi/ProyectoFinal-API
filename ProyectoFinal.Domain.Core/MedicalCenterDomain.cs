@@ -29,5 +29,10 @@ namespace ProyectoFinal.Domain.Core
         {
             return await repository.GetSpecialitiesById(id);
         }
+
+        public async Task<IEnumerable<string>> GetNeighborhoods()
+        {
+            return await repository.GetNeighborhood();
+        }
     }
 }

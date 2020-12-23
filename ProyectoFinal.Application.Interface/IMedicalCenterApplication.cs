@@ -12,5 +12,7 @@ namespace ProyectoFinal.Application.Interface
         Task<Response<MedicalCenterDTO>> GetById(int id);
 
         Task<Response<IEnumerable<SpecialityDTO>>> GetSpecialitiesById(int id);
+
+        Task<Response<IEnumerable<string>>> GetNeighborhoods();
     }
 }
