@@ -7,7 +7,7 @@ namespace ProyectoFinal.Application.Interface
 {
     public interface ISpecialityApplication
     {
-        Task<Response<IEnumerable<SpecialityDTO>>> GetAll();
+        Task<Response<IEnumerable<string>>> GetNames();
 
         Task<Response<SpecialityDTO>> GetById(int id);
 

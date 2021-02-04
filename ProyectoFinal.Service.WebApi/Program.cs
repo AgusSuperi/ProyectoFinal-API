@@ -17,8 +17,7 @@ namespace ProyectoFinal.Service.WebApi
             var services = scope.ServiceProvider;
             {
                 var context = services.GetRequiredService<ProyectoFinalContext>();
-                var env = services.GetRequiredService<IWebHostEnvironment>();
-                DataBaselnitializer.Initialize(context, env);
+                DataBaselnitializer.Initialize(context);
             }
 
             host.Run();

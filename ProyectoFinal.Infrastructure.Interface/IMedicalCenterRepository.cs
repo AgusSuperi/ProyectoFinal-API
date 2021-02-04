@@ -1,4 +1,5 @@
 ﻿using ProyectoFinal.Domain.Entity;
+using ProyectoFinal.Transversal.Common;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -14,6 +15,6 @@ namespace ProyectoFinal.Infrastructure.Interface
 
         Task<IEnumerable<MedicalCenter>> GetByFilter(Filter filter);
 
-        Task<IEnumerable<string>> GetNeighborhood();
+        Task<IEnumerable<string>> GetNeighborhoods();
     }
 }

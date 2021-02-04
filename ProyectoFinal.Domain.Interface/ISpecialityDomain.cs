@@ -6,7 +6,7 @@ namespace ProyectoFinal.Domain.Interface
 {
     public interface ISpecialityDomain
     {
-        Task<IEnumerable<Speciality>> GetAll();
+        Task<IEnumerable<string>> GetNames();
 
         Task<Speciality> GetById(int id);
 

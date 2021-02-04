@@ -15,10 +15,10 @@ namespace ProyectoFinal.Service.WebApi.Controllers
             this.application = application;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("names")]
+        public async Task<IActionResult> GetNames()
         {
-            var response = await application.GetAll();
+            var response = await application.GetNames();
 
             if (response.IsSuccess)
                 return Ok(response);

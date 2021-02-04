@@ -7,7 +7,7 @@ namespace ProyectoFinal.Domain.Entity
     {
         public int Id { get; set; }
 
-        [Required, StringLength(20)]
+        [Required, StringLength(50)]
         public string Name { get; set; }
 
         public IEnumerable<MedicalCenter> MedicalCenters { get; set; } = new List<MedicalCenter>();

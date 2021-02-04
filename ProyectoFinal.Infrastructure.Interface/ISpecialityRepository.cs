@@ -6,7 +6,7 @@ namespace ProyectoFinal.Infrastructure.Interface
 {
     public interface ISpecialityRepository
     {
-        Task<IEnumerable<Speciality>> GetAll();
+        Task<IEnumerable<string>> GetNames();
 
         Task<Speciality> GetById(int id);
 

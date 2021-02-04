@@ -9,8 +9,6 @@ namespace ProyectoFinal.Infrastructure.Data
 
         public DbSet<Speciality> Specialities { get; set; }
 
-        public DbSet<Neighborhood> Neighborhoods { get; set; }
-
         public ProyectoFinalContext(DbContextOptions<ProyectoFinalContext> Options) : base(Options) { }
     }
 }

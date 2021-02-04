@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ProyectoFinal.Domain.Entity\ProyectoFinal.Domain.Entity.csproj" />
     <ProjectReference Include="..\ProyectoFinal.Domain.Interface\ProyectoFinal.Domain.Interface.csproj" />
     <ProjectReference Include="..\ProyectoFinal.Infrastructure.Interface\ProyectoFinal.Infrastructure.Interface.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Transversal.Common\ProyectoFinal.Transversal.Common.csproj" />
   </ItemGroup>
 
 </Project>

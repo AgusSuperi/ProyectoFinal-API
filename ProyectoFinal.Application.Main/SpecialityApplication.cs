@@ -20,13 +20,12 @@ namespace ProyectoFinal.Application.Main
             this.mapper = mapper;
         }
 
-        public async Task<Response<IEnumerable<SpecialityDTO>>> GetAll()
+        public async Task<Response<IEnumerable<string>>> GetNames()
         {
-            var response = new Response<IEnumerable<SpecialityDTO>>();
+            var response = new Response<IEnumerable<string>>();
             try
             {
-                var specialities = await domain.GetAll();
-                response.Data = mapper.Map<IEnumerable<SpecialityDTO>>(specialities);
+                response.Data = await domain.GetNames();
                 if (response.Data != null)
                 {
                     response.IsSuccess = true;

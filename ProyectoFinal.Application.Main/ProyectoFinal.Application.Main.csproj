@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +12,7 @@
     <ProjectReference Include="..\ProyectoFinal.Application.DTO\ProyectoFinal.Application.DTO.csproj" />
     <ProjectReference Include="..\ProyectoFinal.Application.Interface\ProyectoFinal.Application.Interface.csproj" />
     <ProjectReference Include="..\ProyectoFinal.Domain.Interface\ProyectoFinal.Domain.Interface.csproj" />
+    <ProjectReference Include="..\ProyectoFinal.Transversal.Common\ProyectoFinal.Transversal.Common.csproj" />
   </ItemGroup>
 
 </Project>

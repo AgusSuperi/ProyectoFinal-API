@@ -1,14 +1,25 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Domain.Entity;
 using ProyectoFinal.Infrastructure.Data;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ProyectoFinal.Service.WebApi.Initializer
 {
     public static class DataBaselnitializer
     {
-        public static void Initialize(ProyectoFinalContext context, IWebHostEnvironment env)
+        public static void Initialize(ProyectoFinalContext context)
+        {
+            context.Database.Migrate();
+
+            if (!context.MedicalCenters.Any())
+            {
+                context.MedicalCenters.AddRange(InitializeMedicalCenters());
+                context.SaveChanges();
+            }                       
+        }
+
+        private static List<MedicalCenter> InitializeMedicalCenters()
         {
             //Specialities 
             var communityActivity = new Speciality("Actividad Comunitaria");
@@ -57,6 +68,7 @@ namespace ProyectoFinal.Service.WebApi.Initializer
                         socialWork,
                     },
                 },
+
                 new MedicalCenter
                 {
                     Name = "12 de Octubre",
@@ -76,6 +88,7 @@ namespace ProyectoFinal.Service.WebApi.Initializer
                         psychology,
                     },
                 },
+
                 new MedicalCenter
                 {
                     Name = "A. Menghini",
@@ -101,6 +114,7 @@ namespace ProyectoFinal.Service.WebApi.Initializer
                         socialWork,
                     },
                 },
+
                 new MedicalCenter
                 {
                     Name = "Aldea Romana",
@@ -125,6 +139,7 @@ namespace ProyectoFinal.Service.WebApi.Initializer
                         socialWork,
                     },
                 },
+
                 new MedicalCenter
                 {
                     Name = "Anchorena",
@@ -432,7 +447,6 @@ namespace ProyectoFinal.Service.WebApi.Initializer
 
                 new MedicalCenter
                 {
-                    Id = 19,
                     Name = "Laureano Muñiz - Vacunatorio",
                     Address = "Francisco de Gurruchaga 40, Gral Daniel Cerri, Provincia de Buenos Aires",
                     PhoneNumber = "(291) 4847220",
@@ -441,6 +455,7 @@ namespace ProyectoFinal.Service.WebApi.Initializer
                     Longitude = -62.413710,
                     Neighborhood = "General Daniel Cerri",
                     ImageURL = "laureanomuñiz.png",
+                    Specialities = new List<Speciality>()
                 },
 
                 new MedicalCenter
@@ -1217,7 +1232,9 @@ namespace ProyectoFinal.Service.WebApi.Initializer
                         psychology,
                     },
                 }
-            };          
+            };
+
+            return medicalCenters;
         }
     }
 }

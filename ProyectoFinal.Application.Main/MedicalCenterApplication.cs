@@ -80,6 +80,26 @@ namespace ProyectoFinal.Application.Main
             return response;
         }
 
+        public async Task<Response<IEnumerable<MedicalCenterDTO>>> GetByFilter(Filter filter)
+        {
+            var response = new Response<IEnumerable<MedicalCenterDTO>>();
+            try
+            {
+                var medicalCenters = await domain.GetByFilter(filter);
+                response.Data = mapper.Map<IEnumerable<MedicalCenterDTO>>(medicalCenters);
+                if (response.Data != null)
+                {
+                    response.IsSuccess = true;
+                    response.Message = "Consulta Exitosa";
+                }
+            }
+            catch (Exception e)
+            {
+                response.Message = e.Message;
+            }
+            return response;
+        }
+
         public async Task<Response<IEnumerable<string>>> GetNeighborhoods()
         {
             var response = new Response<IEnumerable<string>>();
@@ -97,7 +117,6 @@ namespace ProyectoFinal.Application.Main
                 response.Message = e.Message;
             }
             return response;
-        }
-
+        }        
     }
 }

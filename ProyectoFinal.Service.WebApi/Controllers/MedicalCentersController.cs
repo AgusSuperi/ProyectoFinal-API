@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProyectoFinal.Application.DTO;
 using ProyectoFinal.Application.Interface;
+using ProyectoFinal.Transversal.Common;
 using System.Threading.Tasks;
 
 namespace ProyectoFinal.Service.WebApi.Controllers
@@ -66,59 +66,15 @@ namespace ProyectoFinal.Service.WebApi.Controllers
             return BadRequest(response.Message);
         }
 
-        /*
-        [HttpPost("GetByFilter")]
-        public async Task<IActionResult> GetByFilter(FilterDTO filtro)
+        [HttpPost("filter")]
+        public async Task<IActionResult> GetByFilter(Filter filter)
         {
-            return Ok();
+            var response = await application.GetByFilter(filter);
+
+            if (response.IsSuccess)
+                return Ok(response);
+
+            return BadRequest(response.Message);
         }
-
-        
-        public async Task<IEnumerable<CentroSalud>> GetCentrosSaludPorFiltro(FiltroDTO filtro)
-        {
-            var centrosSalud = await centrosSaludContext.CentrosSalud.
-                Where(c => (filtro.Horarios.Count > 0 ? filtro.Horarios.Contains(c.HorarioAtencion) : true) &&
-                (filtro.Barrios.Count > 0 ? filtro.Barrios.Contains(c.Barrio) : true)).
-                Include(c => c.EspecialidadesCentroSalud).
-                ToListAsync();
-
-            List<CentroSalud> result = new List<CentroSalud>();
-
-            if (filtro.Especialidades.Count > 0)
-            {
-                foreach (var centroSalud in centrosSalud)
-                {
-                    if (await CapsContieneEspecialidades(filtro.Especialidades, centroSalud))
-                    {
-                        result.Add(centroSalud);
-                    }
-                }
-
-                return result;
-            }
-            else
-            {
-                return centrosSalud;
-            }
-        }
-
-        private async Task<bool> CapsContieneEspecialidades(List<string> especialidades, CentroSalud centroSalud)
-        {
-            var especialidadesCentroSalud = await centrosSaludContext.EspecialidadesCentrosSalud.
-                Where(e => e.CentroSaludId == centroSalud.Id).
-                Select(e => e.Especialidad.Nombre).
-                ToListAsync();
-
-            foreach (var especialidad in especialidades)
-            {
-                if (!especialidadesCentroSalud.Contains(especialidad))
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-        */
     }
 }

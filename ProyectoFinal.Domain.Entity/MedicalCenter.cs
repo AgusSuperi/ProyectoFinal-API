@@ -7,7 +7,7 @@ namespace ProyectoFinal.Domain.Entity
     {
         public int Id { get; set; }
 
-        [Required, StringLength(30)]
+        [Required, StringLength(50)]
         public string Name { get; set; }
 
         [Required, StringLength(15)]
@@ -16,7 +16,7 @@ namespace ProyectoFinal.Domain.Entity
         [Required, StringLength(80)]
         public string Address { get; set; }
 
-        [Required, StringLength(15)]
+        [Required, StringLength(30)]
         public string OpeningHours { get; set; }
 
         [Required]
@@ -25,10 +25,10 @@ namespace ProyectoFinal.Domain.Entity
         [Required]
         public double Longitude { get; set; }
 
-        [Required, StringLength(30)]
+        [Required, StringLength(50)]
         public string Neighborhood { get; set; }
 
-        [Required, StringLength(20)]
+        [Required, StringLength(50)]
         public string ImageURL { get; set; }
 
         public IEnumerable<Speciality> Specialities { get; set; }

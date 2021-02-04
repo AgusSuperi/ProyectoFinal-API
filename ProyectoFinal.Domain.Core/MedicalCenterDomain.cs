@@ -1,6 +1,7 @@
 ﻿using ProyectoFinal.Domain.Entity;
 using ProyectoFinal.Domain.Interface;
 using ProyectoFinal.Infrastructure.Interface;
+using ProyectoFinal.Transversal.Common;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -30,9 +31,14 @@ namespace ProyectoFinal.Domain.Core
             return await repository.GetSpecialitiesById(id);
         }
 
+        public async Task<IEnumerable<MedicalCenter>> GetByFilter(Filter filter)
+        {
+            return await repository.GetByFilter(filter);
+        }
+
         public async Task<IEnumerable<string>> GetNeighborhoods()
         {
-            return await repository.GetNeighborhood();
-        }
+            return await repository.GetNeighborhoods();
+        }        
     }
 }
