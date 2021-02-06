@@ -17,6 +17,11 @@ namespace ProyectoFinal.Infrastructure.Repository
             this.context = context;
         }
 
+        public async Task<IEnumerable<Speciality>> GetAll()
+        {
+            return await context.Specialities.ToListAsync();
+        }
+
         public async Task<IEnumerable<string>> GetNames()
         {
             return await context.Specialities.OrderBy(s => s.Name).Select(s => s.Name).ToListAsync();

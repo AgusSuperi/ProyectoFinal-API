@@ -36,20 +36,26 @@ namespace ProyectoFinal.Infrastructure.Repository
 
         public async Task<IEnumerable<MedicalCenter>> GetByFilter(Filter filter)
         {
-            /*
             var medicalCenters = await context.MedicalCenters
                 .Include(m => m.Specialities)
                 .Where(m => (filter.Neighborhoods.Count == 0 || filter.Neighborhoods.Contains(m.Neighborhood)))
                 .Where(m => (filter.OpeningHours.Count == 0 || filter.OpeningHours.Contains(m.OpeningHours)))
-                .Where(m => (filter.Specialities.Count == 0 || m.Specialities.All(s => filter.Specialities.Contains(s.Name))))
-                .ToListAsync();
-            */
-
-            var medicalCenters = await context.MedicalCenters
-                .Include(m => m.Specialities)
-                .Where(m => (filter.Specialities.Count == 0 || m.Specialities.All(s => filter.Specialities.Contains(s.Name))))
                 .ToListAsync();
 
+            if (filter.Specialities.Count != 0)
+            {
+                var result = new List<MedicalCenter>();
+
+                foreach (var medicalCenter in medicalCenters)
+                {
+                    if (filter.Specialities.All(s => medicalCenter.Specialities.Any(s2 => s2.Name.Equals(s))))
+                    {
+                        result.Add(medicalCenter);
+                    }
+                }
+
+                return result;
+            }            
 
             return medicalCenters;
         }

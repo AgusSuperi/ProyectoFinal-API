@@ -15,6 +15,11 @@ namespace ProyectoFinal.Domain.Core
             this.repository = repository;
         }
 
+        public async Task<IEnumerable<Speciality>> GetAll()
+        {
+            return await repository.GetAll();
+        }
+
         public async Task<IEnumerable<string>> GetNames()
         {
             return await repository.GetNames();
