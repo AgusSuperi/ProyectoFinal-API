@@ -192,7 +192,7 @@ namespace ProyectoFinal.Service.WebApi.Initializer
 
                 new MedicalCenter
                 {
-                    Name = "Neighborhood Latino",
+                    Name = "Barrio Latino",
                     Address = "Lugones 46, Bahía Blanca, Provincia de Buenos Aires",
                     PhoneNumber = "(291) 4889859",
                     OpeningHours = "08:00 a 14:00",
@@ -215,7 +215,7 @@ namespace ProyectoFinal.Service.WebApi.Initializer
 
                 new MedicalCenter
                 {
-                    Name = "Neighborhood Obrero",
+                    Name = "Barrio Obrero",
                     Address = "Chiclana 1974, Bahía Blanca, Provincia de Buenos Aires",
                     PhoneNumber = "(291) 4821674",
                     OpeningHours = "08:00 a 14:00",
