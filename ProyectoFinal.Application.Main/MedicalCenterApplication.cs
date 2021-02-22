@@ -117,6 +117,25 @@ namespace ProyectoFinal.Application.Main
                 response.Message = e.Message;
             }
             return response;
-        }        
+        }
+
+        public Response<IEnumerable<string>> GetFilterOpeningHours()
+        {
+            var response = new Response<IEnumerable<string>>();
+            try
+            {
+                response.Data = FilterOpeningHours.Get();
+                if (response.Data != null)
+                {
+                    response.IsSuccess = true;
+                    response.Message = "Consulta Exitosa";
+                }
+            }
+            catch (Exception e)
+            {
+                response.Message = e.Message;
+            }
+            return response;
+        }
     }
 }

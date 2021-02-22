@@ -39,7 +39,9 @@ namespace ProyectoFinal.Infrastructure.Repository
             var medicalCenters = await context.MedicalCenters
                 .Include(m => m.Specialities)
                 .Where(m => (filter.Neighborhoods.Count == 0 || filter.Neighborhoods.Contains(m.Neighborhood)))
-                .Where(m => (filter.OpeningHours.Count == 0 || filter.OpeningHours.Contains(m.OpeningHours)))
+                .Where(m => (filter.OpeningHours == FilterOpeningHours.Until_14 || 
+                    (filter.OpeningHours == FilterOpeningHours.Until_18 ? (OpeningHours.Until_18 == m.OpeningHours || 
+                    OpeningHours.AllDay == m.OpeningHours) : OpeningHours.AllDay == m.OpeningHours)))
                 .ToListAsync();
 
             if (filter.Specialities.Count != 0)

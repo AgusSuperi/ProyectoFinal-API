@@ -4,7 +4,7 @@ namespace ProyectoFinal.Transversal.Common
 {
     public class Filter
     {
-        public List<string> OpeningHours { get; set; }
+        public string OpeningHours { get; set; }
 
         public List<string> Neighborhoods { get; set; }
 

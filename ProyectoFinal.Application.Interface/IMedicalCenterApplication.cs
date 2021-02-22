@@ -16,5 +16,7 @@ namespace ProyectoFinal.Application.Interface
         Task<Response<IEnumerable<MedicalCenterDTO>>> GetByFilter(Filter filter);
 
         Task<Response<IEnumerable<string>>> GetNeighborhoods();
+
+        Response<IEnumerable<string>> GetFilterOpeningHours();
     }
 }

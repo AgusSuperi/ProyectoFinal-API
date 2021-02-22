@@ -9,9 +9,9 @@ namespace ProyectoFinal.Application.Interface
     {
         Task<Response<IEnumerable<SpecialityDTO>>> GetAll();
 
-        Task<Response<IEnumerable<string>>> GetNames();
-
         Task<Response<SpecialityDTO>> GetById(int id);
+
+        Task<Response<IEnumerable<string>>> GetNames();
 
         Task<Response<IEnumerable<MedicalCenterDTO>>> GetMedicalCentersById(int id);
     }

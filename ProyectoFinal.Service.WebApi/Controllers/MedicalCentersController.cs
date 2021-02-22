@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using ProyectoFinal.Application.Interface;
 using ProyectoFinal.Transversal.Common;
-using System.Threading.Tasks;
 
 namespace ProyectoFinal.Service.WebApi.Controllers
 {
@@ -44,9 +44,6 @@ namespace ProyectoFinal.Service.WebApi.Controllers
         [HttpGet("{id}/specialities")]
         public async Task<IActionResult> GetSpecialitiesById(int id)
         {
-            if (id <= 0)
-                return BadRequest();
-
             var response = await application.GetSpecialitiesById(id);
 
             if (response.IsSuccess)
@@ -59,6 +56,17 @@ namespace ProyectoFinal.Service.WebApi.Controllers
         public async Task<IActionResult> GetNeighborhoods()
         {
             var response = await application.GetNeighborhoods();
+
+            if (response.IsSuccess)
+                return Ok(response);
+
+            return BadRequest(response.Message);
+        }
+
+        [HttpGet("filterOpeningHours")]
+        public IActionResult GetFilterOpeningHours()
+        {
+            var response = application.GetFilterOpeningHours();
 
             if (response.IsSuccess)
                 return Ok(response);
