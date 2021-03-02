@@ -15,6 +15,10 @@ namespace ProyectoFinal.Domain.Interface
 
         Task<IEnumerable<MedicalCenter>> GetByFilter(Filter filter);
 
+        Task<MedicalCenter> GetClosestByCoordinates(Coordinates coordinates);
+
         Task<IEnumerable<string>> GetNeighborhoods();
+
+        IEnumerable<string> GetFilterOpeningHours();
     }
 }

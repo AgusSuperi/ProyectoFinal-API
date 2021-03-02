@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Device.Location.Portable" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ProyectoFinal.Infrastructure.Data\ProyectoFinal.Infrastructure.Data.csproj" />
     <ProjectReference Include="..\ProyectoFinal.Infrastructure.Interface\ProyectoFinal.Infrastructure.Interface.csproj" />
     <ProjectReference Include="..\ProyectoFinal.Transversal.Common\ProyectoFinal.Transversal.Common.csproj" />

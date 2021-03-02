@@ -3,7 +3,9 @@ using ProyectoFinal.Domain.Entity;
 using ProyectoFinal.Infrastructure.Data;
 using ProyectoFinal.Infrastructure.Interface;
 using ProyectoFinal.Transversal.Common;
+using System;
 using System.Collections.Generic;
+using System.Device.Location;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -60,6 +62,29 @@ namespace ProyectoFinal.Infrastructure.Repository
             }            
 
             return medicalCenters;
+        }
+
+        public async Task<MedicalCenter> GetClosestByCoordinates(Coordinates coordinates)
+        {
+            var medicalCenters = await context.MedicalCenters.ToListAsync();
+            var minDistance = Double.MaxValue;
+            var closest = new MedicalCenter();
+
+            foreach(var medicalCenter in medicalCenters)
+            {
+                var xCoord = new GeoCoordinate(medicalCenter.Latitude, medicalCenter.Longitude);
+                var yCoord = new GeoCoordinate(coordinates.Latitude, coordinates.Longitude);
+
+                var distance = xCoord.GetDistanceTo(yCoord);
+
+                if (distance < minDistance)
+                {
+                    closest = medicalCenter;
+                    minDistance = distance;
+                }
+            }
+
+            return closest;
         }
 
         public async Task<IEnumerable<string>> GetNeighborhoods()

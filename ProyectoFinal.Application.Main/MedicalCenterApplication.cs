@@ -100,6 +100,26 @@ namespace ProyectoFinal.Application.Main
             return response;
         }
 
+        public async Task<Response<MedicalCenterDTO>> GetClosestByCoordinates(Coordinates coordinates)
+        {
+            var response = new Response<MedicalCenterDTO>();
+            try
+            {
+                var medicalCenter = await domain.GetClosestByCoordinates(coordinates);
+                response.Data = mapper.Map<MedicalCenterDTO>(medicalCenter);
+                if (response.Data != null)
+                {
+                    response.IsSuccess = true;
+                    response.Message = "Consulta Exitosa";
+                }
+            }
+            catch (Exception e)
+            {
+                response.Message = e.Message;
+            }
+            return response;
+        }
+
         public async Task<Response<IEnumerable<string>>> GetNeighborhoods()
         {
             var response = new Response<IEnumerable<string>>();
@@ -124,7 +144,7 @@ namespace ProyectoFinal.Application.Main
             var response = new Response<IEnumerable<string>>();
             try
             {
-                response.Data = FilterOpeningHours.Get();
+                response.Data = domain.GetFilterOpeningHours();
                 if (response.Data != null)
                 {
                     response.IsSuccess = true;

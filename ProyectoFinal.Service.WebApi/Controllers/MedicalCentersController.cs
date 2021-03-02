@@ -52,6 +52,17 @@ namespace ProyectoFinal.Service.WebApi.Controllers
             return BadRequest(response.Message);
         }
 
+        [HttpPost("closest")]
+        public async Task<IActionResult> GetClosestByCoordinates(Coordinates coordinates)
+        {
+            var response = await application.GetClosestByCoordinates(coordinates);
+
+            if (response.IsSuccess)
+                return Ok(response);
+
+            return BadRequest(response.Message);
+        }
+
         [HttpGet("neighborhoods")]
         public async Task<IActionResult> GetNeighborhoods()
         {

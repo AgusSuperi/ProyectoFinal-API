@@ -36,9 +36,19 @@ namespace ProyectoFinal.Domain.Core
             return await repository.GetByFilter(filter);
         }
 
+        public async Task<MedicalCenter> GetClosestByCoordinates(Coordinates coordinates)
+        {
+            return await repository.GetClosestByCoordinates(coordinates);
+        }
+
         public async Task<IEnumerable<string>> GetNeighborhoods()
         {
             return await repository.GetNeighborhoods();
-        }        
+        }
+
+        public IEnumerable<string> GetFilterOpeningHours()
+        {
+            return FilterOpeningHours.Get();
+        }
     }
 }
