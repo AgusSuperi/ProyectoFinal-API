@@ -24,6 +24,7 @@ namespace ProyectoFinal.Service.WebApi
         {
             services.AddContext(Configuration);
             services.AddMapper();
+            services.AddCorsExtension();
             services.AddControllers();
             services.AddInjection(Configuration);
             services.AddSwaggerGen(c =>
@@ -43,9 +44,8 @@ namespace ProyectoFinal.Service.WebApi
             }
 
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
